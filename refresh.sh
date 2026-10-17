@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# High & Low: pull fresh prices, then publish to Vercel.
+# High & Low: pull fresh prices, then publish them to public/ (served by Tailscale Funnel).
 # Run by hand, or hourly from cron (see README). Linux counterpart of refresh.bat.
 cd "$(dirname "$0")" || exit 1
 export PATH="$HOME/.local/opt/node/bin:$HOME/.local/bin:$PATH"
@@ -21,8 +21,11 @@ if ! .venv/bin/python scrape.py >> refresh.log 2>&1; then
   echo "[$(date)] scrape failed, NOT deploying" >> refresh.log
   exit 1
 fi
-if ! vercel deploy --prod --yes --cwd site >> refresh.log 2>&1; then
-  echo "[$(date)] deploy failed" >> refresh.log
-  exit 1
-fi
+# Publish to public/, which Tailscale Funnel serves (see README). Copy then rename, so a visitor
+# never gets a half-written page. Only these two files go in: site/ also holds Vercel's
+# .env.local token and .vercel/ link, which must never be served.
+mkdir -p public
+cp site/favicon.png public/favicon.png.tmp && mv public/favicon.png.tmp public/favicon.png
+cp site/index.html public/index.html.tmp && mv public/index.html.tmp public/index.html
+echo "[$(date)] published to public/" >> refresh.log
 echo "[$(date)] refresh done" >> refresh.log

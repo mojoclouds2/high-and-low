@@ -7,3 +7,4 @@ out/
 scrape.out
 refresh.lock
 .env*
+public/

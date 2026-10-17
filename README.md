@@ -9,8 +9,9 @@ All eight stores are switched on: **Daylite, Nirvana, Sage, NAR** (Mount Laurel)
 (Merchantville), **Brotherly Bud** (Mt Ephraim), **Enlighten** and **Quality Roots** (Marlton).
 See "Turning stores on or off".
 
-**Live site:** https://high-and-low-cyan.vercel.app (Vercel team `mojoclouds-ai`, a separate account
-used only for this project).
+**Live site:** https://fadethepublic.tail298101.ts.net:10000 — served from this PC by Tailscale Funnel
+(see "Hosting with Tailscale Funnel"). The old Vercel copy (https://high-and-low-cyan.vercel.app,
+team `mojoclouds-ai`) is no longer updated.
 
 > **Running on Linux?** See "Linux setup" below — it replaces steps 1–5. `refresh.sh` is the Linux
 > version of `refresh.bat`.
@@ -180,8 +181,23 @@ uv pip install -p .venv/bin/python -r requirements.txt
 npm install -g vercel
 vercel login                      # use the High & Low account, not your main one
 vercel link --yes --project high-and-low --scope mojoclouds-ai --cwd site
-./refresh.sh                      # scrape + deploy; appends to refresh.log
+./refresh.sh                      # scrape + publish to public/; appends to refresh.log
 ```
+
+### Hosting with Tailscale Funnel
+
+`refresh.sh` copies the finished page into `public/` (only `index.html` and `favicon.png`; never
+serve `site/`, which holds Vercel's `.env.local` token). Funnel publishes that folder with HTTPS and
+no port forwarding. This machine's Funnel is shared: 443 and 8443 belong to other apps, so High & Low
+uses Funnel's third allowed port, **10000**. Turn it on once (it survives reboots):
+
+```
+tailscale funnel --bg --https=10000 /home/mojoclouds/mojoclouds-projects/high-and-low/public
+tailscale funnel status           # check; never run `tailscale funnel reset` (it removes every app)
+```
+
+To take the site down: `tailscale funnel --https=10000 off`. The site is only up while this PC is on
+and awake.
 
 (Python 3.12 because the system Python lacks `venv`/`pip`.)
 
@@ -190,7 +206,7 @@ wholesale. Back it up, then add one line with `crontab -e`:
 
 ```
 crontab -l > ~/crontab-backup-$(date +%F).txt
-# High & Low price refresh (scrape + Vercel deploy), hourly at :07
+# High & Low price refresh (scrape + publish), hourly at :07
 7 * * * * /home/mojoclouds/mojoclouds-projects/high-and-low/refresh.sh
 ```
 
