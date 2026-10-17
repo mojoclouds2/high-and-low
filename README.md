@@ -9,9 +9,9 @@ All eight stores are switched on: **Daylite, Nirvana, Sage, NAR** (Mount Laurel)
 (Merchantville), **Brotherly Bud** (Mt Ephraim), **Enlighten** and **Quality Roots** (Marlton).
 See "Turning stores on or off".
 
-**Live site:** https://fadethepublic.tail298101.ts.net:10000 — served from this PC by Tailscale Funnel
-(see "Hosting with Tailscale Funnel"). The old Vercel copy (https://high-and-low-cyan.vercel.app,
-team `mojoclouds-ai`) is no longer updated.
+**Hosting:** GoDaddy web hosting, uploaded over SFTP by `upload.sh` (see "Hosting on GoDaddy").
+The old Vercel copy (https://high-and-low-cyan.vercel.app, team `mojoclouds-ai`) is no longer updated;
+the "Ship it" Vercel steps below are kept only for reference.
 
 > **Running on Linux?** See "Linux setup" below — it replaces steps 1–5. `refresh.sh` is the Linux
 > version of `refresh.bat`.
@@ -178,28 +178,32 @@ Tools: Python via [`uv`](https://docs.astral.sh/uv/), Node at `~/.local/opt/node
 uv venv --python 3.12 .venv
 uv pip install -p .venv/bin/python -r requirements.txt
 .venv/bin/python -m playwright install chromium
-npm install -g vercel
-vercel login                      # use the High & Low account, not your main one
-vercel link --yes --project high-and-low --scope mojoclouds-ai --cwd site
-./refresh.sh                      # scrape + publish to public/; appends to refresh.log
+./refresh.sh                      # scrape + upload to GoDaddy; appends to refresh.log
 ```
 
-### Hosting with Tailscale Funnel
+### Hosting on GoDaddy
 
-`refresh.sh` copies the finished page into `public/` (only `index.html` and `favicon.png`; never
-serve `site/`, which holds Vercel's `.env.local` token). Funnel publishes that folder with HTTPS and
-no port forwarding. This machine's Funnel is shared: 443 and 8443 belong to other apps, so High & Low
-uses Funnel's third allowed port, **10000**. Turn it on once (it survives reboots):
+Needs a GoDaddy **Web Hosting (cPanel)** plan; Website Builder can't host this page. `upload.sh`
+sends `site/index.html`, `site/favicon.png` and `godaddy/.htaccess` (compression + cache headers)
+over SFTP, under temporary names and then renamed, so visitors never see a half-uploaded page.
 
-```
-tailscale funnel --bg --https=10000 /home/mojoclouds/mojoclouds-projects/high-and-low/public
-tailscale funnel status           # check; never run `tailscale funnel reset` (it removes every app)
-```
+One-time setup:
+1. cPanel → **SSH Access** → **Manage SSH Keys** → **Import Key**: paste `~/.ssh/godaddy_highlow.pub`,
+   then **Manage → Authorize**. (On some plans SSH must first be switched on under
+   **Settings → Server → SSH Access** in the GoDaddy hosting dashboard.)
+2. Create `~/.config/high-and-low/godaddy.env` (keep it private: `chmod 600`):
+   ```
+   GD_HOST=<server IP or hostname from the hosting dashboard>
+   GD_USER=<cPanel username>
+   GD_DIR=public_html          # or public_html/<folder> if the domain shares this hosting
+   GD_KEY=$HOME/.ssh/godaddy_highlow
+   ```
+3. Test with `./upload.sh`, then open the domain.
 
-To take the site down: `tailscale funnel --https=10000 off`. The site is only up while this PC is on
-and awake.
+`upload.sh` replaces `.htaccess` in `GD_DIR`, so point `GD_DIR` at a folder used only by this site.
 
-(Python 3.12 because the system Python lacks `venv`/`pip`.)
+(Python 3.12 because the system Python lacks `venv`/`pip`. Node and the Vercel CLI are no longer
+needed.)
 
 **Hourly refresh (cron).** This machine's crontab is shared with other jobs — never replace it
 wholesale. Back it up, then add one line with `crontab -e`:
