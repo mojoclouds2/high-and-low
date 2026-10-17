@@ -5,8 +5,15 @@
 A static website that compares prices across dispensary menus. A Python scraper (run on your PC)
 pulls every store's menu, builds one page (`site/index.html`), and publishes it to Vercel.
 
-This copy covers **Daylite, Nirvana, Sage and NAR** (Mount Laurel). Gynsyng, Brotherly Bud, Enlighten
-and Quality Roots are in the code but switched off (see "Turning stores on or off").
+All eight stores are switched on: **Daylite, Nirvana, Sage, NAR** (Mount Laurel), **Gynsyng**
+(Merchantville), **Brotherly Bud** (Mt Ephraim), **Enlighten** and **Quality Roots** (Marlton).
+See "Turning stores on or off".
+
+**Live site:** https://high-and-low-cyan.vercel.app (Vercel team `mojoclouds-ai`, a separate account
+used only for this project).
+
+> **Running on Linux?** See "Linux setup" below — it replaces steps 1–5. `refresh.sh` is the Linux
+> version of `refresh.bat`.
 
 ---
 
@@ -115,11 +122,13 @@ Only `site/` goes to Vercel. The code, data and logs stay on your PC.
 
 | Store | Menu system | Method |
 |---|---|---|
-| Sage | Flowhub | The menu's own page-data JSON, 20 products per page |
+| Sage | Flowhub | Loads each menu page (20 products) and reads the product list embedded in it. Cloudflare blocks the JSON route and challenges headless browsers, so Sage opens a **visible** Chromium window (needs a desktop session) |
 | NAR | Dutchie | Opens one Dutchie menu to copy its product queries, then runs them with NAR's store id |
 | Daylite, Nirvana | Dispense | Types in the menu's search box so it requests products, then pages through the whole menu with that request's headers |
-| *(off)* Gynsyng, Brotherly Bud, Enlighten | Dutchie | Same as NAR |
-| *(off)* Quality Roots | Own API | `api.getqualityroots.com/products/`, 100 per page |
+| Gynsyng, Brotherly Bud, Enlighten | Dutchie | Same as NAR |
+| Quality Roots | Own API | `api.getqualityroots.com/products/`, 100 per page |
+
+Each store gets up to 3 tries per run (menus sometimes don't fire their product request the first time).
 
 No keys or passwords are stored in the code; anything a menu needs is read from the live page each run.
 
@@ -159,6 +168,37 @@ menu's site in `DISPENSE_MED` in `scrape.py`).
 - **Deploy asks to log in again** — run `vercel login` in a terminal.
 - **Changed the design** — edit `template.html`, run `python build_snapshot.py` to preview with saved
   data, then `refresh.bat` (or `vercel deploy --prod --cwd site`) to publish.
+
+## Linux setup
+
+Tools: Python via [`uv`](https://docs.astral.sh/uv/), Node at `~/.local/opt/node` (for the Vercel CLI).
+
+```
+uv venv --python 3.12 .venv
+uv pip install -p .venv/bin/python -r requirements.txt
+.venv/bin/python -m playwright install chromium
+npm install -g vercel
+vercel login                      # use the High & Low account, not your main one
+vercel link --yes --project high-and-low --scope mojoclouds-ai --cwd site
+./refresh.sh                      # scrape + deploy; appends to refresh.log
+```
+
+(Python 3.12 because the system Python lacks `venv`/`pip`.)
+
+**Hourly refresh (cron).** This machine's crontab is shared with other jobs — never replace it
+wholesale. Back it up, then add one line with `crontab -e`:
+
+```
+crontab -l > ~/crontab-backup-$(date +%F).txt
+# High & Low price refresh (scrape + Vercel deploy), hourly at :07
+7 * * * * /home/mojoclouds/mojoclouds-projects/high-and-low/refresh.sh
+```
+
+`refresh.sh` sets `DISPLAY`/`XAUTHORITY` itself so Sage's visible browser works from cron, and skips a
+run if the previous one is still going. You must be logged in to the desktop; if not, Sage fails
+and keeps its last prices (marked stale) while the other stores still update.
+
+---
 
 ## Deploying from GitHub instead (optional)
 

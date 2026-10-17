@@ -22,6 +22,8 @@ import normalize as N
 OUT = Path(__file__).parent / "out"    # last run's data (kept private, used as fallback)
 SITE = Path(__file__).parent / "site"  # what gets deployed to Vercel
 PAUSE = 0.6  # seconds between paged requests -- keep it gentle
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/140.0 Safari/537.36")
 BRANDS = {}  # lower-cased brand name -> {"n": name, "t": blurb, "s": store it came from}
 
 
@@ -40,21 +42,39 @@ def scrape_sage(ctx):
 
 def _scrape_sage_menu(ctx, menu):
     listing = SAGE_LIST.replace("/rec/", f"/{menu}/")
-    page = ctx.new_page()
-    page.goto(SAGE_BASE + listing, wait_until="domcontentloaded")
+    # Cloudflare blocks Flowhub's _data JSON route for scripts, but the normal page load is allowed and
+    # embeds the same product list in window.__remixContext, so read each page from there.
+    # Cloudflare also challenges headless browsers after the first page, so Sage gets a headed one
+    # (needs a display); fall back to the shared headless context if none is available.
+    hb = None
+    try:
+        hb = ctx.browser.browser_type.launch(headless=False, args=["--disable-blink-features=AutomationControlled"])
+        page = hb.new_context(user_agent=UA, viewport={"width": 1366, "height": 900}, locale="en-US").new_page()
+    except Exception:
+        page = ctx.new_page()
+    try:
+        items = _sage_pages(page, listing)
+    finally:
+        if hb:
+            hb.close()
+    return [sage_row(sage_compact(x), menu) for x in items]
+
+
+def _sage_pages(page, listing):
     items, p, total = [], 1, 1
     while len(items) < total and p < 60:
-        j = page.request.get(f"{SAGE_BASE}{listing}{SAGE_DATA}&page={p}").json()
-        total = j["products"]["total"]
-        batch = j["products"]["products"]
-        if not batch:
+        page.goto(f"{SAGE_BASE}{listing}?page={p}", wait_until="domcontentloaded")
+        page.wait_for_function("() => window.__remixContext", timeout=30000)
+        prods = page.evaluate("""() => { const ld = window.__remixContext.state.loaderData;
+            const k = Object.keys(ld).find(k => ld[k] && ld[k].products && ld[k].products.products);
+            return k ? ld[k].products : null; }""")
+        if not prods or not prods["products"]:
             break
-        items += batch
+        total = prods["total"]
+        items += prods["products"]
         p += 1
         time.sleep(PAUSE)
-    page.close()
-
-    return [sage_row(sage_compact(x), menu) for x in items]
+    return items
 
 
 def sage_compact(x):
@@ -445,10 +465,9 @@ def main():
     OUT.mkdir(exist_ok=True)
     results, status = [], {}
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
+        browser = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
         ctx = browser.new_context(
-            user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                        "(KHTML, like Gecko) Chrome/140.0 Safari/537.36"),
+            user_agent=UA,
             viewport={"width": 1366, "height": 900},
         )
         jobs = [("sage", scrape_sage), ("qualityroots", scrape_qualityroots)] + \
@@ -459,7 +478,14 @@ def main():
         jobs = [(name, fn) for name, fn in jobs if name in active]
         for name, fn in jobs:
             try:
-                rows = [r for r in fn(ctx) if N.keep(r)]
+                for attempt in (1, 2, 3):  # menus occasionally fail to fire their product request
+                    try:
+                        rows = [r for r in fn(ctx) if N.keep(r)]
+                        break
+                    except Exception:
+                        if attempt == 3:
+                            raise
+                        time.sleep(5)
                 results += rows
                 status[name] = {"ok": True, "count": len(rows)}
             except Exception as e:  # one broken store shouldn't sink the rest

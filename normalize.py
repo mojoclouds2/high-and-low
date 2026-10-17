@@ -2,7 +2,7 @@
 import re
 from urllib.parse import quote
 
-# "enabled": False switches a store off (not scraped, not shown) without deleting its code.
+# "enabled": True switches a store off (not scraped, not shown) without deleting its code.
 # "medical": True means the store sells to medical patients online; the scraper then also pulls
 # its medical menu and the page shows a Rec / Med / Both switch.
 STORES = {
@@ -10,10 +10,10 @@ STORES = {
     "nirvana": {"name": "Nirvana", "address": "1134 Route 73, Mount Laurel", "url": "https://explorenirvana.com/menu", "medical": False, "enabled": True},
     "sage": {"name": "Sage", "address": "1170 Route 73, Mount Laurel", "url": "https://shop.sagedispensarynj.com/rec/menu", "medical": False, "enabled": True},
     "nar": {"name": "NAR", "address": "Mount Laurel", "url": "https://shopnarcannabis.com/pages/mount-laurel-menu", "medical": False, "enabled": True},
-    "gynsyng": {"name": "Gynsyng", "address": "Merchantville", "url": "https://www.gynsyng.com/stores/gynsyng-rec", "medical": False, "enabled": False},
-    "brotherlybud": {"name": "Brotherly Bud", "address": "500 N Black Horse Pike, Mt Ephraim", "url": "https://brotherlybud.com/shop/", "medical": False, "enabled": False},
-    "enlighten": {"name": "Enlighten", "address": "781 Route 70 W, Marlton", "url": "https://enlightendispensary.com/menu", "medical": False, "enabled": False},
-    "qualityroots": {"name": "Quality Roots", "address": "850 Route 70 W, Marlton", "url": "https://getqualityroots.com/locations/marlton/shop/", "medical": False, "enabled": False},
+    "gynsyng": {"name": "Gynsyng", "address": "Merchantville", "url": "https://www.gynsyng.com/stores/gynsyng-rec", "medical": False, "enabled": True},
+    "brotherlybud": {"name": "Brotherly Bud", "address": "500 N Black Horse Pike, Mt Ephraim", "url": "https://brotherlybud.com/shop/", "medical": False, "enabled": True},
+    "enlighten": {"name": "Enlighten", "address": "781 Route 70 W, Marlton", "url": "https://enlightendispensary.com/menu", "medical": False, "enabled": True},
+    "qualityroots": {"name": "Quality Roots", "address": "850 Route 70 W, Marlton", "url": "https://getqualityroots.com/locations/marlton/shop/", "medical": False, "enabled": True},
 }
 
 CATEGORY_MAP = [
