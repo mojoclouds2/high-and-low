@@ -9,7 +9,7 @@ All eight stores are switched on: **Daylite, Nirvana, Sage, NAR** (Mount Laurel)
 (Merchantville), **Brotherly Bud** (Mt Ephraim), **Enlighten** and **Quality Roots** (Marlton).
 See "Turning stores on or off".
 
-**Hosting:** GoDaddy web hosting, uploaded over SFTP by `upload.sh` (see "Hosting on GoDaddy").
+**Hosting:** GitHub Pages. `refresh.sh` scrapes, then commits `site/index.html` and pushes to `mojoclouds2/main`; the `pages.yml` workflow deploys it. (GoDaddy/`upload.sh` is no longer used.)
 The old Vercel copy (https://high-and-low-cyan.vercel.app, team `mojoclouds-ai`) is no longer updated;
 the "Ship it" Vercel steps below are kept only for reference.
 
@@ -205,13 +205,13 @@ One-time setup:
 (Python 3.12 because the system Python lacks `venv`/`pip`. Node and the Vercel CLI are no longer
 needed.)
 
-**Hourly refresh (cron).** This machine's crontab is shared with other jobs — never replace it
+**Twice-daily refresh (cron).** This machine's crontab is shared with other jobs — never replace it
 wholesale. Back it up, then add one line with `crontab -e`:
 
 ```
 crontab -l > ~/crontab-backup-$(date +%F).txt
-# High & Low price refresh (scrape + publish), hourly at :07
-7 * * * * /home/mojoclouds/mojoclouds-projects/high-and-low/refresh.sh
+# High & Low price refresh (scrape + push to GitHub Pages), 06:07 and 18:07
+7 6,18 * * * /home/mojoclouds/mojoclouds-projects/high-and-low/refresh.sh
 ```
 
 `refresh.sh` sets `DISPLAY`/`XAUTHORITY` itself so Sage's visible browser works from cron, and skips a

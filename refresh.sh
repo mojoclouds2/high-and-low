@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# High & Low: pull fresh prices, then upload the page to GoDaddy hosting (upload.sh).
-# Run by hand, or hourly from cron (see README). Linux counterpart of refresh.bat.
+# High & Low: pull fresh prices, then publish by pushing to main (GitHub Pages deploys site/).
+# Run by hand, or every 12 hours from cron (see README). Linux counterpart of refresh.bat.
 cd "$(dirname "$0")" || exit 1
 export PATH="$HOME/.local/opt/node/bin:$HOME/.local/bin:$PATH"
 
@@ -21,8 +21,11 @@ if ! .venv/bin/python scrape.py >> refresh.log 2>&1; then
   echo "[$(date)] scrape failed, NOT deploying" >> refresh.log
   exit 1
 fi
-if ! ./upload.sh >> refresh.log 2>&1; then
-  echo "[$(date)] upload to GoDaddy failed" >> refresh.log
+git add site/index.html data/ >> refresh.log 2>&1
+if git diff --cached --quiet; then
+  echo "[$(date)] no changes to publish" >> refresh.log
+elif ! { git commit -q -m "Refresh prices $(date '+%Y-%m-%d %H:%M')" && git push -q mojoclouds2 main; } >> refresh.log 2>&1; then
+  echo "[$(date)] publish to GitHub failed" >> refresh.log
   exit 1
 fi
 echo "[$(date)] refresh done" >> refresh.log
