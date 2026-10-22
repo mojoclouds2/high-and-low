@@ -352,10 +352,15 @@ def _pass_age_gate(page):
 
 
 def scrape_dispense(ctx, store):
-    rec = _scrape_dispense_menu(ctx, store, DISPENSE[store], "rec")
-    if not (N.STORES[store].get("medical") and DISPENSE_MED.get(store)):
-        return rec
-    return N.merge_medical(rec, _scrape_dispense_menu(ctx, store, DISPENSE_MED[store], "med"))
+    # Own browser context per store: reusing one after Daylite left Nirvana's menu without a products request.
+    own = ctx.browser.new_context(user_agent=UA, viewport={"width": 1366, "height": 900})
+    try:
+        rec = _scrape_dispense_menu(own, store, DISPENSE[store], "rec")
+        if not (N.STORES[store].get("medical") and DISPENSE_MED.get(store)):
+            return rec
+        return N.merge_medical(rec, _scrape_dispense_menu(own, store, DISPENSE_MED[store], "med"))
+    finally:
+        own.close()
 
 
 def _scrape_dispense_menu(ctx, store, base, menu):
