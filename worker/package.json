@@ -1,0 +1,14 @@
+{
+  "name": "highlow-go",
+  "version": "1.0.0",
+  "description": "Click redirect for High & Low",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "wrangler": "^4.152.0"
+  },
+  "private": true
+}

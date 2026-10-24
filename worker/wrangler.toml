@@ -1,0 +1,20 @@
+name = "highlow-go"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Where unknown links send the visitor. Change when the custom domain is live.
+SITE_URL = "https://mojoclouds2.github.io/high-and-low/"
+
+[observability]
+enabled = true
+
+# Click log (optional). Create it with `npx wrangler d1 create highlow-clicks`, paste the id below,
+# apply schema.sql, and uncomment. Without it, clicks still appear in Workers Logs.
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "highlow-clicks"
+# database_id = "PASTE-ID-FROM-wrangler-d1-create"
+
+# Once the domain is on Cloudflare, serve links from it, e.g.:
+# routes = [{ pattern = "go.yourdomain.com/*", zone_name = "yourdomain.com" }]

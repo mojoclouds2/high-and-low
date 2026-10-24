@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, data]   # main = page and code; data = prices (force-pushed by refresh.sh each run)
   workflow_dispatch:
 
 permissions:
@@ -21,6 +21,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          ref: data
+          path: site/data
+        continue-on-error: true   # the data branch does not exist until refresh.sh has run once
+      - run: rm -rf site/data/.git
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
