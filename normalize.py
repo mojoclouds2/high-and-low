@@ -1,20 +1,24 @@
 """Shared normalization: turn each store's raw rows into one product schema."""
+import json
+import os
 import re
+from pathlib import Path
 from urllib.parse import quote
 
-# "enabled": True switches a store off (not scraped, not shown) without deleting its code.
-# "medical": True means the store sells to medical patients online; the scraper then also pulls
-# its medical menu and the page shows a Rec / Med / Both switch.
-STORES = {
-    "daylite": {"name": "Daylite", "address": "1136 Route 73, Mount Laurel", "url": "https://www.daylitecannabis.com/menu", "medical": False, "enabled": True},
-    "nirvana": {"name": "Nirvana", "address": "1134 Route 73, Mount Laurel", "url": "https://explorenirvana.com/menu", "medical": False, "enabled": True},
-    "sage": {"name": "Sage", "address": "1170 Route 73, Mount Laurel", "url": "https://shop.sagedispensarynj.com/rec/menu", "medical": False, "enabled": True},
-    "nar": {"name": "NAR", "address": "Mount Laurel", "url": "https://shopnarcannabis.com/pages/mount-laurel-menu", "medical": False, "enabled": True},
-    "gynsyng": {"name": "Gynsyng", "address": "Merchantville", "url": "https://www.gynsyng.com/stores/gynsyng-rec", "medical": False, "enabled": True},
-    "brotherlybud": {"name": "Brotherly Bud", "address": "500 N Black Horse Pike, Mt Ephraim", "url": "https://brotherlybud.com/shop/", "medical": False, "enabled": True},
-    "enlighten": {"name": "Enlighten", "address": "781 Route 70 W, Marlton", "url": "https://enlightendispensary.com/menu", "medical": False, "enabled": True},
-    "qualityroots": {"name": "Quality Roots", "address": "850 Route 70 W, Marlton", "url": "https://getqualityroots.com/locations/marlton/shop/", "medical": False, "enabled": True},
-}
+# Stores live in stores.json (the registry): name, address, coordinates, platform, scraper settings, and
+# "enabled": true/false, which switches a store on or off without deleting its settings.
+# "medical": true means the store sells to medical patients online; the scraper then also pulls its medical menu
+# and the page shows a Rec / Med / Both switch. HL_STORES=<file> points at a different registry (for tests).
+REGISTRY_PATH = Path(os.environ.get("HL_STORES") or Path(__file__).parent / "stores.json")
+STORES = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
+
+
+def adapter_ready(store):
+    """A store can be scraped only when its adapter has everything it needs."""
+    a = store.get("adapter") or {}
+    t = a.get("type")
+    return t in ("sage", "qualityroots") or (t == "dutchie" and bool(a.get("id"))) or (t == "dispense" and bool(a.get("base")))
+
 
 CATEGORY_MAP = [
     (r"pre[\s-]?rolls?|joint|blunt|infused cone", "Pre-Rolls"),
@@ -220,5 +224,5 @@ def merge_medical(rec_rows, med_rows):
 
 
 def active_stores():
-    """Stores that are switched on."""
-    return {k: v for k, v in STORES.items() if v.get("enabled", True)}
+    """Stores that are switched on and ready to scrape."""
+    return {k: v for k, v in STORES.items() if v.get("enabled", False) and adapter_ready(v)}

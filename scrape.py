@@ -7,20 +7,22 @@ No keys are stored here -- anything a menu needs is taken from the live page at 
 
 Usage:  python scrape.py            (writes ./out/products.json and ./out/index.html)
 """
+import hashlib
 import json
+import os
 import re
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
+from urllib.parse import urlparse, parse_qs, urlencode, urlunparse, quote
 
 from playwright.sync_api import sync_playwright
 
 import normalize as N
 
-OUT = Path(__file__).parent / "out"    # last run's data (kept private, used as fallback)
-SITE = Path(__file__).parent / "site"  # what gets deployed to Vercel
+OUT = Path(os.environ.get("HL_OUT") or Path(__file__).parent / "out")    # last run's data (kept private, used as fallback)
+SITE = Path(os.environ.get("HL_SITE") or Path(__file__).parent / "site")  # what gets published (HL_OUT / HL_SITE redirect test runs)
 PAUSE = 0.6  # seconds between paged requests -- keep it gentle
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/140.0 Safari/537.36")
@@ -178,15 +180,13 @@ def qr_row(r):
 # ----------------------------------------------------------------------------- Dutchie stores
 # Every store here runs on Dutchie. We open one Dutchie menu, copy its list + detail query URLs,
 # and replay them with each store's dispensary id. To add a Dutchie store, add a line here.
-DUTCHIE = {
-    "nar": {"id": "66edf2525a65ad64693d1605", "link": lambda c: N.nar_url(c)},
-    "gynsyng": {"id": "65367b5ab515050009f7543a",
-                "link": lambda c: f"https://www.gynsyng.com/stores/gynsyng-rec/product/{c}"},
-    "brotherlybud": {"id": "65afc306d5271000097d57fb",
-                     "link": lambda c: f"https://brotherlybud.com/product/{c}/?retailer_id=14beadc1-5ad4-49df-b412-7fe5118669cc"},
-    "enlighten": {"id": "63cea036c46856007e10ab2b",
-                  "link": lambda c: f"https://enlightendispensary.com/?dtche%5Bproduct%5D={c}"},
-}
+def _link_fn(template):
+    """Deep link to one product: the registry's template with {c} (the product's cName) filled in. No {c}: just the menu page."""
+    return lambda c: template.replace("{c}", quote(c))
+
+
+DUTCHIE = {k: {"id": v["adapter"]["id"], "link": _link_fn(v["adapter"].get("link") or v["url"])}
+           for k, v in N.STORES.items() if v["adapter"].get("type") == "dutchie" and v["adapter"].get("id")}
 DUTCHIE_SEED_MENU = "https://dutchie.com/embedded-menu/nar-cannabis-mt-laurel/products/flower"
 
 
@@ -252,15 +252,21 @@ def _scrape_dutchie_menu(ctx, store, menu):
     lvars["productsFilter"]["dispensaryId"] = cfg["id"]
     lvars["productsFilter"]["pricingType"] = menu
 
-    listed, pg = [], 0
-    while pg < 30:
+    # Dutchie pages hold 93-100 products, not always 100, so "short page = last page" drops most of a menu.
+    # Trust the page count Dutchie reports (queryInfo.totalPages); fall back to "empty page" if it is missing.
+    listed, pg, total_pages = [], 0, None
+    while pg < 80:
         lvars["page"] = pg
-        batch = ((_gql(page, _with_vars(lu, lqs, lvars)).get("data") or {}).get("filteredProducts") or {}).get("products") or []
+        fp = (_gql(page, _with_vars(lu, lqs, lvars)).get("data") or {}).get("filteredProducts") or {}
+        batch = fp.get("products") or []
         listed += batch
-        if len(batch) < 100:
-            break
+        if total_pages is None:
+            total_pages = (fp.get("queryInfo") or {}).get("totalPages")
         pg += 1
+        if not batch or (total_pages is not None and pg >= total_pages):
+            break
         time.sleep(PAUSE)
+    listed = list({p["id"]: p for p in listed}.values())  # a product can show up on two pages
 
     detailed = {}
     if listed and "detail" in Q:
@@ -332,10 +338,8 @@ def dutchie_rows(store, r, menu="rec"):
 
 
 # ----------------------------------------------------------------------------- Daylite + Nirvana (Dispense)
-DISPENSE = {
-    "daylite": "https://www.daylitecannabis.com",
-    "nirvana": "https://explorenirvana.com",
-}
+DISPENSE = {k: v["adapter"]["base"] for k, v in N.STORES.items() if v["adapter"].get("type") == "dispense" and v["adapter"].get("base")}
+DISPENSE_PATH = {k: v["adapter"]["menu_path"] for k, v in N.STORES.items() if v["adapter"].get("menu_path")}  # sites that serve the menu under /shop instead of /menu
 # Dispense runs medical as a separate menu ("venue"). If a store turns one on, put its menu site here.
 DISPENSE_MED = {}
 
@@ -376,7 +380,7 @@ def _scrape_dispense_menu(ctx, store, base, menu):
                                    if k.lower() in ("api-key", "x-prospect-token", "x-pathname", "x-url")}
 
     page.on("request", on_request)
-    page.goto(base + "/menu/categories/flower", wait_until="domcontentloaded")
+    page.goto(base + DISPENSE_PATH.get(store, "/menu/categories/flower"), wait_until="domcontentloaded")
     page.wait_for_timeout(2500)
     _pass_age_gate(page)
     try:
@@ -467,6 +471,8 @@ def dispense_row(store, base, r, menu="rec"):
 
 # ----------------------------------------------------------------------------- main
 def main():
+    """python scrape.py [--only id1,id2]: --only scrapes just those stores; every other store keeps its last data."""
+    only = set(sys.argv[sys.argv.index("--only") + 1].split(",")) if "--only" in sys.argv else None
     OUT.mkdir(exist_ok=True)
     results, status = [], {}
     with sync_playwright() as pw:
@@ -475,13 +481,19 @@ def main():
             user_agent=UA,
             viewport={"width": 1366, "height": 900},
         )
-        jobs = [("sage", scrape_sage), ("qualityroots", scrape_qualityroots)] + \
-               [(k, (lambda c, k=k: scrape_dutchie(c, k))) for k in DUTCHIE] + [
-                ("daylite", lambda c: scrape_dispense(c, "daylite")),
-                ("nirvana", lambda c: scrape_dispense(c, "nirvana"))]
         active = N.active_stores()
-        jobs = [(name, fn) for name, fn in jobs if name in active]
+        jobs = []
+        for typ in ("sage", "qualityroots", "dutchie", "dispense"):  # Sage first: it opens a visible browser
+            for name, st in active.items():
+                if st["adapter"]["type"] != typ:
+                    continue
+                fn = {"sage": scrape_sage, "qualityroots": scrape_qualityroots,
+                      "dutchie": lambda c, k=name: scrape_dutchie(c, k),
+                      "dispense": lambda c, k=name: scrape_dispense(c, k)}[typ]
+                jobs.append((name, fn))
+        jobs = [(name, fn) for name, fn in jobs if name in active and (only is None or name in only)]
         for name, fn in jobs:
+            t0 = time.time()
             try:
                 for attempt in (1, 2, 3):  # menus occasionally fail to fire their product request
                     try:
@@ -492,25 +504,29 @@ def main():
                             raise
                         time.sleep(5)
                 results += rows
-                status[name] = {"ok": True, "count": len(rows)}
+                status[name] = {"ok": True, "count": len(rows), "seconds": round(time.time() - t0)}
             except Exception as e:  # one broken store shouldn't sink the rest
-                status[name] = {"ok": False, "error": str(e)[:300]}
+                status[name] = {"ok": False, "error": str(e)[:300], "seconds": round(time.time() - t0)}
             print(name, status[name], file=sys.stderr)
         browser.close()
 
-    # keep last good data for any store that failed this run
+    # keep last good data for any store that failed this run (and, with --only, for every store not scraped)
     prev_path = OUT / "products.json"
     if prev_path.exists():
         prev = json.loads(prev_path.read_text(encoding="utf-8"))
+        for name in active:
+            if only is not None and name not in only and name not in status:
+                results += [r for r in prev.get("products", []) if r["store"] == name]
+                status[name] = {**prev.get("status", {}).get(name, {"ok": True}), "carried": True}
         for name, st in status.items():
-            if not st["ok"]:
+            if not st["ok"] and not st.get("carried"):
                 kept = [r for r in prev.get("products", []) if r["store"] == name]
                 results += kept
                 st["stale_rows_kept"] = len(kept)
                 st["last_ok"] = prev.get("status", {}).get(name, {}).get("last_ok")
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    for st in status.values():
-        if st["ok"]:
+    for name, st in status.items():
+        if st["ok"] and not st.get("carried"):
             st["last_ok"] = now
 
     brands = dict(json.loads(prev_path.read_text(encoding="utf-8")).get("brands", {})) if prev_path.exists() else {}
@@ -525,9 +541,99 @@ def main():
         sys.exit(1)
 
 
+def load_affiliates():
+    """Affiliate tiles + sponsored slot for the page. HL_AFFILIATES=<file> overrides affiliates.json (for previews).
+    With go_base set, tiles link to go_base + id and the redirect service holds the real URLs (they stay out of the page).
+    With go_base blank, tiles link straight to each item's https url."""
+    path = Path(os.environ.get("HL_AFFILIATES") or Path(__file__).parent / "affiliates.json")
+    try:
+        cfg = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    go = (cfg.get("go_base") or "").strip()
+    cats = {}
+    for cat, c in (cfg.get("categories") or {}).items():
+        items = []
+        for i in c.get("items", []):
+            if not (i.get("id") and i.get("title") and i.get("enabled", True)):
+                continue
+            if not go and not str(i.get("url", "")).startswith("https://"):
+                continue  # direct mode needs a usable https link
+            t = {k: i.get(k, "") for k in ("id", "title", "merchant", "price", "img")}
+            if not go:
+                t["url"] = i["url"]  # no redirect service: tile links straight to the merchant
+            items.append(t)
+        if items:
+            cats[cat] = {"heading": c.get("heading", ""), "items": items}
+    sp = cfg.get("sponsored") or {}
+    spon = {k: sp.get(k, "") for k in ("label", "text", "cta", "url")} if sp.get("enabled") and sp.get("url") and sp.get("text") else None
+    if spon and go:
+        spon["url"] = ""  # clicks go through go_base + "sponsor"
+    if not cats and not spon:
+        return None
+    return {"go": go, "disclosure": cfg.get("disclosure", ""), "categories": cats, "sponsored": spon}
+
+
+DEFAULT_ZIP = "08054"  # Mount Laurel: the area first-time visitors see
+
+
+def _hue(store_id):
+    return int(hashlib.md5(store_id.encode()).hexdigest()[:4], 16) % 360
+
+
+def public_stores():
+    """What the page needs to know about each live store (no scraper settings)."""
+    keys = ("name", "label", "address", "town", "zip", "county", "lat", "lng", "url", "medical")
+    return {k: {**{x: v.get(x) for x in keys}, "hue": _hue(k)} for k, v in N.active_stores().items()}
+
+
+def _dump(path, obj):
+    path.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
+
+def write_shards(payload, store_ids):
+    """One small file per store (the prices) plus one for its details (descriptions, terpenes, ...) that the page
+    only fetches when someone opens a product. Row i of <id>.json has its detail under key "i" in <id>.d.json."""
+    out = SITE / "data"
+    out.mkdir(parents=True, exist_ok=True)
+    by = {}
+    for r in payload["products"]:
+        by.setdefault(r["store"], []).append(r)
+    keep = {"brands.json", "zips.json"}
+    for sid in store_ids:
+        core, det = [], {}
+        for i, r in enumerate(by.get(sid, [])):
+            r = dict(r)
+            d = r.pop("d", None)
+            r.pop("store", None)  # same for every row in the file; the page adds it back
+            core.append(r)
+            if d:
+                det[str(i)] = d
+        _dump(out / f"{sid}.json", {"rows": core})
+        _dump(out / f"{sid}.d.json", det)
+        keep |= {f"{sid}.json", f"{sid}.d.json"}
+    _dump(out / "brands.json", payload.get("brands", {}))
+    zips = Path(__file__).parent / "data" / "zips.json"
+    if zips.exists():
+        (out / "zips.json").write_bytes(zips.read_bytes())
+    for f in out.glob("*.json"):  # drop files for stores that are no longer live
+        if f.name not in keep:
+            f.unlink()
+    return {sid: len(by.get(sid, [])) for sid in store_ids}
+
+
 def build_html(payload):
+    """Write site/data/*.json (per-store prices) and site/index.html (the page plus the small store list)."""
     tpl = (Path(__file__).parent / "template.html").read_text(encoding="utf-8")
-    data = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/").replace("\ufffd", "")
+    stores = public_stores()
+    counts = write_shards(payload, list(stores))
+    status = {k: {"ok": st.get("ok", True), "count": counts.get(k, 0), "last_ok": st.get("last_ok")}
+              for k, st in payload["status"].items() if k in stores}
+    zc = json.loads((Path(__file__).parent / "data" / "zips.json").read_text(encoding="utf-8"))[DEFAULT_ZIP]
+    page = {"default_area": {"zip": DEFAULT_ZIP, "radius": 15, "lat": zc[0], "lng": zc[1]},
+            "updated": payload["updated"], "v": re.sub(r"\D", "", payload["updated"])[:14], "stores": stores, "status": status,
+            "affiliates": load_affiliates()}
+    data = json.dumps(page, ensure_ascii=False).replace("</", "<\\/").replace("\ufffd", "")
     SITE.mkdir(exist_ok=True)
     (SITE / "index.html").write_text(tpl.replace("/*__DATA__*/null", data), encoding="utf-8")
     logo = Path(__file__).parent / "logo.png"

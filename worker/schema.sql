@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS clicks (
+  n INTEGER PRIMARY KEY AUTOINCREMENT,
+  ts TEXT NOT NULL,
+  id TEXT NOT NULL,
+  cat TEXT, page TEXT, country TEXT
+);
+CREATE INDEX IF NOT EXISTS clicks_id_ts ON clicks (id, ts);

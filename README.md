@@ -158,6 +158,39 @@ menu's site in `DISPENSE_MED` in `scrape.py`).
 
 ---
 
+## Store registry, areas and publishing
+
+**Stores live in `stores.json`.** One entry per store: name, address, coordinates, county, platform, scraper settings (`adapter`),
+`enabled` (on/off) and `wave` (rollout group: 0 = original eight, 1-3 = rollout waves, 9 = not scrapable yet). `normalize.py` reads it;
+`scrape.py` builds its job list from the enabled stores whose adapter has everything it needs (`adapter_ready`).
+`HL_STORES=<file>` points the scraper at a different registry (for tests).
+
+**The page loads data per area.** `site/index.html` is small (page + store list). Prices are one file per store in `site/data/`
+(`<id>.json`), with descriptions, terpenes and effects split into `<id>.d.json` and fetched only when a product is opened.
+Visitors pick a ZIP and distance; the page loads the nearest stores (up to 30). `data/zips.json` (rebuilt by `tools/build_zips.py` from
+Census files) covers NJ plus the Philadelphia and Wilmington areas. Product pages are `#/p/<slug>-<id>@<zip>.<miles>`.
+
+### Adding a store
+1. Find its entry in `stores.json` (all licensed South Jersey stores are there, `enabled: false`).
+2. `python tools/discover_stores.py --ids <id>` loads its public menu and fills in `adapter` (Dutchie: dispensary id + product link template;
+   Dispense: menu site and path). Use `--wave N` for a whole wave; add `--shard 1/4 --out DIR` runs to go faster, then `--merge DIR`.
+   Stores it can't read get `discovery_failed: true`: the menu id is usually hidden behind a WordPress plugin; fill `adapter.id` by hand.
+3. `python scrape.py --only <id>` (use `HL_OUT=<dir> HL_SITE=<dir>` to keep a test run away from the real data). Check the count looks right.
+4. `python tools/check_links.py site/data <id>` spot-checks that product links open the product.
+5. Set `"enabled": true`. The next refresh includes it.
+To drop a store (for example if it asks), set `"enabled": false`. `python scrape.py --only a,b` re-scrapes just those stores; every other store keeps its last data.
+
+### Publishing
+`refresh.sh` scrapes, then pushes the **prices** to a `data` branch (force-pushed as a single commit each time, so git history does not grow)
+and the **page** to `main`. `.github/workflows/pages.yml` runs on a push to either branch and deploys `main` + the `data` branch together.
+First time only: merge the work to `main` locally, then run `./refresh.sh` so the `data` branch exists before the first deploy.
+
+### Rollout status
+Wave 1 = Dutchie and Dispense stores in Burlington, Camden and Gloucester counties; wave 2 = the same platforms in Atlantic, Cape May,
+Cumberland and Salem; wave 3 = Sweed and Flowhub stores (need new adapters; Flowhub probably needs a visible browser like Sage).
+`tools/discover_stores.py` could not find a menu id for some stores (plugin-hosted Dutchie menus such as Brotherly Bud's style); they are marked
+`discovery_failed` in `stores.json`.
+
 ## Troubleshooting
 
 - **`python` or `vercel` "not recognized"** — reinstall Python with "Add to PATH" checked / reinstall

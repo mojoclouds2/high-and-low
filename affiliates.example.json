@@ -1,0 +1,20 @@
+{
+  "go_base": "https://example.invalid/go/",
+  "disclosure": "Affiliate links · we may earn a commission · prices unaffected",
+  "categories": {
+    "Flower": {"heading": "Grabbing flower? You'll want these too", "items": [
+      {"id": "grinder-4pc", "title": "4-piece grinder", "merchant": "Grasscity", "price": "from $18", "url": "https://example.com"},
+      {"id": "papers-raw", "title": "RAW papers + tips", "merchant": "Smoke Cartel", "price": "from $6", "url": "https://example.com"},
+      {"id": "stash-jar", "title": "Smell-proof stash jar", "merchant": "Green Goddess", "price": "from $14", "url": "https://example.com"}
+    ]},
+    "Concentrates": {"heading": "Dabbing this? Hardware that fits", "items": [
+      {"id": "dab-rig", "title": "Mini dab rig + banger", "merchant": "Smoke Cartel", "price": "from $40", "url": "https://example.com"},
+      {"id": "dab-mat", "title": "Silicone dab mat + tool", "merchant": "DankStop", "price": "from $12", "url": "https://example.com"}
+    ]},
+    "Vapes": {"heading": "Running a cart? Power and protection", "items": [
+      {"id": "battery-510", "title": "510 battery", "merchant": "Example Merchant", "price": "from $15", "url": "https://example.com"},
+      {"id": "vape-case", "title": "Cart case", "merchant": "Example Merchant", "price": "from $9", "url": "https://example.com"}
+    ]}
+  },
+  "sponsored": {"enabled": true, "label": "[LOCAL HEAD SHOP]", "text": "Show this page at the counter for 10% off glass.", "cta": "Get directions", "url": "https://example.com"}
+}

@@ -16,9 +16,29 @@ fi
 exec 9>refresh.lock
 flock -n 9 || { echo "[$(date)] previous refresh still running, skipped" >> refresh.log; exit 0; }
 
+# Prices live on their own branch ("data"), replaced with a single commit each run so git history doesn't grow.
+# The Pages workflow (pages.yml) merges it with site/ when it deploys. DATA_REMOTE overrides the push target (for tests).
+publish_data() {
+  local tmp remote
+  tmp="$(mktemp -d)"
+  remote="${DATA_REMOTE:-$(git remote get-url mojoclouds2)}"
+  cp -r site/data/. "$tmp"/ || return 1
+  git -C "$tmp" init -q -b data \
+    && git -C "$tmp" add -A \
+    && git -C "$tmp" -c user.name="$(git config user.name)" -c user.email="$(git config user.email)" commit -q -m "Prices $(date '+%Y-%m-%d %H:%M')" \
+    && git -C "$tmp" push -q -f "$remote" data
+  local rc=$?
+  rm -rf "$tmp"
+  return $rc
+}
+
 echo "[$(date)] refresh started" >> refresh.log
 if ! .venv/bin/python scrape.py >> refresh.log 2>&1; then
   echo "[$(date)] scrape failed, NOT deploying" >> refresh.log
+  exit 1
+fi
+if ! publish_data >> refresh.log 2>&1; then  # data first: the deploy triggered by the main push below then sees fresh prices
+  echo "[$(date)] publish of price data failed" >> refresh.log
   exit 1
 fi
 git add site/index.html data/ >> refresh.log 2>&1
