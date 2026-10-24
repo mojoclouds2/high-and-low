@@ -730,6 +730,12 @@ $("#areaform").onsubmit = e => {
   if (!/^\d{5}$/.test(zip)) { $("#areanote").textContent = "Enter a 5-digit ZIP code."; return; }
   setArea({ zip, radius: +$("#radius").value });
 };
+// the ZIP applies itself as soon as the fifth digit is typed (digits only); Enter or Update also work
+$("#zip").oninput = e => {
+  const z = e.target.value.replace(/\D/g, "").slice(0, 5);
+  if (z !== e.target.value) e.target.value = z;
+  if (/^\d{5}$/.test(z) && !(state.area && state.area.zip === z)) setArea({ zip: z, radius: +$("#radius").value });
+};
 $("#radius").onchange = () => { if (/^\d{5}$/.test($("#zip").value.trim())) setArea({ zip: $("#zip").value.trim(), radius: +$("#radius").value }); };
 $("#storetoggle").onclick = () => { const c = $("#stores").classList.toggle("collapsed"); $("#storetoggle").textContent = c ? `Show all ${areaStores.length} stores` : "Show fewer stores"; $("#storetoggle").setAttribute("aria-expanded", String(!c)); };
 $("#locate").onclick = () => {
