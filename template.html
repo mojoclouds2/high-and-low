@@ -8,7 +8,7 @@
 <meta property="og:title" content="High &amp; Low">
 <meta property="og:description" content="Buy low.  Get high. South Jersey's best dispensary prices, all in one place.">
 <meta property="og:image" content="favicon.png">
-<meta name="theme-color" content="#2f6b3f">
+<meta name="theme-color" content="#121613">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,30 +16,16 @@
 <style>
 /* Layout: one column tool — sticky filter bar over a dense price list; each row = one product, one price per store */
 :root {
-  --bg: #f5f6f2; --surface: #ffffff; --fg: #1b211c; --muted: #5f6b61; --line: #dde2da;
-  --accent: #2f6b3f; --accent-soft: #e3efe4; --sale: #b4432b;
-  --daylite: #c7851c; --nirvana: #6a4fc0; --sage: #3f8a5a; --nar: #2c6fa8;
-  --med: #1f8f4e; --med-soft: #e2f3e8;
-  --gear-bg: #fbf4ec; --gear-line: #f0dfc9; --gear-tile-line: #eadcc8; --gear-ink: #7a4a12; --gear-mut: #8a7a66; --gear-img: #f0e4d4;
-  --spons-bg: #17201b; --spons-fg: #f6f5f0; --spons-line: #3a463f; --cta-bg: #b4432b; --cta-fg: #fff;
-  --gynsyng: #b5436b; --brotherlybud: #1f8a8a; --enlighten: #8a5a3c; --qualityroots: #55606e;
+  --bg: #121613; --surface: #1a201b; --fg: #e6ebe4; --muted: #98a598; --line: #2b332c;
+  --accent: #7cc48f; --accent-soft: #203326; --sale: #f08a70;
+  --gear-bg: #2a2118; --gear-line: #4a3a28; --gear-tile-line: #4a3a28; --gear-ink: #e0b27a; --gear-mut: #b09a80; --gear-img: #3a2e20;
+  --spons-bg: #222b24; --spons-fg: #e6ebe4; --spons-line: #3a463f; --cta-bg: #f08a70; --cta-fg: #121613;
+  --med: #5fd08e; --med-soft: #16301f; --daylite: #e8a843; --nirvana: #a28cf0; --sage: #6cc58e; --nar: #6aaee8; --gynsyng: #ee84a8; --brotherlybud: #5cc8c8; --enlighten: #d19a74; --qualityroots: #a3adbb;
   --display: "Schibsted Grotesk", "Segoe UI", system-ui, sans-serif;
   --body: "Schibsted Grotesk", "Segoe UI", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
-  color-scheme: light;
+  color-scheme: dark;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg: #121613; --surface: #1a201b; --fg: #e6ebe4; --muted: #98a598; --line: #2b332c;
-  --accent: #7cc48f; --accent-soft: #203326; --sale: #f08a70;
-  --gear-bg: #2a2118; --gear-line: #4a3a28; --gear-tile-line: #4a3a28; --gear-ink: #e0b27a; --gear-mut: #b09a80; --gear-img: #3a2e20;
-  --spons-bg: #222b24; --spons-fg: #e6ebe4; --spons-line: #3a463f; --cta-bg: #f08a70; --cta-fg: #121613;
-  --med: #5fd08e; --med-soft: #16301f; --daylite: #e8a843; --nirvana: #a28cf0; --sage: #6cc58e; --nar: #6aaee8; --gynsyng: #ee84a8; --brotherlybud: #5cc8c8; --enlighten: #d19a74; --qualityroots: #a3adbb; color-scheme: dark; } }
-:root[data-theme="dark"] {
-  --bg: #121613; --surface: #1a201b; --fg: #e6ebe4; --muted: #98a598; --line: #2b332c;
-  --accent: #7cc48f; --accent-soft: #203326; --sale: #f08a70;
-  --gear-bg: #2a2118; --gear-line: #4a3a28; --gear-tile-line: #4a3a28; --gear-ink: #e0b27a; --gear-mut: #b09a80; --gear-img: #3a2e20;
-  --spons-bg: #222b24; --spons-fg: #e6ebe4; --spons-line: #3a463f; --cta-bg: #f08a70; --cta-fg: #121613;
-  --med: #5fd08e; --med-soft: #16301f; --daylite: #e8a843; --nirvana: #a28cf0; --sage: #6cc58e; --nar: #6aaee8; --gynsyng: #ee84a8; --brotherlybud: #5cc8c8; --enlighten: #d19a74; --qualityroots: #a3adbb; color-scheme: dark; }
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -237,9 +223,7 @@ table.cmp { width: 100%; min-width: 560px; border-collapse: collapse; font-size:
 @media (max-width: 520px) { .pv-hero .pic { width: 72px; height: 72px; } .trio b { font-size: 17px; } .pv-main, .pv-best { padding: 16px; } }
 
 /* Area picker, long store lists, loading placeholders */
-:root { --dot-l: 42%; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --dot-l: 66%; } }
-:root[data-theme="dark"] { --dot-l: 66%; }
+:root { --dot-l: 66%; }
 .area { display: grid; gap: 6px; margin-top: 14px; }
 .area input, .area select { font: 15px var(--body); color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px; }
 .area input { width: 120px; }
