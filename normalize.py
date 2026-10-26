@@ -62,6 +62,16 @@ def norm_strain(s):
 
 
 OZ_FRACTIONS = {"1/8": 3.5, "1/4": 7.0, "1/2": 14.0}
+# A whole number: "0.5", "0,5" and ".5" (menus write all three), never just the "5" inside them.
+# A comma right after a word is a separator ("Rainbow,3.5g"), so a decimal comma needs a digit before it.
+NUM = r"(?<!\d)(?<!\d[.,])(\d+(?:[.,]\d+)?|\.\d+)"
+
+
+def _num(s):
+    """'0,5' and '.5' are decimals; '1,000' is a thousands separator."""
+    if re.fullmatch(r"\d{1,3},\d{3}", s):
+        return float(s.replace(",", ""))
+    return float(s.replace(",", "."))
 
 
 def parse_grams(*texts):
@@ -73,12 +83,12 @@ def parse_grams(*texts):
         m = re.search(r"(1/8|1/4|1/2)\s*(oz|ounce)", t)
         if m:
             return OZ_FRACTIONS[m.group(1)]
-        m = re.search(r"(\d+(?:\.\d+)?)\s*oz\b", t)
+        m = re.search(NUM + r"\s*oz\b", t)
         if m:
-            return round(float(m.group(1)) * 28, 2)
-        m = re.search(r"(\d+(?:\.\d+)?)\s*(g|gr|gram|grams)\b", t)
+            return round(_num(m.group(1)) * 28, 2)
+        m = re.search(NUM + r"\s*(g|gr|gram|grams)\b", t)
         if m:
-            return float(m.group(1))
+            return _num(m.group(1))
     return None
 
 
@@ -86,9 +96,9 @@ def parse_mg(*texts):
     for t in texts:
         if not t:
             continue
-        m = re.search(r"(\d+(?:\.\d+)?)\s*mg\b", str(t).lower())
+        m = re.search(NUM + r"\s*mg\b", str(t).lower())
         if m:
-            return float(m.group(1))
+            return _num(m.group(1))
     return None
 
 
