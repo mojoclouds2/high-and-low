@@ -102,12 +102,29 @@ def pack_grams(name):
     or written "N x weight", is one unit; anything else is taken as the total. Only for weights read from a name:
     stores' own weight fields and size options already give the total."""
     g = parse_grams(name)
-    m = PACK.search(name or "")
-    n = int(m.group(1) or m.group(2)) if m else 1
+    n = pack_count(name)
     if not g or n < 2:
         return g
-    per_unit = g < 1 or re.search(r"(?i)\beach\b", name) or m.group(2)
+    per_unit = g < 1 or re.search(r"(?i)\beach\b|\bx\s*\.?\d", name) or PACK.search(name).group(2)
     return round(g * n, 2) if per_unit else g
+
+
+def pack_count(name):
+    m = PACK.search(name or "")
+    return int(m.group(1) or m.group(2)) if m else 1
+
+
+def check_pack(grams, name):
+    """A store's own weight for a multipack, unless the name states a clearly different pack weight
+    ("Twozie 2pk 2g" sent as 1g). Kept when it matches any weight in the name, alone or times the pack count
+    ("14pk 1g ... - 14g", "3pk x 1g")."""
+    n = pack_count(name)
+    if not grams or n < 2:
+        return grams
+    stated = [_num(m.group(1)) for m in re.finditer(NUM + r"\s*(?:g|gr|gram|grams)\b", name.lower())]
+    if any(abs(grams - w) <= 0.1 * w or abs(grams - w * n) <= 0.1 * w * n for w in stated):
+        return grams
+    return pack_grams(name) or grams
 
 
 def parse_mg(*texts):

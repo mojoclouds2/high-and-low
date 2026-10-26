@@ -49,6 +49,7 @@ class PackTest(unittest.TestCase):  # names from the real menus
         self.assertEqual(N.pack_grams("Higgs | Sunday Driver | 10 x .3g Preroll (I)"), 3.0)
         self.assertEqual(N.pack_grams("Torchez - Blue Dream - 2pk x 0.75g each Infused Pre-roll"), 1.5)
         self.assertEqual(N.pack_grams("GO TIME | 0.58G | 6PK | GET UP"), 3.48)
+        self.assertEqual(N.pack_grams("Shaka - Banana Cake #20 - (3pk x 1g) Pre-rolls"), 3.0)
         self.assertEqual(N.pack_grams("Jay's Party Pack Duo - Burpee & Morning Diesel - 28pk .5g Pre Rolls"), 14.0)
 
     def test_pack_total_is_kept(self):
@@ -64,6 +65,26 @@ class PackTest(unittest.TestCase):  # names from the real menus
         self.assertEqual(N.pack_grams("Sour Diesel x Kush Mints Pre-Roll .5g"), 0.5)  # "x" between strains, not a count
         self.assertIsNone(N.pack_grams("2pk - Diamond Infused Preroll - Lemon Cherry Rozay"))
         self.assertIsNone(N.pack_grams(None))
+
+
+class CheckPackTest(unittest.TestCase):  # store weight vs the name, real listings
+    def test_name_overrules_a_clearly_wrong_store_weight(self):
+        self.assertEqual(N.check_pack(1.0, "Twozie - Chill Pre-Roll 2pk 2g"), 2.0)
+        self.assertEqual(N.check_pack(1.0, "Springtime - Sub Zero 5pk 2.5g"), 2.5)
+        self.assertEqual(N.check_pack(2.5, "Illicit | Violet Fog | 2pk 1g Pre-Roll (I)"), 1.0)
+        self.assertEqual(N.check_pack(2.0, "Chocolate OG | All Times 5pk Pre-Rolls | 0.5g Each"), 2.5)
+        self.assertEqual(N.check_pack(5.0, "Kind Tree Pre-Roll 2pk/0.5g Infused- Cherry Slushee"), 1.0)
+
+    def test_store_weight_kept_when_the_name_agrees(self):
+        self.assertEqual(N.check_pack(14, "Sunday -  Kush Cake - 14pk 1g Pre Rolls - 14g"), 14)
+        self.assertEqual(N.check_pack(3, "Shaka - Banana Cake #20 - (3pk x 1g) Pre-rolls"), 3)
+        self.assertEqual(N.check_pack(2.5, "Dawg Lemons Smokos Pre-Roll .5g 5-Pack"), 2.5)
+        self.assertEqual(N.check_pack(3.5, "Clade9 Pre-Roll 5pk/3.4g- Fig Bar"), 3.5)  # within 10%
+
+    def test_singles_and_unstated_weights_untouched(self):
+        self.assertEqual(N.check_pack(3.5, "Blue Dream 1g"), 3.5)  # not a pack
+        self.assertEqual(N.check_pack(3.5, "10 Pack - Infused PreRolls - Pave - High Wired"), 3.5)
+        self.assertIsNone(N.check_pack(None, "Twozie 2pk 2g"))
 
 
 class MgTest(unittest.TestCase):

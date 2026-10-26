@@ -118,7 +118,7 @@ def sage_row(r, menu="rec"):
             thc, thc_unit = mg_thc, "mg"
     uom = (r["uom"] or "").lower()
     wv = r["wv"]
-    grams = float(wv) if wv and uom.startswith("gram") else N.pack_grams(r["name"])
+    grams = N.check_pack(float(wv), r["name"]) if wv and uom.startswith("gram") else N.pack_grams(r["name"])
     mg = float(wv) if wv and uom.startswith("milligram") else N.parse_mg(r["name"])
     return N.make("sage", r["name"], r["brand"], N.norm_category(r["cat"]), N.norm_strain(r["species"]), grams, mg,
                   (r["pre"] or 0) / 100, (r["disc"] or 0) / 100, thc, thc_unit,
@@ -167,7 +167,7 @@ def qr_compact(x):
 
 def qr_row(r):
     cat = N.norm_category(r.get("cat"), r.get("custom"), r.get("ptype"))
-    grams = r.get("grams") or N.pack_grams(r["name"])
+    grams = N.check_pack(r.get("grams"), r["name"]) or N.pack_grams(r["name"])
     mg = N.parse_mg(r["name"]) if not grams else None
     thc = next((v for n, v, u in r.get("cann") or [] if n == "THC"), None)
     thc_unit = next((u for n, v, u in r.get("cann") or [] if n == "THC"), None)
@@ -323,6 +323,8 @@ def dutchie_rows(store, r, menu="rec"):
     link = DUTCHIE[store]["link"](r["cname"]) if r.get("cname") else None
     prices, specials = (r["prices"], r["special"]) if menu == "rec" else \
         (r.get("medPrices") or r["prices"], r.get("medSpecial") or [])
+    # With several size options (say a 2-pack and a 5-pack) the name can't overrule an option's own weight.
+    single = (lambda g: N.check_pack(g, r["name"])) if len(r["opts"] or []) <= 1 else (lambda g: g)
     for i, opt in enumerate(r["opts"] or [None]):
         price = prices[i] if i < len(prices) else None
         if price is None:
@@ -331,7 +333,7 @@ def dutchie_rows(store, r, menu="rec"):
         stock = r["stock"][i] if i < len(r.get("stock") or []) else None
         out.append(N.make(
             store, r["name"], r["brand"], cat, N.norm_strain(r["strain"]),
-            N.parse_grams(opt) or N.pack_grams(r["name"]), N.parse_mg(r["name"], opt), price, sale,
+            single(N.parse_grams(opt)) or N.pack_grams(r["name"]), N.parse_mg(r["name"], opt), price, sale,
             r["thc"] or None, {"PERCENTAGE": "%", "MILLIGRAMS": "mg"}.get(r["thcUnit"]),
             link, size=opt, stock=stock, detail=detail, menu=menu))
     return out
@@ -462,7 +464,7 @@ def dispense_row(store, base, r, menu="rec"):
      qty, url) = r[:15]
     detail = r[15] if len(r) > 15 else None
     cat = N.norm_category(catname, ctype, subtype)
-    grams = wg if wunit in ("GRAMS", "OUNCES") and wg else (N.parse_grams(wf) or N.pack_grams(name))
+    grams = N.check_pack(wg, name) if wunit in ("GRAMS", "OUNCES") and wg else (N.check_pack(N.parse_grams(wf), name) or N.pack_grams(name))
     mg = N.parse_mg(wf, name) if not grams else None
     return N.make(store, name, brand, cat, N.norm_strain(strain), grams, mg, price, price_disc,
                   thc, "%" if thc_unit in (None, "%") else thc_unit, url or f"{base}/menu",
