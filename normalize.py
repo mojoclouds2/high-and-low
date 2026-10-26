@@ -92,6 +92,24 @@ def parse_grams(*texts):
     return None
 
 
+# "5pk", "5 pk", "5-Pack", "10 ct", "10 x .3g", "2pk x 0.75g"
+PACK = re.compile(r"(?<![\d.])(\d{1,2})\s*-?\s*(?:pk|pack|ct|count|pcs?)\b|(?<![\d.])(\d{1,2})\s*x\s*(?=[.\d])", re.I)
+
+
+def pack_grams(name):
+    """Weight of the whole pack, from a product name. Names give either the pack total ("5pk 2.5g", "3.5g/6pk") or
+    one unit ("5pk .5g", "0.58G | 6PK", "10 x .3g", "2pk x 0.75g each"). A weight under 1g, or one marked "each"
+    or written "N x weight", is one unit; anything else is taken as the total. Only for weights read from a name:
+    stores' own weight fields and size options already give the total."""
+    g = parse_grams(name)
+    m = PACK.search(name or "")
+    n = int(m.group(1) or m.group(2)) if m else 1
+    if not g or n < 2:
+        return g
+    per_unit = g < 1 or re.search(r"(?i)\beach\b", name) or m.group(2)
+    return round(g * n, 2) if per_unit else g
+
+
 def parse_mg(*texts):
     for t in texts:
         if not t:

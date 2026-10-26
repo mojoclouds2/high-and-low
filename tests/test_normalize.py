@@ -41,6 +41,31 @@ class GramsTest(unittest.TestCase):
         self.assertEqual(N.size_label(N.parse_grams(".25g"), None), "0.25g")
 
 
+class PackTest(unittest.TestCase):  # names from the real menus
+    def test_unit_weight_is_multiplied(self):
+        self.assertEqual(N.pack_grams("Green Leevz | Soap | .7g 2pk PreRolls (S)"), 1.4)
+        self.assertEqual(N.pack_grams("Honey Banana - Live Rosin Vape 2pk (.5g Cart)"), 1.0)
+        self.assertEqual(N.pack_grams("Dawg Lemons Smokos Pre-Roll .5g 5-Pack"), 2.5)
+        self.assertEqual(N.pack_grams("Higgs | Sunday Driver | 10 x .3g Preroll (I)"), 3.0)
+        self.assertEqual(N.pack_grams("Torchez - Blue Dream - 2pk x 0.75g each Infused Pre-roll"), 1.5)
+        self.assertEqual(N.pack_grams("GO TIME | 0.58G | 6PK | GET UP"), 3.48)
+        self.assertEqual(N.pack_grams("Jay's Party Pack Duo - Burpee & Morning Diesel - 28pk .5g Pre Rolls"), 14.0)
+
+    def test_pack_total_is_kept(self):
+        self.assertEqual(N.pack_grams("ALLDAY - Blacktop Diesel 5pk 2.5g"), 2.5)
+        self.assertEqual(N.pack_grams("Lowell Farms | Chill Indica | Pre-Roll | 3.5g/6pk"), 3.5)
+        self.assertEqual(N.pack_grams("Twozie - Chill Pre-Roll 2pk 2g"), 2.0)
+        self.assertEqual(N.pack_grams("Cheddar Cheeze Mini Dogs 5-pack | 1.75g"), 1.75)
+        self.assertEqual(N.pack_grams("2.25g - 5pk - Infused Prerolls - Couch Crasher - Dogwalkers - REC"), 2.25)
+
+    def test_singles_and_no_weight(self):
+        self.assertEqual(N.pack_grams("Blue Dream Pre-Roll 1g"), 1.0)
+        self.assertEqual(N.pack_grams("One Pre-Roll 1pk/0.7g- Vanilla Sprinklez"), 0.7)
+        self.assertEqual(N.pack_grams("Sour Diesel x Kush Mints Pre-Roll .5g"), 0.5)  # "x" between strains, not a count
+        self.assertIsNone(N.pack_grams("2pk - Diamond Infused Preroll - Lemon Cherry Rozay"))
+        self.assertIsNone(N.pack_grams(None))
+
+
 class MgTest(unittest.TestCase):
     def test_mg(self):
         self.assertEqual(N.parse_mg("1906 - Bliss Tablets 20pk 100mg"), 100.0)
