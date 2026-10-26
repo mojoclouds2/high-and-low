@@ -1,0 +1,5311 @@
+[
+ {
+  "id": "flowerbomb-dispensary-irvington",
+  "name": "Flowerbomb Dispensary",
+  "town": "Irvington",
+  "zip": "07111",
+  "tags": "Recreational cannabis",
+  "website": "https://flowerbombdispensarynj.com/",
+  "menu_url": "https://flowerbombdispensarynj.com/shop/",
+  "platform": "Blaze",
+  "confidence": "high",
+  "api_paths": [
+   "api.mapbox.com/geocoding/v5/mapbox.places/1108%20Clinton%20Ave,%20Irvington,%20NJ%2007111.json",
+   "cdn.acsbapp.com/cache/app/wildcards.json",
+   "cdn.acsbapp.com/config/flowerbombdispensarynj.com/config.json",
+   "ecom-api.blaze.me/api/v1/products/recommendations/sponsored-user-top-picks/"
+  ]
+ },
+ {
+  "id": "mmd-nj-jersey-city",
+  "name": "MMD NJ",
+  "town": "Jersey City",
+  "zip": "07306",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://mmdshops.com/location/jersey-city/",
+  "menu_url": "https://mmdshops.com/locations/jersey-city/",
+  "platform": "Blaze",
+  "confidence": "high",
+  "api_paths": [
+   "api.mapbox.com/geocoding/v5/mapbox.places/655%20Newark%20Avenue,%20Jersey%20City,%20NJ%2007306.json",
+   "cdn.acsbapp.com/config/mmdshops.com/config.json",
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track"
+  ]
+ },
+ {
+  "id": "roots-dispensary-willingboro",
+  "name": "Roots Dispensary",
+  "town": "Willingboro",
+  "zip": "08046",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "http://rootsnj.com",
+  "menu_url": "https://rootsnj.com/recreational/brands/",
+  "platform": "Blaze",
+  "confidence": "high",
+  "api_paths": [
+   "api.mapbox.com/geocoding/v5/mapbox.places/4402%20US-130,%20Willingboro,%20NJ%2008046.json",
+   "cdn.acsbapp.com/config/rootsnj.com/config.json",
+   "ecom-api.blaze.me/api/v1/products/",
+   "ecom-api.blaze.me/api/v1/products/recommendations/sponsored-user-top-picks/"
+  ]
+ },
+ {
+  "id": "the-cannabis-place-jersey-city",
+  "name": "The Cannabis Place",
+  "town": "Jersey City",
+  "zip": "07305",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://thecannabisplace.org/",
+  "menu_url": "https://thecannabisplace.org/store?locId=2",
+  "platform": "Carrot",
+  "confidence": "high",
+  "api_paths": [
+   "api.nevada.getcarrot.io/api/v1/customer/me/cart",
+   "api.nevada.getcarrot.io/api/v1/store/category",
+   "api.nevada.getcarrot.io/api/v1/store/flags",
+   "api.nevada.getcarrot.io/api/v1/store/locations"
+  ]
+ },
+ {
+  "id": "green-wellness-haven-pleasantville",
+  "name": "Green Wellness Haven",
+  "town": "Pleasantville",
+  "zip": "08232",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://www.learngreenhaven.com",
+  "menu_url": "https://shop.greenhavennj.com/",
+  "platform": "Cova",
+  "confidence": "medium",
+  "api_paths": [
+   "a.visitor-speed.com/x/y",
+   "api.leadpages.io/analytics/v1/events/capture",
+   "idx.liadm.com/idex/did-0014/any",
+   "js.monitor.azure.com/scripts/b/ai.config.1.cfg.json"
+  ]
+ },
+ {
+  "id": "salt-air-botanicals-atlantic-city",
+  "name": "Salt Air Botanicals",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://www.saltairbotanicals.com/",
+  "menu_url": "https://saltairbotanicals.com/menu",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/0d4970ebc697aaf5/banners",
+   "api.dispenseapp.com/v1/users/c6e9e38d8476b8c2/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/5f94eb97f7377a96/product-categories/df281e28a06804f7/products"
+  ]
+ },
+ {
+  "id": "a-z-supply-bloomfield",
+  "name": "A-Z Supply",
+  "town": "Bloomfield",
+  "zip": "07003",
+  "tags": "Recreational cannabis",
+  "website": "https://azsupplynj.com/",
+  "menu_url": "https://azsupplynj.com/order/categories/rare-deals-limited-time-only",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/578734f8118f28f9/banners",
+   "api.dispenseapp.com/v1/users/cdc413268c6a946c/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/c88aefe3940805df/product-categories/71d1acf8cba229a8/products"
+  ]
+ },
+ {
+  "id": "blue-oak-nj-1-bloomfield",
+  "name": "Blue Oak NJ 1",
+  "town": "Bloomfield",
+  "zip": "07003",
+  "tags": "Recreational cannabis|Offers delivery|Microbusiness",
+  "website": "http://blueoaknj.com",
+  "menu_url": "https://blueoaknj.com/shop/offers",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/a02b1797d236c28e/banners",
+   "api.dispenseapp.com/v1/users/ceffeb4387365865/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/7450756b1ee88bad/product-categories/f25da7554b980f55/products"
+  ]
+ },
+ {
+  "id": "indigo-brooklawn",
+  "name": "Indigo",
+  "town": "Brooklawn",
+  "zip": "08030",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.indigodispensary.com/",
+  "menu_url": "https://www.indigodispensary.com/shop/categories/flower",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/9b37790780473ec5/banners",
+   "api.dispenseapp.com/v1/users/b881c5d80d2cd8c4/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/041444e70b831110/product-categories/4990fabc69688bb8/products"
+  ]
+ },
+ {
+  "id": "taste-of-earth-buena",
+  "name": "Taste of Earth",
+  "town": "Buena",
+  "zip": "08310",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://tasteofearth.co/",
+  "menu_url": "https://tasteofearth.co/shop",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/0f38e2d8cb267b4c/banners",
+   "api.dispenseapp.com/v1/users/de031079a2f3007d/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/95ec4d149d67b404/product-categories/c6f3c0bf4f58b982/products"
+  ]
+ },
+ {
+  "id": "shore-house-canna-cape-may",
+  "name": "Shore House Canna",
+  "town": "Cape May",
+  "zip": "08204",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://shorehousecanna.com/",
+  "menu_url": "https://www.shorehousecanna.com/menu/offers",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/55cb13cd55dc83ba/banners",
+   "api.dispenseapp.com/v1/users/e2de42471aba6bcf/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/89d4331affeab63c/product-categories/16b292bcdb01347a/products"
+  ]
+ },
+ {
+  "id": "nj-leaf-aberdeen-cliffwood",
+  "name": "NJ LEAF Aberdeen",
+  "town": "Cliffwood",
+  "zip": "07721",
+  "tags": "",
+  "website": "https://njleaf.com/",
+  "menu_url": "https://njleaf.com/products/flower/",
+  "platform": "Dispense",
+  "confidence": "medium",
+  "api_paths": [
+   "njleaf.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "nj-leaf-aberdeen-cliffwood-2",
+  "name": "NJ Leaf Aberdeen",
+  "town": "Cliffwood",
+  "zip": "07721",
+  "tags": "Medicinal cannabis|Recreational cannabis|Expanded ATC (Both Med & Rec)",
+  "website": "https://njleaf.com/",
+  "menu_url": "https://njleaf.com/products/flower/",
+  "platform": "Dispense",
+  "confidence": "medium",
+  "api_paths": [
+   "njleaf.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "med-leaf-egg-harbor-city",
+  "name": "Med Leaf",
+  "town": "Egg Harbor City",
+  "zip": "08215",
+  "tags": "Recreational cannabis",
+  "website": "https://www.medleafdispensary.com/",
+  "menu_url": "https://menus.dispenseapp.com/9e34aad030c6f68f/menu/offers",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "engage.wixapps.net/_api/chat-web/v1/chatrooms-for-list-view",
+   "engage.wixapps.net/_api/chat-web/v1/display-data/current-user",
+   "engage.wixapps.net/_api/chat-web/v1/real-time-tokens"
+  ]
+ },
+ {
+  "id": "city-leaves-egg-harbor-township",
+  "name": "City Leaves",
+  "town": "Egg Harbor Township",
+  "zip": "08234",
+  "tags": "Recreational cannabis",
+  "website": "http://cityleaves.com",
+  "menu_url": "https://cityleaves.com/shop",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/06f4c19c09247cd3/banners",
+   "api.dispenseapp.com/v1/users/159082396d65d816/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/94b97cba76dcbc82/product-categories/11abdf4b255a60c6/products"
+  ]
+ },
+ {
+  "id": "conservatory-cannabis-company-egg-harbor-township",
+  "name": "Conservatory Cannabis Company",
+  "town": "Egg Harbor Township",
+  "zip": "08234",
+  "tags": "Recreational cannabis",
+  "website": "http://www.conservatorycannabis.com/",
+  "menu_url": "https://shop.conservatorycannabis.com/shop",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/c78b003ea247551e/banners",
+   "api.dispenseapp.com/v1/users/26c2118cdd80ee01/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/482264628c7deb3e/product-categories/1f26b8beb1f4abe0/products"
+  ]
+ },
+ {
+  "id": "plantopia-englishtown",
+  "name": "Plantopia",
+  "town": "Englishtown",
+  "zip": "07726",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://plantopiadispensaries.com/?utm_source=google_business&utm_medium=organic&utm_campaign=GBP_englishtown",
+  "menu_url": "https://plantopiadispensaries.com/menu/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/63111213d645e6a1/banners",
+   "api.dispenseapp.com/v1/users/fc83115a709c4eea/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/d73719cc285d62b5/product-categories/9cea83dbe1109fd4/products"
+  ]
+ },
+ {
+  "id": "ruuted-englishtown",
+  "name": "Ruuted",
+  "town": "Englishtown",
+  "zip": "07726",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://ruuteddispensary.com/",
+  "menu_url": "https://ruuteddispensary.com/dispensary-delivery/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/2fd6f35442196ce4/banners",
+   "api.dispenseapp.com/v1/users/f1c5d7da5d76e769/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/257c8e61fe900044/product-filters"
+  ]
+ },
+ {
+  "id": "nj-leaf-freehold-freehold",
+  "name": "NJ Leaf Freehold",
+  "town": "Freehold",
+  "zip": "07728",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://njleaf.com/",
+  "menu_url": "https://njleaf.com/products/flower/",
+  "platform": "Dispense",
+  "confidence": "medium",
+  "api_paths": [
+   "njleaf.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "high-street-dispensary-hackettstown",
+  "name": "High Street Dispensary",
+  "town": "Hackettstown",
+  "zip": "07840",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.njhighstreet.com/",
+  "menu_url": "https://njhighstreet.com/menu",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/76b7ad1bbe2c7d8d/banners",
+   "api.dispenseapp.com/v1/users/14a1cf13b0587266/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/5d76cf0363f89fe7/product-filters"
+  ]
+ },
+ {
+  "id": "molly-ann-farms-haledon",
+  "name": "Molly Ann Farms",
+  "town": "Haledon",
+  "zip": "07508",
+  "tags": "Recreational cannabis",
+  "website": "https://www.mollyannfarms.com/",
+  "menu_url": "https://www.mollyannfarms.com/shop-now",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/94a363e71d12a909/banners",
+   "api.dispenseapp.com/v1/users/e6a40bf5ae63802a/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/cfe5f6a8f1d10470/product-categories/abc853006171b228/products"
+  ]
+ },
+ {
+  "id": "4twenty-somewhere-hewitt",
+  "name": "4Twenty Somewhere",
+  "town": "Hewitt",
+  "zip": "07421",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://4twentysomewhere.com/",
+  "menu_url": "https://4twentysomewhere.com/shop/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/2f1f1c61acf3748d/banners",
+   "api.dispenseapp.com/v1/users/06dbf67c592885e2/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/680b325c2357c0ab/product-categories/1809026f5ac5f377/products"
+  ]
+ },
+ {
+  "id": "anja-life-highland-park",
+  "name": "Anja Life",
+  "town": "Highland Park",
+  "zip": "08904",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.getanja.com/",
+  "menu_url": "https://www.getanja.com/shop/none/12pc-cigarette-pack-holder-kingsize",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/f7f4fccd2ec1634a/banners",
+   "api.dispenseapp.com/v1/users/e3dff4d7c61c0742/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/75b89af98283d723/product-categories/a17d852d68b324c1/products"
+  ]
+ },
+ {
+  "id": "jersey-leaf-jersey-city",
+  "name": "Jersey Leaf",
+  "town": "Jersey City",
+  "zip": "07304",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://jerseyleaf.net/",
+  "menu_url": "https://jerseyleaf.net/menu",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/1c7af7a55b093996/banners",
+   "api.dispenseapp.com/v1/users/abdc9679e5a9f0be/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/27ac0bd81be82e2b/product-categories/c4a76a4e4fc10eb3/products"
+  ]
+ },
+ {
+  "id": "legacy-to-lifted-jersey-city",
+  "name": "Legacy to Lifted",
+  "town": "Jersey City",
+  "zip": "07304",
+  "tags": "Recreational cannabis",
+  "website": "https://liftednj.com/",
+  "menu_url": "https://liftednj.com/shop",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/a739eda60ad918f2/banners",
+   "api.dispenseapp.com/v1/users/c69d50b3b75f58ac/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/959d9b801309a703/product-categories/e70a00638f89d094/products"
+  ]
+ },
+ {
+  "id": "uforia-dispensary-jersey-city",
+  "name": "Uforia Dispensary",
+  "town": "Jersey City",
+  "zip": "07307",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "http://www.uforiadispensary.com/",
+  "menu_url": "https://uforiadispensary.com/menu/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/1271cc1af9a610e7/banners",
+   "api.dispenseapp.com/v1/users/069988f16ee8c450/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/79ad3a6e5574e148/product-categories/c123b69ebf79ac3c/products"
+  ]
+ },
+ {
+  "id": "nj-leaf-keansburg-keansburg",
+  "name": "NJ Leaf Keansburg",
+  "town": "Keansburg",
+  "zip": "07734",
+  "tags": "Recreational cannabis",
+  "website": "https://njleaf.com/",
+  "menu_url": "https://njleaf.com/products/flower/",
+  "platform": "Dispense",
+  "confidence": "medium",
+  "api_paths": [
+   "njleaf.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "premo-keyport",
+  "name": "Premo",
+  "town": "Keyport",
+  "zip": "07735",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://premocannabis.co",
+  "menu_url": "https://premocannabis.co/menu/dover/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/f3751a14d2eb58b7/banners",
+   "api.dispenseapp.com/v1/users/8cff0e0976b2e77d/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/116c2420c9db7f0a/product-categories/08a30b95bab12878/products"
+  ]
+ },
+ {
+  "id": "garden-state-natural-green-kingston",
+  "name": "Garden State Natural Green",
+  "town": "Kingston",
+  "zip": "08528",
+  "tags": "Recreational cannabis",
+  "website": "https://gstate.co/",
+  "menu_url": "https://gsngdispensary.com/shop/categories/all?effects=happy",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/users/ec92531fbf4e0e17/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/e2075dbd8d4324f9/product-filters",
+   "api.dispenseapp.com/v1/venues/e2075dbd8d4324f9/products"
+  ]
+ },
+ {
+  "id": "gas-grass-cannabis-recreational-dispensary-lake-hopatcong",
+  "name": "Gas & Grass Cannabis Recreational Dispensary",
+  "town": "Lake Hopatcong",
+  "zip": "07849",
+  "tags": "Recreational cannabis",
+  "website": "https://gasandgrassnj.com/",
+  "menu_url": "https://gasandgrassnj.com/menu/offers",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "ai.virtualbudz.com/admin/business/mindset_vir/season_status",
+   "ai.virtualbudz.com/admin/status/mindset_vir",
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/c4c3469c6699c15c/banners"
+  ]
+ },
+ {
+  "id": "vigor-dispensary-matawan",
+  "name": "Vigor Dispensary",
+  "town": "Matawan",
+  "zip": "07747",
+  "tags": "Recreational cannabis",
+  "website": "https://vigordispensary.com/",
+  "menu_url": "https://vigordispensary.com/shop/vigor-select/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "vigordispensary.com/cdn-cgi/challenge-platform/h/b/fo/725451836:1792768209:ivTpDb-zKS-sVYQWGUnyLJAvlHGzocEMC4zKyc5cWIM/a",
+   "vigordispensary.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.8382033251339321:1792768220:2Uqp6YEyPN8Gte"
+  ]
+ },
+ {
+  "id": "kine-buds-maywood-maywood",
+  "name": "Kine Buds Maywood",
+  "town": "Maywood",
+  "zip": "07607",
+  "tags": "Recreational cannabis",
+  "website": "https://kinebudsdispensary.com/",
+  "menu_url": "https://kinebudsdispensary.com/menu/categories/deals",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/da83ea81dabcc6a8/banners",
+   "api.dispenseapp.com/v1/users/3510a80f993afb5e/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/83de9c41aa1a3cc5/product-categories/aeebb7e2a7f046e9/products"
+  ]
+ },
+ {
+  "id": "daylite-cannabis-mt-laurel-township",
+  "name": "Daylite Cannabis",
+  "town": "Mt Laurel Township",
+  "zip": "08054",
+  "tags": "Recreational cannabis",
+  "website": "http://daylitecannabis.com/",
+  "menu_url": "https://www.daylitecannabis.com/menu",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/4bc2f240eaea957c/banners",
+   "api.dispenseapp.com/v1/users/f297818abed44a1c/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/39309ae8a582e88e/product-categories/d7494d63188b3006/products"
+  ]
+ },
+ {
+  "id": "nirvana-mt-laurel-township",
+  "name": "Nirvana",
+  "town": "Mt Laurel Township",
+  "zip": "08054",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://explorenirvana.com",
+  "menu_url": "https://explorenirvana.com/dispensary-near/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "ai.virtualbudz.com/admin/business/nirvana_vir/popup-icon",
+   "ai.virtualbudz.com/admin/business/nirvana_vir/popup-message",
+   "ai.virtualbudz.com/admin/business/nirvana_vir/quick-responses",
+   "ai.virtualbudz.com/admin/business/nirvana_vir/season_status"
+  ]
+ },
+ {
+  "id": "puffin-store-new-brunswick",
+  "name": "Puffin Store",
+  "town": "New Brunswick",
+  "zip": "08901",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://puffinstorenj.com/",
+  "menu_url": "https://puffinstorenj.com/menu/categories/flower",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/2e40d98a9eb721c3/banners",
+   "api.dispenseapp.com/v1/users/ff4e76ca56a08f44/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/3680b30f1b381a3f/product-categories/641ff11d68d411b2/products"
+  ]
+ },
+ {
+  "id": "soulflora-newfoundland",
+  "name": "Soulflora",
+  "town": "Newfoundland",
+  "zip": "07435",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.soulflora.com/",
+  "menu_url": "https://www.soulflora.com/menu/categories/flower",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/users/58a891889ba9ecbc/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/b4803b38d0c964b5/product-categories/e416f253daff9bfa/products",
+   "api.dispenseapp.com/v1/venues/b4803b38d0c964b5/product-filters"
+  ]
+ },
+ {
+  "id": "sea-leaf-north-cape-may",
+  "name": "Sea & Leaf",
+  "town": "North Cape May",
+  "zip": "08204",
+  "tags": "Recreational cannabis",
+  "website": "http://www.seaandleaf.com",
+  "menu_url": "https://seaandleaf.com/menu/categories/flower",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/e3babbcaf0606c03/banners",
+   "api.dispenseapp.com/v1/users/906952bced90dffe/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/eb435d60f3689e31/product-categories/7d9f93263529ba56/products"
+  ]
+ },
+ {
+  "id": "cloud-nine-dispensary-north-plainfield",
+  "name": "Cloud Nine Dispensary",
+  "town": "North Plainfield",
+  "zip": "07060",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.c9dispensarynj.com/",
+  "menu_url": "https://www.c9dispensarynj.com/menu",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/4bb35788df9c667a/banners",
+   "api.dispenseapp.com/v1/users/6299264516edbd91/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/6c028859e110daac/product-categories/9adc1e19329f2eb3/products"
+  ]
+ },
+ {
+  "id": "good-karma-dispensary-north-plainfield",
+  "name": "Good Karma Dispensary",
+  "town": "North Plainfield",
+  "zip": "07060",
+  "tags": "Recreational cannabis",
+  "website": "https://goodkarmadispensary.com/",
+  "menu_url": "https://goodkarmadispensary.com/products/",
+  "platform": "Dispense",
+  "confidence": "medium",
+  "api_paths": [
+   "goodkarmadispensary.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "mountain-view-farmacy-oak-ridge",
+  "name": "Mountain View Farmacy",
+  "town": "Oak Ridge",
+  "zip": "07438",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://www.mvf.earth/",
+  "menu_url": "https://mvf.earth/shop/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/98a70cb792fa6107/banners",
+   "api.dispenseapp.com/v1/users/6a98680408a35357/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/4177df0b88f23719/product-categories/2d016d36d75d183a/products"
+  ]
+ },
+ {
+  "id": "ginger-hale-oaklyn",
+  "name": "Ginger Hale",
+  "town": "Oaklyn",
+  "zip": "08107",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://www.gingerhaledispensary.com/",
+  "menu_url": "https://www.gingerhaledispensary.com/shop",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/78236d4bb182f3d4/banners",
+   "api.dispenseapp.com/v1/users/4a91f6aa7d31ea6a/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/65ee0a5c96a1e96e/product-filters"
+  ]
+ },
+ {
+  "id": "aurum-botanics-pemberton",
+  "name": "Aurum Botanics",
+  "town": "Pemberton",
+  "zip": "08068",
+  "tags": "Recreational cannabis",
+  "website": "https://aurumbotanics.com/",
+  "menu_url": "https://aurumbotanics.com/cannabis-products/flower/",
+  "platform": "Dispense",
+  "confidence": "medium",
+  "api_paths": [
+   "aurumbotanics.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.639106172951227:1792771825:oUmVw93VOJ0vAZkqM"
+  ]
+ },
+ {
+  "id": "jersey-meds-pennington",
+  "name": "Jersey Meds",
+  "town": "Pennington",
+  "zip": "08534",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://jerseymeds.com",
+  "menu_url": "https://jerseymeds.com/shop/categories/edibles",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/users/6f7fa176b4babab9/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/2c0db436f9815b7c/product-categories/1738a7fc3458092b/products",
+   "api.dispenseapp.com/v1/venues/2c0db436f9815b7c/product-categories/89dd099e8b08050f/products"
+  ]
+ },
+ {
+  "id": "cannaverde-dispensary-plainfield",
+  "name": "CannaVerde Dispensary",
+  "town": "Plainfield",
+  "zip": "07060",
+  "tags": "",
+  "website": "https://cannaverdenj.com/shop",
+  "menu_url": "https://cannaverdenj.com/shop/cart",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/b884475444b21950/banners",
+   "api.dispenseapp.com/v1/users/b1c0df0f5ca65ff0/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/c873f0d3ace99f68/product-categories/6244041771ac5453/products"
+  ]
+ },
+ {
+  "id": "island-vibez-plainfield",
+  "name": "Island Vibez",
+  "town": "Plainfield",
+  "zip": "07060",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://islandvibezdispensary.com",
+  "menu_url": "https://menus.dispenseapp.com/86fc4f1d31772362/menu/categories/flower",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/bbfa1a36700f6519/banners",
+   "api.dispenseapp.com/v1/users/a303f9cfed1e61df/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/86fc4f1d31772362/product-categories/247f28b30bdc55f6/products"
+  ]
+ },
+ {
+  "id": "queen-city-remedies-plainfield",
+  "name": "Queen City Remedies",
+  "town": "Plainfield",
+  "zip": "07062",
+  "tags": "Recreational cannabis",
+  "website": "https://queencitynj.com/",
+  "menu_url": "https://queencitynj.com/kiosk-ordering/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/6f1e5bb605be1d29/banners",
+   "api.dispenseapp.com/v1/users/33524442cb5555c0/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/c7a90aef64ff484d/product-categories/d87b6c7c05f00a73/products"
+  ]
+ },
+ {
+  "id": "the-frosted-nug-at-red-bank-red-bank",
+  "name": "The Frosted Nug at Red Bank",
+  "town": "Red Bank",
+  "zip": "07701",
+  "tags": "Recreational cannabis",
+  "website": "https://frostednug.com/",
+  "menu_url": "https://frostednug.com/menu/carneys-point/offers",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/venues/2024883014413667/product-filters",
+   "api.dispenseapp.com/v1/venues/2024883014413667/product-offers",
+   "api.dispenseapp.com/v1/venues/2024883014413667/product-offers/072f089295ceb07e/products"
+  ]
+ },
+ {
+  "id": "g2-dispensary-rockaway",
+  "name": "G2 Dispensary",
+  "town": "Rockaway",
+  "zip": "07866",
+  "tags": "Recreational cannabis",
+  "website": "http://G2dispensary.com",
+  "menu_url": "https://www.g2dispensary.com/menu/cart",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/212d84a4526e9399/banners",
+   "api.dispenseapp.com/v1/users/46826b8c2d0550a3/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/245c8f238f29c512/product-categories/87e59bbe167aad5b/products"
+  ]
+ },
+ {
+  "id": "a21-wellness-scotch-plains",
+  "name": "A21 Wellness",
+  "town": "Scotch Plains",
+  "zip": "07076",
+  "tags": "Recreational cannabis|Offers delivery|Microbusiness",
+  "website": "https://a21dispensary.com/",
+  "menu_url": "https://a21dispensary.com/cannabis-delivery/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "a21dispensary.com/cdn-cgi/rum",
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/3954d316be694892/banners",
+   "api.dispenseapp.com/v1/users/51f67028f1f4ae94/loyalty-profile"
+  ]
+ },
+ {
+  "id": "b-caf-dispensary-scotch-plains",
+  "name": "B Caf Dispensary",
+  "town": "Scotch Plains",
+  "zip": "07076",
+  "tags": "Recreational cannabis",
+  "website": "https://www.bcafdispensary.com/",
+  "menu_url": "https://www.bcafdispensary.com/dispensary-near-berkeley-heights-nj/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/f674e142a92d78db/banners",
+   "api.dispenseapp.com/v1/users/40d62cae9b7b826a/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/de37ee984a8de298/product-categories/665af1814594b7ae/products"
+  ]
+ },
+ {
+  "id": "happy-leaf-somerdale",
+  "name": "Happy Leaf",
+  "town": "Somerdale",
+  "zip": "08083",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://happyleafdispensarynj.com/",
+  "menu_url": "https://happyleafdispensarynj.com/drive-thru",
+  "platform": "Dispense",
+  "confidence": "medium",
+  "api_paths": [
+   "happyleafdispensarynj.com/",
+   "happyleafdispensarynj.com/contact",
+   "happyleafdispensarynj.com/deals",
+   "happyleafdispensarynj.com/drive-thru"
+  ]
+ },
+ {
+  "id": "silverleaf-wellness-somerset",
+  "name": "SilverLeaf Wellness",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://silverleafnj.com/",
+  "menu_url": "https://silverleafnj.com/menu/rec",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "ai.virtualbudz.com/admin/business/silverleaf_sil/popup-icon",
+   "ai.virtualbudz.com/admin/business/silverleaf_sil/popup-message",
+   "ai.virtualbudz.com/admin/business/silverleaf_sil/quick-responses",
+   "ai.virtualbudz.com/admin/business/silverleaf_sil/season_status"
+  ]
+ },
+ {
+  "id": "new-era-dispensary-south-bound-brook",
+  "name": "New Era Dispensary",
+  "town": "South Bound Brook",
+  "zip": "08880",
+  "tags": "Recreational cannabis",
+  "website": "https://neweradispensary.com/",
+  "menu_url": "https://neweradispensary.com/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/890f2911f7edec76/banners",
+   "api.dispenseapp.com/v1/users/96bc8dfc61fe88bd/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/82fdd505d4f2d67a/product-categories/12cf734a5f4cd1ad/products"
+  ]
+ },
+ {
+  "id": "rushbudz-dispensary-south-bound-brook",
+  "name": "RushBudz Dispensary",
+  "town": "South Bound Brook",
+  "zip": "08880",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.rushbudz.com/new-jersey",
+  "menu_url": "https://rushbudz.com/menu/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/75b3285520c40136/banners",
+   "api.dispenseapp.com/v1/users/671a2bde88a46caa/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/4870989abbd32896/product-categories/8d94b9c312fa68d1/products"
+  ]
+ },
+ {
+  "id": "cannabis-clubhouse-sussex",
+  "name": "Cannabis Clubhouse",
+  "town": "Sussex",
+  "zip": "07461",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.cannabisclubhousenj.com/",
+  "menu_url": "https://menus.dispenseapp.com/1c1e4e3311e11e41/menu",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/235f62b898a13e82/banners",
+   "api.dispenseapp.com/v1/users/67fe2f4c47c32e09/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/1c1e4e3311e11e41/product-categories/d8780f9281654390/products"
+  ]
+ },
+ {
+  "id": "vigor-dispensary-tinton-falls-tinton-falls",
+  "name": "Vigor Dispensary - Tinton Falls",
+  "town": "Tinton Falls",
+  "zip": "07753",
+  "tags": "Recreational cannabis",
+  "website": "https://vigordispensary.com/",
+  "menu_url": "https://vigordispensary.com/shop/vigor-select/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "vigordispensary.com/cdn-cgi/challenge-platform/h/b/fo/725451836:1792768209:ivTpDb-zKS-sVYQWGUnyLJAvlHGzocEMC4zKyc5cWIM/a",
+   "vigordispensary.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.8382033251339321:1792768220:2Uqp6YEyPN8Gte"
+  ]
+ },
+ {
+  "id": "elevated-herb-west-milford",
+  "name": "Elevated Herb",
+  "town": "West Milford",
+  "zip": "07480",
+  "tags": "Recreational cannabis",
+  "website": "https://elevated-herb.com/",
+  "menu_url": "https://elevated-herb.com/shop/categories/brand-new",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/b13b17322570d597/banners",
+   "api.dispenseapp.com/v1/users/43e38098d1dc9ea3/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/c683c95931054062/product-categories/92e6f1eee0b4ebf2/products"
+  ]
+ },
+ {
+  "id": "nile-of-nj-west-new-york",
+  "name": "Nile of NJ",
+  "town": "West New York",
+  "zip": "07093",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.nile-cannabis.com/",
+  "menu_url": "https://nile-cannabis.com/menu/best-sellers/",
+  "platform": "Dispense",
+  "confidence": "medium",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "nile-cannabis.com/cdn-cgi/rum",
+   "nile-cannabis.com/wp-admin/admin-ajax.php"
+  ]
+ },
+ {
+  "id": "releaf-cannabis-williamstown",
+  "name": "Releaf Cannabis",
+  "town": "Williamstown",
+  "zip": "08094",
+  "tags": "Recreational cannabis",
+  "website": "https://releafcanna.biz/",
+  "menu_url": "https://releafcanna.biz/menu/offers",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/6342b3d04224bfe2/banners",
+   "api.dispenseapp.com/v1/users/4b524ed6a0546f8d/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/09aab434fa9fd83c/product-categories/4150e95989563f37/products"
+  ]
+ },
+ {
+  "id": "bestbuds-woodbury",
+  "name": "BestBuds",
+  "town": "Woodbury",
+  "zip": "08096",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://bestbudsnj.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp-nj",
+  "menu_url": "https://bestbudsnj.com/menu/categories/flower/",
+  "platform": "Dispense",
+  "confidence": "high",
+  "api_paths": [
+   "api.dispenseapp.com/user/me",
+   "api.dispenseapp.com/v1/organizations/abc4a5b701acae4a/banners",
+   "api.dispenseapp.com/v1/users/0a005741cb247521/loyalty-profile",
+   "api.dispenseapp.com/v1/venues/e598dea980e58665/product-categories/2093b2b372d1126b/products"
+  ]
+ },
+ {
+  "id": "andover-cannabis-andover",
+  "name": "Andover Cannabis",
+  "town": "Andover",
+  "zip": "07821",
+  "tags": "Recreational cannabis|Microbusiness",
+  "website": "https://andovercannabis.llc/",
+  "menu_url": "https://andovercannabis.llc/menu/?dtche%5Bpath%5D=specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "andovercannabis.llc/wp-json/age-gate/v3/check",
+   "app.launchdarkly.com/sdk/evalx/5ee2761738b5d10a6705cadf/contexts/eyJraW5kIjoibXVsdGkiLCJ1c2VyIjp7ImtpbmQiOiJ1c2VyIiwia2V5IjoiMzc2ODBmODEtNjk2NC00NTE2LThlNTctNmIxMGZmZDJiZTU4IiwidHlwZSI6Imd1ZXN0Q3VzdG9tZXIiLCJjYW5hcnkiOmZhbHNlfSwiYXBwbGljYXRpb24iOnsia2V5IjoibWFya2V0cGxhY2UifSwiZWNvbW0tZGlzcGVuc2FyeSI6eyJrZXkiOiI2NWYxY2RjMTk1NjlmZTAwMDkwYTE1MDMifSwiZWNvbW0tZW50ZXJwcmlzZSI6eyJrZXkiOiJlYWNlMjI5NC1mNTNlLTQ2ZjUtOWM1NC00ZDg1ZTkzMmQzNGIifX0",
+   "app.launchdarkly.com/sdk/goals/5ee2761738b5d10a6705cadf",
+   "cdn-api.ethyca.com/location"
+  ]
+ },
+ {
+  "id": "buddy-s-dispensary-andover",
+  "name": "Buddy's Dispensary",
+  "town": "Andover",
+  "zip": "07821",
+  "tags": "Recreational cannabis",
+  "website": "https://buddysnj.com/",
+  "menu_url": "https://buddysnj.com/shop/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "app.launchdarkly.com/sdk/evalx/5ee2761738b5d10a6705cadf/contexts/eyJraW5kIjoibXVsdGkiLCJ1c2VyIjp7ImtpbmQiOiJ1c2VyIiwia2V5IjoiNjgyZjFjNWEtN2I1NS00ZGYzLTljZWQtMDcxMjhjNTRlZTMyIiwidHlwZSI6Imd1ZXN0Q3VzdG9tZXIiLCJjYW5hcnkiOmZhbHNlfSwiYXBwbGljYXRpb24iOnsia2V5IjoibWFya2V0cGxhY2UifSwiZWNvbW0tZGlzcGVuc2FyeSI6eyJrZXkiOiI2NDExYzA2OGYxYWRiZjAwMzFjOTczOGMifSwiZWNvbW0tZW50ZXJwcmlzZSI6eyJrZXkiOiI5NTEzMTg0OC0zZjVmLTRjNTgtYjkxOS0xMDIwNjJlMjlhOTIifX0",
+   "app.launchdarkly.com/sdk/goals/5ee2761738b5d10a6705cadf",
+   "cdn-api.ethyca.com/location",
+   "dutchie.com/api-1/graphql"
+  ]
+ },
+ {
+  "id": "green-oasis-dispensary-atco",
+  "name": "Green Oasis Dispensary",
+  "town": "Atco",
+  "zip": "08004",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://greenoasisnj.com",
+  "menu_url": "https://greenoasisnj.com/shop/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "ac-leef-atlantic-city",
+  "name": "AC Leef",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis|Offers delivery|Microbusiness",
+  "website": "https://acleef.com/",
+  "menu_url": "https://acleef.com/#",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "acleef.com/markup/ad",
+   "csp.secureserver.net/eventbus/web",
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql"
+  ]
+ },
+ {
+  "id": "bakin-bad-atlantic-city",
+  "name": "Bakin\u2019 Bad",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://bakinbadac.com",
+  "menu_url": "https://www.bakinbadac.com/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "core.service.elfsight.com/p/boot/",
+   "dutchie.com/api-3/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "everest-dispensary-atlantic-city",
+  "name": "Everest Dispensary",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis",
+  "website": "https://everestdispensary.com/",
+  "menu_url": "https://everestdispensary.com/effects/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "api.moodiday.com/api/clients-partners",
+   "api.moodiday.com/api/ratings-products",
+   "api.moodiday.com/api/retailer-products-matches",
+   "api.moodiday.com/api/video-overlays"
+  ]
+ },
+ {
+  "id": "high-rollers-dispensary-atlantic-city",
+  "name": "High Rollers Dispensary",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis|Offers delivery|Cannabis Consumption Area",
+  "website": "http://highrollersdispensary.com",
+  "menu_url": "https://highrollersdispensary.com/products/?product_page=b9cefd88-a280-46bc-80d4-a95fe0af8905",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dmerch.iheartjane.com/v2/smart",
+   "highrollersdispensary.com/wp-admin/admin-ajax.php",
+   "highrollersdispensary.com/wp-json/age-gate/v3/check",
+   "highrollersdispensary.com/wp-json/joint-api/v1/geolocation"
+  ]
+ },
+ {
+  "id": "juniper-lane-atlantic-city",
+  "name": "Juniper Lane",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis",
+  "website": "https://www.juniperlanecannabis.com/",
+  "menu_url": "https://www.juniperlanecannabis.com/newjersey",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "legal-distribution-atlantic-city",
+  "name": "Legal Distribution",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "http://legaldistributionnj.com",
+  "menu_url": "https://legaldistributionnj.com/menu",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "app.aminos.ai/api/bot_info/29671",
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "mpx-nj-atlantic-city",
+  "name": "MPX NJ",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://mpxnj.com/cannabis-dispensary-atlantic-city/?utm_source=google&utm_medium=organic&utm_campaign=gbp-atlantic-city",
+  "menu_url": "https://mpxnj.com/stores/mpx-new-jersey-atlantic-city-med/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "app.jointcommerce.com/api/event-data/",
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "ppp-dispensary-atlantic-city",
+  "name": "PPP Dispensary",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis",
+  "website": "https://pppdispensaryllc.com/",
+  "menu_url": "https://pppdispensaryllc.com/home",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "backend.leadconnectorhq.com/attribution_service/user_session_v3/create_session",
+   "backend.leadconnectorhq.com/attribution_service/user_session_v3/update_session/083e6bed-b20e-48aa-8fa1-3bf190599a28",
+   "backend.leadconnectorhq.com/funnels/funnel/geo-location/",
+   "backend.leadconnectorhq.com/stats/event"
+  ]
+ },
+ {
+  "id": "rollin-green-atlantic-city",
+  "name": "Rollin' Green",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://rollingnj.com/",
+  "menu_url": "https://rollingnj.com/menu/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cdn.acsbapp.com/config/rollingnj.com/config.json",
+   "dutchie.com/api-3/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "la-vida-gardens-belleville",
+  "name": "La Vida Gardens",
+  "town": "Belleville",
+  "zip": "07109",
+  "tags": "Recreational cannabis",
+  "website": "https://www.lavidagardens.com/",
+  "menu_url": "https://lavidagardens.com/stores/la-vida-gardens/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "lavidagardens.com/api-0/graphql",
+   "lavidagardens.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.34934399103509894:1792764620:4VgsZVJbVSMUPqx",
+   "lavidagardens.com/telemetry"
+  ]
+ },
+ {
+  "id": "flower-flame-dispensary-blackwood",
+  "name": "Flower & Flame Dispensary",
+  "town": "Blackwood",
+  "zip": "08012",
+  "tags": "Recreational cannabis",
+  "website": "http://njflowerandflame.com",
+  "menu_url": "https://dutchie.com/embedded-menu/flower-and-flame",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "emerald-tea-supply-co-bloomfield",
+  "name": "Emerald Tea Supply Co.",
+  "town": "Bloomfield",
+  "zip": "07003",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://etsc.store",
+  "menu_url": "https://etsc.store/dispensary-delivery-near-me-nj",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "core.service.elfsight.com/p/boot/",
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "nightjar-bloomfield",
+  "name": "Nightjar",
+  "town": "Bloomfield",
+  "zip": "07003",
+  "tags": "Recreational cannabis",
+  "website": "http://www.nightjarcannabis.com",
+  "menu_url": "https://nightjarcannabis.com/dispensaries-in-new-jersey/bloomfield/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "evolve-cannabis-bordentown",
+  "name": "Evolve Cannabis",
+  "town": "Bordentown",
+  "zip": "08505",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.evolvecannanj.com/store",
+  "menu_url": "https://www.evolvecannanj.com/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cdn-account.optimonk.com/4575/accountInfo.json",
+   "cdn-account.optimonk.com/4575/campaigns.json",
+   "cdn-limit.optimonk.com/public/4575/limit.json",
+   "dutchie.com/api-4/graphql"
+  ]
+ },
+ {
+  "id": "blazin-buddiez-bridgeton",
+  "name": "Blazin Buddiez",
+  "town": "Bridgeton",
+  "zip": "08302",
+  "tags": "Recreational cannabis",
+  "website": "https://blazinbuddiez.com/",
+  "menu_url": "https://blazinbuddiez.com/menu/?dtche%5Bcategory%5D=flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "blazinbuddiez.com/cdn-cgi/rum",
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "social-dispensary-bridgeton",
+  "name": "Social Dispensary",
+  "town": "Bridgeton",
+  "zip": "08302",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://thesocialcannabis.com/shop/",
+  "menu_url": "https://thesocialcannabis.com/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "fd-api.cleantalk.org/frontend_data/v2",
+   "g.surfside.io/enrich"
+  ]
+ },
+ {
+  "id": "far-dotter-browns-mills",
+  "name": "Far & Dotter",
+  "town": "Browns Mills",
+  "zip": "08015",
+  "tags": "Recreational cannabis",
+  "website": "https://fardotter.com/dispensaries/pemberton/",
+  "menu_url": "https://fardotter.com/dispensaries/pemberton/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cdn.acsbapp.com/cache/app/wildcards.json",
+   "cdn.acsbapp.com/config/fardotter.com/config.json",
+   "cdn.cookielaw.org/consent/019dfdc0-3255-74e0-a900-ecb6994af38f/019dfdc0-3255-74e0-a900-ecb6994af38f.json",
+   "cdn.cookielaw.org/consent/019dfdc0-3255-74e0-a900-ecb6994af38f/019dfdc6-4e5f-7f6c-b23f-64d1173bf0d8/en.json"
+  ]
+ },
+ {
+  "id": "cuzzie-s-camden",
+  "name": "Cuzzie's",
+  "town": "Camden",
+  "zip": "08104",
+  "tags": "Recreational cannabis|Offers delivery|Microbusiness",
+  "website": "https://dutchie.com/dispensary/cuzzies-retail",
+  "menu_url": "https://dutchie.com/dispensary/cuzzies-retail/brands",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/_next/data/j-3PsoRX1pp0Xdc-MHHfz/us/dispensaries/nj-camden.json",
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "organic-farms-camden",
+  "name": "Organic Farms",
+  "town": "Camden",
+  "zip": "08104",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://www.organicfarms21.com/",
+  "menu_url": "https://organicfarms21.com/drive-thru-dispensary",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "api.framer.com/auth/web/access-token",
+   "core.service.elfsight.com/p/boot/",
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql"
+  ]
+ },
+ {
+  "id": "insa-coastline-dispensary-cape-may-court-house",
+  "name": "INSA Coastline Dispensary",
+  "town": "Cape May Court House",
+  "zip": "08210",
+  "tags": "Recreational cannabis",
+  "website": "https://coastlinedispensary.com/",
+  "menu_url": "https://www.leafly.com/dispensary-info/coastline-dispensary-not-insa-corporate-separate-ownership-group",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "api.sail-personalize.com/v1/personalize/simple",
+   "coastlinedispensary.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/b53e478bd915/0.0365552964190341:1792767109:g6PP3Cx2vm",
+   "coastlinedispensary.com/nitropack_static/uquvIWcqrXZlghtFYQRIEKjHGgLbTbyQ/assets/static/optimized/rev-872186a/coastlined",
+   "coastlinedispensary.com/nitropack_static/uquvIWcqrXZlghtFYQRIEKjHGgLbTbyQ/assets/static/optimized/rev-872186a/dutchie.co"
+  ]
+ },
+ {
+  "id": "honeygrove-clementon",
+  "name": "HoneyGrove",
+  "town": "Clementon",
+  "zip": "08021",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://www.honeygrovedispensary.com/",
+  "menu_url": "https://honeygrovedispensary.com/shop/specials",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "honeygrovedispensary.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "the-botanist-collingswood",
+  "name": "The Botanist",
+  "town": "Collingswood",
+  "zip": "08108",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://shopbotanist.com/locations/collingswood/",
+  "menu_url": "https://shopbotanist.com/stores//specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/IL1MZjyD.json",
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/audit-table/LY9CAMvP.json",
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/config/WwGX9zY-.json",
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/translations/rVeM4LTL.json"
+  ]
+ },
+ {
+  "id": "breakwater-dispensary-cranbury-cranbury",
+  "name": "Breakwater Dispensary Cranbury",
+  "town": "Cranbury",
+  "zip": "08512",
+  "tags": "Recreational cannabis",
+  "website": "https://www.breakwateratc.com/",
+  "menu_url": "https://www.breakwateratc.com/online-ordering-cranbury-rec",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "hzy-goods-east-orange",
+  "name": "HZY Goods",
+  "town": "East Orange",
+  "zip": "07017",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "https://www.hzygoods.com/",
+  "menu_url": "https://www.hzygoods.com/service/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-3/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "breakwater-east-windsor",
+  "name": "Breakwater",
+  "town": "East Windsor",
+  "zip": "08512",
+  "tags": "Medicinal cannabis",
+  "website": "https://www.breakwateratc.com/",
+  "menu_url": "https://www.breakwateratc.com/online-ordering-cranbury-rec",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "fresh-dispensary-eatontown-eatontown",
+  "name": "Fresh Dispensary Eatontown",
+  "town": "Eatontown",
+  "zip": "07724",
+  "tags": "Recreational cannabis",
+  "website": "https://freshcannabis.co/location/eatontown/?utm_source=google_business&utm_medium=organic&utm_campaign=GBP_eatontown",
+  "menu_url": "https://freshcannabis.co/menu/eatontown?type=rec",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-4/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "atlantic-flower-egg-harbor-city",
+  "name": "Atlantic Flower",
+  "town": "Egg Harbor City",
+  "zip": "08215",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "https://atlanticflowerdispensary.com/",
+  "menu_url": "https://atlanticflowerdispensary.com/menu/?dtche%5Bpath%5D=specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "csp.secureserver.net/eventbus/web",
+   "dutchie.com/api-4/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "the-botanist-egg-harbor-township",
+  "name": "The Botanist",
+  "town": "Egg Harbor Township",
+  "zip": "08234",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://www.shopbotanist.com/locations/egg-harbor-township/",
+  "menu_url": "https://shopbotanist.com/stores//specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/IL1MZjyD.json",
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/audit-table/LY9CAMvP.json",
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/config/WwGX9zY-.json",
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/translations/rVeM4LTL.json"
+  ]
+ },
+ {
+  "id": "budzooka-weed-dispensary-elizabeth",
+  "name": "Budzooka Weed Dispensary",
+  "town": "Elizabeth",
+  "zip": "07201",
+  "tags": "Recreational cannabis",
+  "website": "https://budzookanj.com/",
+  "menu_url": "https://budzookanj.com/wp-content/uploads/2026/05/BudZOOka-Elizabeth-NJ-Cannabis-Dispensary-Shop-Deals-05-04-2026_09_56_AM.png",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "budzookanj.com/wp-json/age-gate/v3/check",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "core.service.elfsight.com/p/boot/",
+   "csp.secureserver.net/eventbus/web"
+  ]
+ },
+ {
+  "id": "fresh-elizabeth-elizabeth",
+  "name": "Fresh Elizabeth",
+  "town": "Elizabeth",
+  "zip": "07202",
+  "tags": "Recreational cannabis",
+  "website": "https://freshcannabis.co/",
+  "menu_url": "https://freshcannabis.co/",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "freshcannabis.co/__l5e/trackevents",
+   "juvesrqmosxupevsmkjz.supabase.co/rest/v1/page_assets",
+   "juvesrqmosxupevsmkjz.supabase.co/rest/v1/seo_pages",
+   "juvesrqmosxupevsmkjz.supabase.co/rest/v1/stores"
+  ]
+ },
+ {
+  "id": "cannavibes-elmwood-park",
+  "name": "Cannavibes",
+  "town": "Elmwood Park",
+  "zip": "07407",
+  "tags": "Recreational cannabis|Microbusiness",
+  "website": "https://www.cannavibesnj.com/",
+  "menu_url": "https://cannavibesnj.com/stores/cannavibes-rec/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cannavibesnj.com/api-0/graphql",
+   "cannavibesnj.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/b53e478bd915/0.9833681103415648:1792767624:3L0V6Jt2o3ZdU_QkR",
+   "cannavibesnj.com/telemetry",
+   "cannavibesnj.com/wp-json/fte/v1/locations"
+  ]
+ },
+ {
+  "id": "ohm-theory-elmwood-park",
+  "name": "Ohm Theory",
+  "town": "Elmwood Park",
+  "zip": "07407",
+  "tags": "Recreational cannabis",
+  "website": "http://ohmtheory.com",
+  "menu_url": "https://ohmtheory.com/stores/ohm-theory",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "highway-90-evesham",
+  "name": "Highway 90",
+  "town": "Evesham",
+  "zip": "08053",
+  "tags": "Recreational cannabis",
+  "website": "http://www.thehighway90.com/",
+  "menu_url": "https://www.thehighway90.com/stores/highway-90-cannabis-dispensary-marlton-nj/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "api.moodiday.com/api/clients-partners",
+   "api.moodiday.com/api/ratings-products",
+   "api.moodiday.com/api/retailer-products-matches",
+   "api.moodiday.com/api/video-overlays"
+  ]
+ },
+ {
+  "id": "bloc-ewing-township",
+  "name": "BLOC",
+  "town": "Ewing Township",
+  "zip": "08638",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://www.blocdispensary.com/",
+  "menu_url": "https://blocdispensary.com/shop",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "blocdispensary.com/wp-json/age-gate/v3/check",
+   "pixel.quantserve.com/cs"
+  ]
+ },
+ {
+  "id": "aunt-mary-s-dispensary-flemington",
+  "name": "Aunt Mary's Dispensary",
+  "town": "Flemington",
+  "zip": "08822",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "http://www.auntmarysnj.co/",
+  "menu_url": "https://auntmarysnj.co/products/pre-rolls/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "auntmarysnj.co/cdn-cgi/rum",
+   "cdn.internetmilk.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/b53e478bd915/0.9833681103415648:1792767624:3L0V6Jt2o3ZdU",
+   "cdn.internetmilk.com/cdn-cgi/rum",
+   "cmp.osano.com/Eq0y1pc9DQ/cebe8d9e-1886-4c23-a72d-cc459049147b/en.json"
+  ]
+ },
+ {
+  "id": "ascend-fort-lee",
+  "name": "Ascend",
+  "town": "Fort Lee",
+  "zip": "07024",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://letsascend.com/locations/new-jersey/fort-lee/",
+  "menu_url": "https://letsascend.com/stores/chicago-midway-illinois",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "letsascend.com/api-4/graphql",
+   "letsascend.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "indoor-treez-fort-lee",
+  "name": "Indoor Treez",
+  "town": "Fort Lee",
+  "zip": "07024",
+  "tags": "Recreational cannabis",
+  "website": "https://gwleaf.com/",
+  "menu_url": "https://gwleaf.com/shop/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-3/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "sparkology-franklin-park",
+  "name": "Sparkology",
+  "town": "Franklin Park",
+  "zip": "08823",
+  "tags": "Recreational cannabis",
+  "website": "https://sparkology.com/",
+  "menu_url": "https://sparkology.com/shop/?pagination=1&sort=POPULAR_DESC&retailer_id=e26155f3-7699-45d5-a087-d89266ceebef&menu_type=RECREATIONAL&collection_type=PICKUP&brands=%22583956bf-479e-4893-9774-fd28ffe7f721%22%2C",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "api.mywallet.deals/production/merchants/7fea60e2-0e98-439d-97a7-bfed705472ea",
+   "col.surfside.io/event/track",
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql"
+  ]
+ },
+ {
+  "id": "one-green-leaf-gibbsboro",
+  "name": "One Green Leaf",
+  "town": "Gibbsboro",
+  "zip": "08026",
+  "tags": "Recreational cannabis",
+  "website": "http://onegreenleafdispensary.com",
+  "menu_url": "https://onegreenleafdispensary.com/menu/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "the-jersey-joint-dispensary-glassboro",
+  "name": "The Jersey Joint Dispensary",
+  "town": "Glassboro",
+  "zip": "08028",
+  "tags": "Recreational cannabis",
+  "website": "https://www.jerseyjointdispensary.com/",
+  "menu_url": "https://jerseyjointdispensary.com/stores/jersey-joint/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/be0fd/6a7507a09cfb3c1361a79de8/999998350.json",
+   "dutchie.com/api-1/graphql"
+  ]
+ },
+ {
+  "id": "hashery-hackensack",
+  "name": "Hashery",
+  "town": "Hackensack",
+  "zip": "07601",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://hasherynj.com/",
+  "menu_url": "https://hasherynj.com/deals/hackensack/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "app.jointcommerce.com/api/event-data/",
+   "hasherynj.com/",
+   "hasherynj.com/account/",
+   "hasherynj.com/account/login/"
+  ]
+ },
+ {
+  "id": "hackettstown-dispensary-hackettstown",
+  "name": "Hackettstown Dispensary",
+  "town": "Hackettstown",
+  "zip": "07840",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://www.hackettstowndispensarynj.com/",
+  "menu_url": "https://www.hackettstowndispensarynj.com/shop-now",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "core.service.elfsight.com/p/boot/",
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "northeast-alternatives-dispensary-hamilton-township",
+  "name": "Northeast Alternatives Dispensary",
+  "town": "Hamilton Township",
+  "zip": "08691",
+  "tags": "Recreational cannabis",
+  "website": "https://nealternatives.com/hamilton-nj/",
+  "menu_url": "https://nealternatives.com/menu/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "cdn.trustindex.io/widgets/d5/d56571c5754a197c8f1622fd9e0/content.html",
+   "col.surfside.io/event/track",
+   "dutchie.com/api-0/graphql"
+  ]
+ },
+ {
+  "id": "hello-high-hammonton",
+  "name": "Hello High",
+  "town": "Hammonton",
+  "zip": "08037",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://www.hellohigh.com/",
+  "menu_url": "https://hellohigh.com/shop/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "g.surfside.io/enrich",
+   "hellohigh.com/wp-admin/admin-ajax.php"
+  ]
+ },
+ {
+  "id": "botera-harrison-harrison",
+  "name": "Botera Harrison",
+  "town": "Harrison",
+  "zip": "07029",
+  "tags": "Recreational cannabis",
+  "website": "https://boteranj.com/",
+  "menu_url": "https://boteranj.com/effects/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "boteranj.com/wp-admin/admin-ajax.php",
+   "boteranj.com/wp-json/joint-api/v1/geolocation",
+   "boteranj.com/wp-json/joint-api/v1/surfside-settings"
+  ]
+ },
+ {
+  "id": "cookies-harrison-harrison",
+  "name": "Cookies Harrison",
+  "town": "Harrison",
+  "zip": "07029",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://harrison.cookies.co/",
+  "menu_url": "https://harrison.cookies.co/effects/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dmerch.iheartjane.com/v2/smart",
+   "harrison.cookies.co/wp-admin/admin-ajax.php",
+   "harrison.cookies.co/wp-json/age-gate/v3/check",
+   "harrison.cookies.co/wp-json/joint-api/v1/geolocation"
+  ]
+ },
+ {
+  "id": "blkbrn-cannabis-dispensary-highland-park",
+  "name": "BLKBRN Cannabis Dispensary",
+  "town": "Highland Park",
+  "zip": "08904",
+  "tags": "Recreational cannabis",
+  "website": "https://www.blkbrndispensary.com/",
+  "menu_url": "https://dutchie.com/embedded-menu/66cf5c3ac9fd392b86e202e9",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-3/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "herbalicity-highland-park",
+  "name": "Herbalicity",
+  "town": "Highland Park",
+  "zip": "08904",
+  "tags": "Recreational cannabis",
+  "website": "http://herbalicity.com/",
+  "menu_url": "https://herbalicity.com/shop/category/flower/",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": []
+ },
+ {
+  "id": "main-street-dispensary-highland-park",
+  "name": "Main Street Dispensary",
+  "town": "Highland Park",
+  "zip": "08904",
+  "tags": "Recreational cannabis",
+  "website": "https://www.mainstreetdispensarynj.com/",
+  "menu_url": "https://mainstreetdispensarynj.com/shop-now/?dtche%5Bcategory%5D=flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fd-api.cleantalk.org/frontend_data/v2"
+  ]
+ },
+ {
+  "id": "the-honorable-plant-highlands",
+  "name": "The Honorable Plant",
+  "town": "Highlands",
+  "zip": "07732",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://honorableplant.com/",
+  "menu_url": "https://njdispo.com/stores/the-honorable-plant",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/4dmim/662024ffcfa794b39380887e/999997990.json",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "village-hoboken-hoboken",
+  "name": "Village Hoboken",
+  "town": "Hoboken",
+  "zip": "07030",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://thevillagebrands.com/",
+  "menu_url": "https://thevillagebrands.com/products/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "sky-cannabis-hopewell",
+  "name": "Sky Cannabis",
+  "town": "Hopewell",
+  "zip": "08525",
+  "tags": "Recreational cannabis",
+  "website": "https://www.skycannanj.com/",
+  "menu_url": "https://www.skycannanj.com/store",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-4/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "organic-fusion-dispensary-irvington",
+  "name": "Organic Fusion Dispensary",
+  "town": "Irvington",
+  "zip": "07111",
+  "tags": "Recreational cannabis",
+  "website": "https://organicfusion.net/",
+  "menu_url": "https://dutchie.com/dispensary/organic-fusion",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "csp.secureserver.net/eventbus/web",
+   "dutchie.com/_next/data/j-3PsoRX1pp0Xdc-MHHfz/us/dispensaries/nj-irvington.json",
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql"
+  ]
+ },
+ {
+  "id": "springfield-ave-dispensary-irvington",
+  "name": "Springfield Ave Dispensary",
+  "town": "Irvington",
+  "zip": "07111",
+  "tags": "Recreational cannabis",
+  "website": "https://springfieldavedispensary.com/",
+  "menu_url": "https://springfieldavedispensary.store/shop?dtche[category]=flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-3/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "1634-funk-jersey-city",
+  "name": "1634 Funk",
+  "town": "Jersey City",
+  "zip": "07304",
+  "tags": "Recreational cannabis|Microbusiness",
+  "website": "https://1634funk.com/",
+  "menu_url": "https://1634funk.com/shop",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "1634funk.com/markup/ad",
+   "csp.secureserver.net/eventbus/web"
+  ]
+ },
+ {
+  "id": "benedict-s-supply-jersey-city",
+  "name": "Benedict's Supply",
+  "town": "Jersey City",
+  "zip": "07307",
+  "tags": "Recreational cannabis",
+  "website": "https://benedictssupply.com/",
+  "menu_url": "https://benedictssupply.com/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "benedictssupply.com/cdn-cgi/rum",
+   "dutchie.com/api-4/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "cream-cannabis-dispensary-jersey-city",
+  "name": "CREAM Cannabis Dispensary",
+  "town": "Jersey City",
+  "zip": "07302",
+  "tags": "Recreational cannabis",
+  "website": "http://cream.online",
+  "menu_url": "https://cream.online/shop/flower/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cream.online/dutchie-proxy.php"
+  ]
+ },
+ {
+  "id": "garden-greenz-jersey-city",
+  "name": "Garden Greenz",
+  "town": "Jersey City",
+  "zip": "07302",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "https://gardengreenz201.com/",
+  "menu_url": "https://gardengreenz201.com/menu/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "csp.secureserver.net/eventbus/web",
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "hazy-harvest-dispensary-jersey-city",
+  "name": "Hazy Harvest Dispensary",
+  "town": "Jersey City",
+  "zip": "07304",
+  "tags": "Recreational cannabis",
+  "website": "https://hazyharvest.com/",
+  "menu_url": "https://hazyharvest.com/shop/?dtche%5Bpath%5D=specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "lady-l-cannabis-jersey-city",
+  "name": "Lady L Cannabis",
+  "town": "Jersey City",
+  "zip": "07304",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://ladyljerseycity.com/",
+  "menu_url": "https://ladyljerseycity.com/stores/lady-l-cannabis-jersey-city/products/pre-rolls",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "ladyljerseycity.com/api-0/graphql",
+   "ladyljerseycity.com/cdn-cgi/rum",
+   "ladyljerseycity.com/t/i"
+  ]
+ },
+ {
+  "id": "leaf-joint-jersey-city",
+  "name": "Leaf Joint",
+  "town": "Jersey City",
+  "zip": "07307",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.theleafjoint.net/",
+  "menu_url": "https://www.theleafjoint.net/menu/?dtche%5Bcategory%5D=flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql"
+  ]
+ },
+ {
+  "id": "the-retreat-jersey-city-dispensary-jersey-city",
+  "name": "The Retreat - Jersey City Dispensary",
+  "town": "Jersey City",
+  "zip": "07304",
+  "tags": "Recreational cannabis",
+  "website": "https://www.retreatnj.com/",
+  "menu_url": "https://www.retreatnj.com/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "app.jointcommerce.com/api/event-data/",
+   "cdn.acsbapp.com/config/retreatnj.com/config.json",
+   "col.surfside.io/event/track",
+   "dutchie.com/api-3/graphql"
+  ]
+ },
+ {
+  "id": "citi-roots-kingston",
+  "name": "Citi Roots",
+  "town": "Kingston",
+  "zip": "08528",
+  "tags": "Recreational cannabis",
+  "website": "https://citirootsdispensarynj.com/",
+  "menu_url": "https://citirootsdispensarynj.com/menu/?dtche%5Bpath%5D=specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "high-profile-lakehurst-lakehurst",
+  "name": "High Profile Lakehurst",
+  "town": "Lakehurst",
+  "zip": "08733",
+  "tags": "Recreational cannabis",
+  "website": "http://highprofilecannabis.com",
+  "menu_url": "https://highprofilecannabis.com/stores//products",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "dwga.highprofilecannabis.com/g/collect",
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "highprofilecannabis.com/api-0/graphql"
+  ]
+ },
+ {
+  "id": "collective-beleaf-dispensary-lambertville",
+  "name": "Collective Beleaf Dispensary",
+  "town": "Lambertville",
+  "zip": "08530",
+  "tags": "Recreational cannabis",
+  "website": "https://www.collectivebeleaf.com/",
+  "menu_url": "https://www.collectivebeleaf.com/menu",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "core.service.elfsight.com/p/boot/",
+   "cors-proxy.utils.elfsightcdn.com/",
+   "dutchie.com/api-1/graphql"
+  ]
+ },
+ {
+  "id": "mister-jones-little-falls-township",
+  "name": "Mister Jones",
+  "town": "Little Falls Township",
+  "zip": "07424",
+  "tags": "Recreational cannabis",
+  "website": "https://misterjones.com/",
+  "menu_url": "https://misterjones.com/stores/mister-jones-new-jersey/products/pre-rolls",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "misterjones.com/api-4/graphql",
+   "misterjones.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.8382033251339321:1792768220:2Uqp6YEyPN8GteDmvD",
+   "misterjones.com/telemetry"
+  ]
+ },
+ {
+  "id": "beyond-hello-little-ferry-dispensary-little-ferry",
+  "name": "Beyond Hello Little Ferry Dispensary",
+  "town": "Little Ferry",
+  "zip": "07643",
+  "tags": "Recreational cannabis",
+  "website": "https://beyond-hello.com/new-jersey-dispensaries/little-ferry/",
+  "menu_url": "https://beyond-hello.com/new-jersey-dispensaries/little-ferry/adult-use-menu/?dtche%5Bpath%5D=specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cdn-cookieyes.com/client_data/ec14b0b874d8325374eba5c7/9OKgy5X4.json",
+   "cdn-cookieyes.com/client_data/ec14b0b874d8325374eba5c7/audit-table/ssB_jgS1.json",
+   "cdn-cookieyes.com/client_data/ec14b0b874d8325374eba5c7/config/22NjP4la.json",
+   "cdn-cookieyes.com/client_data/ec14b0b874d8325374eba5c7/translations/NMs39Iog.json"
+  ]
+ },
+ {
+  "id": "enlighten-dispensary-marlton",
+  "name": "Enlighten Dispensary",
+  "town": "Marlton",
+  "zip": "08053",
+  "tags": "Recreational cannabis",
+  "website": "http://enlightendispensary.com",
+  "menu_url": "https://enlightendispensary.com/menu",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "enlightendispensary.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.8382033251339321:1792768220:2Uqp6YEyPN",
+   "enlightendispensary.com/nitropack_static/FtrUeydhdvHVNwdyerREBlFzcBUdnUXY/assets/static/optimized/rev-e3584d4/dutchie.co",
+   "enlightendispensary.com/nitropack_static/FtrUeydhdvHVNwdyerREBlFzcBUdnUXY/assets/static/optimized/rev-e3584d4/enlightend"
+  ]
+ },
+ {
+  "id": "canna-bar-matawan",
+  "name": "Canna Bar",
+  "town": "Matawan",
+  "zip": "07747",
+  "tags": "Recreational cannabis",
+  "website": "https://thecannabar.com/",
+  "menu_url": "https://thecannabar.com/shop/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-4/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "unity-rd-cannabis-shop-maywood",
+  "name": "Unity Rd. Cannabis Shop",
+  "town": "Maywood",
+  "zip": "07607",
+  "tags": "Recreational cannabis",
+  "website": "https://www.unity-rd.com/",
+  "menu_url": "https://unity-rd.com/stores/unity-rd-maywood",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "r.surfside.io/ccb20/8fe9f/config.json"
+  ]
+ },
+ {
+  "id": "gynsyng-merchantville",
+  "name": "Gynsyng",
+  "town": "Merchantville",
+  "zip": "08109",
+  "tags": "Recreational cannabis|Cannabis Consumption Area|Offers delivery",
+  "website": "http://gynsyng.com",
+  "menu_url": "https://www.gynsyng.com/stores/gynsyng-rec/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "tags.srv.stackadapt.com/sa.jpeg",
+   "tags.srv.stackadapt.com/saq_pxl",
+   "www.gynsyng.com/api-4/graphql"
+  ]
+ },
+ {
+  "id": "honeystash-dispensary-metuchen",
+  "name": "HoneyStash Dispensary",
+  "town": "Metuchen",
+  "zip": "08840",
+  "tags": "Recreational cannabis",
+  "website": "https://honeygrovedispensary.com/location/metuchen/",
+  "menu_url": "https://honeygrovedispensary.com/shop/specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "headless-query-proxy.service-9b2.workers.dev/",
+   "headless-query-proxy.service-9b2.workers.dev//batch",
+   "honeygrovedispensary.com/cdn-cgi/rum",
+   "honeygrovedispensary.com/wp-json/range_headless/v1/data/menu"
+  ]
+ },
+ {
+  "id": "uma-flowers-morristown",
+  "name": "Uma Flowers",
+  "town": "Morristown",
+  "zip": "07960",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://www.umaflowers.co/location/uma-flowers-morristown-nj/",
+  "menu_url": "https://www.umaflowers.co/shop/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "fd-api.cleantalk.org/frontend_data/v2",
+   "g.surfside.io/enrich"
+  ]
+ },
+ {
+  "id": "brotherly-bud-dispensary-mt-ephraim",
+  "name": "Brotherly Bud Dispensary",
+  "town": "Mt Ephraim",
+  "zip": "08059",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://brotherlybud.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+  "menu_url": "https://brotherlybud.com/shop/?POS_Tags=New+In",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "brotherlybud.com/wp-admin/admin-ajax.php",
+   "player.vimeo.com/cdn-cgi/challenge-platform/h/b/precursor/d2d3316b729e/0.21759249550098714:1792768220:WNAh_0dvtyhIV2p2CT",
+   "vimeo.com/api/oembed.json",
+   "vimeo.com/flarepoint/eoN77pKY"
+  ]
+ },
+ {
+  "id": "milligrams-mt-laurel-township",
+  "name": "Milligrams",
+  "town": "Mt Laurel Township",
+  "zip": "08054",
+  "tags": "Recreational cannabis",
+  "website": "https://milligrams.co/locations/mt-laurel-nj/",
+  "menu_url": "https://milligrams.co/stores/mount-laurel-nj/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-4/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "dwga.milligrams.co/g/collect"
+  ]
+ },
+ {
+  "id": "shipwreck-d-neptune-city",
+  "name": "Shipwreck'd",
+  "town": "Neptune City",
+  "zip": "07753",
+  "tags": "Recreational cannabis",
+  "website": "https://shipwreckd.com/",
+  "menu_url": "https://shipwreckd.com/shop",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql"
+  ]
+ },
+ {
+  "id": "jester-s-joint-new-brunswick",
+  "name": "Jester's Joint",
+  "town": "New Brunswick",
+  "zip": "08901",
+  "tags": "Recreational cannabis",
+  "website": "https://jestersdispensary.com/",
+  "menu_url": "https://jestersdispensary.com/specials/?dtche%5Bpath%5D=specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fd-api.cleantalk.org/frontend_data/v2"
+  ]
+ },
+ {
+  "id": "cityleaf-dispensary-newark",
+  "name": "CityLeaf Dispensary",
+  "town": "Newark",
+  "zip": "07104",
+  "tags": "Recreational cannabis|Offers delivery|Microbusiness",
+  "website": "https://cityleafnj.com/",
+  "menu_url": "https://cityleafnj.com/delivery/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cityleafnj.com/",
+   "cityleafnj.com/about-us/",
+   "cityleafnj.com/accessibility/",
+   "cityleafnj.com/accessories/"
+  ]
+ },
+ {
+  "id": "the-station-dispensary-newark",
+  "name": "The Station Dispensary",
+  "town": "Newark",
+  "zip": "07114",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://thestationnewark.org/",
+  "menu_url": "https://dutchie.com/stores/the-station-dispensary/brands",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "treeotics-newark",
+  "name": "Treeotics",
+  "town": "Newark",
+  "zip": "07112",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://treeotics.com",
+  "menu_url": "https://treeotics.com/stores/treeotics/products/flower?sortby=relevance",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cdn.trustindex.io/widgets/65/6546c1382864356b1166b189745/content.html",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql"
+  ]
+ },
+ {
+  "id": "bud-city-nj-newton",
+  "name": "Bud City NJ",
+  "town": "Newton",
+  "zip": "07860",
+  "tags": "Recreational cannabis",
+  "website": "https://budcitynj.com/",
+  "menu_url": "https://budcitynj.com/deals/newton/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "budcitynj.com/",
+   "budcitynj.com/account/",
+   "budcitynj.com/api/account/header-summary",
+   "budcitynj.com/api/account/header-summary/"
+  ]
+ },
+ {
+  "id": "liberty-cannabis-dispensary-north-brunswick-north-brunswick-township",
+  "name": "Liberty Cannabis Dispensary North Brunswick",
+  "town": "North Brunswick Township",
+  "zip": "08902",
+  "tags": "Recreational cannabis",
+  "website": "https://libertycannabis.com/locations/new-jersey/north-brunswick/?utm_source=google-gmb&utm_medium=organic&utm_campaign=north-brunswick/",
+  "menu_url": "https://libertycannabis.com/shop/somerville/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql"
+  ]
+ },
+ {
+  "id": "nj-leaf-north-brunswick-north-brunswick-township",
+  "name": "NJ Leaf North Brunswick",
+  "town": "North Brunswick Township",
+  "zip": "08902",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://dutchie.com/stores/garden-state-botanicals",
+  "menu_url": "https://dutchie.com/stores/garden-state-botanicals/info",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "pure-blossom-pennington",
+  "name": "Pure Blossom",
+  "town": "Pennington",
+  "zip": "08534",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "https://www.pureblossom.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+  "menu_url": "https://www.pureblossom.com/visit-hopewell-cannabis-shop/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "mpx-nj-pennsauken-township",
+  "name": "MPX NJ",
+  "town": "Pennsauken Township",
+  "zip": "08109",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://mpxnj.com/",
+  "menu_url": "https://mpxnj.com/stores//products/flower",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "app.jointcommerce.com/api/event-data/",
+   "col.surfside.io/event/track",
+   "mpxnj.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.639106172951227:1792771825:oUmVw93VOJ0vAZkqMwYYPxpd6",
+   "pixel.quantserve.com/cs"
+  ]
+ },
+ {
+  "id": "got-your-six-dispensary-of-new-jersey-princeton",
+  "name": "Got Your Six Dispensary of New Jersey",
+  "town": "Princeton",
+  "zip": "08540",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://gotyoursixdispensary.com/?utm_source=google&utm_medium=gbp&utm_campaign=princeton_gbp",
+  "menu_url": "https://gotyoursixdispensary.com/stores/got-your-six-llc/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/ef4e4/64765c5b6f2a9400167a15ce/999997573.json",
+   "dutchie.com/api-1/graphql"
+  ]
+ },
+ {
+  "id": "monteverde-nj-red-bank",
+  "name": "Monteverde NJ",
+  "town": "Red Bank",
+  "zip": "07701",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://monteverdenj.com/",
+  "menu_url": "https://monteverdenj.com/recreational-menu/?dtche%5Bcategory%5D=accessories",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "dutchie.com/api-3/graphql",
+   "dutchie.com/graphql"
+  ]
+ },
+ {
+  "id": "township-green-riverside",
+  "name": "Township Green",
+  "town": "Riverside",
+  "zip": "08075",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://townshipgreen.com",
+  "menu_url": "https://townshipgreen.com/shop/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "ascend-rochelle-park",
+  "name": "Ascend",
+  "town": "Rochelle Park",
+  "zip": "07662",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://letsascend.com/menu/nj-rochelle-park-menu/",
+  "menu_url": "https://letsascend.com/stores/rochelle-park-new-jersey/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "letsascend.com/api-4/graphql",
+   "letsascend.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "breakwater-roselle-park",
+  "name": "Breakwater",
+  "town": "Roselle Park",
+  "zip": "07204",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "http://www.breakwateratc.com/",
+  "menu_url": "https://www.breakwateratc.com/online-ordering-cranbury-rec",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "cottonmouth-dispensary-runnemede",
+  "name": "Cottonmouth Dispensary",
+  "town": "Runnemede",
+  "zip": "08078",
+  "tags": "Recreational cannabis",
+  "website": "http://www.getcottonmouth.com/",
+  "menu_url": "https://getcottonmouth.com/cannabis-products-guide",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "getcottonmouth.com/",
+   "getcottonmouth.com/shop"
+  ]
+ },
+ {
+  "id": "phasal-runnemede",
+  "name": "Phasal",
+  "town": "Runnemede",
+  "zip": "08078",
+  "tags": "Recreational cannabis",
+  "website": "https://phasaldispensary.com/",
+  "menu_url": "https://phasaldispensary.com/",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "phasaldispensary.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.639106172951227:1792771825:oUmVw93VOJ0vAZ",
+   "phasaldispensary.com/nitropack_static/TxxaNFxbwNlGocvEmCHaBYymjceZILOH/assets/static/optimized/rev-2699aed/dutchie.com/a",
+   "phasaldispensary.com/nitropack_static/TxxaNFxbwNlGocvEmCHaBYymjceZILOH/assets/static/optimized/rev-2699aed/phasaldispens"
+  ]
+ },
+ {
+  "id": "nirvana-dispensary-saddle-brook-saddle-brook",
+  "name": "Nirvana Dispensary Saddle Brook",
+  "town": "Saddle Brook",
+  "zip": "07663",
+  "tags": "Recreational cannabis",
+  "website": "https://thedispensariesofnj.com/",
+  "menu_url": "https://thedispensariesofnj.com/union/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "mpx-nj-sicklerville",
+  "name": "MPX NJ",
+  "town": "Sicklerville",
+  "zip": "08081",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://mpxnj.com/gloucester-township/",
+  "menu_url": "https://mpxnj.com/stores/mpx-new-jersey-gloucester-med/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "app.jointcommerce.com/api/event-data/",
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "high-profile-of-somerdale-dispensary-somerdale",
+  "name": "High Profile of Somerdale Dispensary",
+  "town": "Somerdale",
+  "zip": "08083",
+  "tags": "Recreational cannabis",
+  "website": "https://highprofilecannabis.com/nj/somerdale-dispensary?utm_source=gmb&utm_medium=organic&utm_campaign=somerdale",
+  "menu_url": "https://highprofilecannabis.com/stores/nj-somerdale-hp/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "dwga.highprofilecannabis.com/g/collect",
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "highprofilecannabis.com/_next/data/bGm2yFt0X9xeyukEx__Rv/stores/nj-somerdale-hp/product/snake-eyes-pre-pack-popcorn-7g.j"
+  ]
+ },
+ {
+  "id": "bloc-somerset",
+  "name": "BLOC",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://www.blocdispensary.com/",
+  "menu_url": "https://blocdispensary.com/shop",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "blocdispensary.com/wp-json/age-gate/v3/check",
+   "pixel.quantserve.com/cs"
+  ]
+ },
+ {
+  "id": "bridge-city-collective-dispensary-somerset",
+  "name": "Bridge City Collective Dispensary",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Recreational cannabis",
+  "website": "https://bridgecitycollective.com/new-brunswick-dispensary/",
+  "menu_url": "https://bridgecitycollective.com/n-portland-menu/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "dispensary-of-somerset-somerset",
+  "name": "Dispensary of Somerset",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Recreational cannabis",
+  "website": "http://thedispensariesofnj.com",
+  "menu_url": "https://thedispensariesofnj.com/union/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "leaf-haus-somerset",
+  "name": "Leaf Haus",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Recreational cannabis",
+  "website": "https://leafhaus.com/",
+  "menu_url": "https://leafhaus.com/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "unity-rd-cannabis-shop-somerset",
+  "name": "Unity Rd. Cannabis Shop",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Recreational cannabis",
+  "website": "https://www.unity-rd.com",
+  "menu_url": "https://unity-rd.com/stores/unity-rd-maywood",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "r.surfside.io/ccb20/8fe9f/config.json"
+  ]
+ },
+ {
+  "id": "high-end-dispensary-south-river",
+  "name": "High End Dispensary",
+  "town": "South River",
+  "zip": "08882",
+  "tags": "Recreational cannabis",
+  "website": "https://www.highendnj.com",
+  "menu_url": "https://www.highendnj.com/stores/high-end-dispensary",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "story-dispensary-of-springfield-springfield",
+  "name": "Story Dispensary of Springfield",
+  "town": "Springfield",
+  "zip": "07081",
+  "tags": "Recreational cannabis",
+  "website": "https://storycannabis.com/shop/new-jersey/story-dispensary-of-springfield/rec-menu/",
+  "menu_url": "https://storycannabis.com/shop/",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "api-v2.leafbridge-api.com/api/v1/products",
+   "api-v2.leafbridge-api.com/api/v1/retailers/public/retailer",
+   "api-v2.leafbridge-api.com/api/v1/specials/public/get-specials",
+   "app.jointcommerce.com/api/event-data/"
+  ]
+ },
+ {
+  "id": "altitude-cannabis-toms-river",
+  "name": "Altitude Cannabis",
+  "town": "Toms River",
+  "zip": "08757",
+  "tags": "Recreational cannabis",
+  "website": "https://www.altitudecannanj.com/",
+  "menu_url": "https://www.altitudecannanj.com/store",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-4/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "moja-life-trenton",
+  "name": "Moja Life",
+  "town": "Trenton",
+  "zip": "08608",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://moja-life.com",
+  "menu_url": "https://moja-life.com/products?dtche%5Bcategory%5D=flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/t/i",
+   "dutchie.com/telemetry"
+  ]
+ },
+ {
+  "id": "theory-wellness-trenton",
+  "name": "Theory Wellness",
+  "town": "Trenton",
+  "zip": "08638",
+  "tags": "Medicinal cannabis|Recreational cannabis|Expanded ATC (Both Med & Rec)",
+  "website": "http://theorywellness.org/new-jersey-dispensary",
+  "menu_url": "https://theorywellness.org/new-jersey-dispensary/trenton-medical-cannabis-dispensary/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "api.privy.com/businesses/1F45FBB36416854F8DB49684/campaigns.json",
+   "bid.surfside.io/rtb/bids/surfside",
+   "c.ba.contentsquare.net/errors",
+   "c.ba.contentsquare.net/pageview"
+  ]
+ },
+ {
+  "id": "botera-union-union",
+  "name": "Botera Union",
+  "town": "Union",
+  "zip": "07083",
+  "tags": "Recreational cannabis",
+  "website": "http://boteranj.com",
+  "menu_url": "https://boteranj.com/effects/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "boteranj.com/wp-admin/admin-ajax.php",
+   "boteranj.com/wp-json/joint-api/v1/geolocation",
+   "boteranj.com/wp-json/joint-api/v1/surfside-settings"
+  ]
+ },
+ {
+  "id": "dispensary-of-union-union",
+  "name": "Dispensary of Union",
+  "town": "Union",
+  "zip": "07083",
+  "tags": "Recreational cannabis",
+  "website": "http://thedispensariesofnj.com",
+  "menu_url": "https://thedispensariesofnj.com/union/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "eastern-green-voorhees-township",
+  "name": "Eastern Green",
+  "town": "Voorhees Township",
+  "zip": "08043",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://easterngreendispensary.com/",
+  "menu_url": "https://easterngreendispensary.com/shop/flower/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "easterngreendispensary.com/wp-json/cannaplanners/v1/graphql/",
+   "fd-api.cleantalk.org/frontend_data/v2",
+   "test-custom-tags.cnna.io/app-ids/NGExNDZiYzUtNDgxMi00NmQzLWFjZWYtMTIxYjQ4MGQxYTQz.js"
+  ]
+ },
+ {
+  "id": "sweet-spot-voorhees-township",
+  "name": "Sweet Spot",
+  "town": "Voorhees Township",
+  "zip": "08043",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://sweetspotfarms.com/store/nj001",
+  "menu_url": "https://sweetspotfarms.com/stores/voorhees-nj-med",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "app.jointcommerce.com/api/event-data/",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "herb.aggle.net/ack"
+  ]
+ },
+ {
+  "id": "tree-house-co-op-dispensary-voorhees-township",
+  "name": "Tree House Co-Op Dispensary",
+  "town": "Voorhees Township",
+  "zip": "08043",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://www.thcvoorhees.com/",
+  "menu_url": "https://thcvoorhees.com/menu",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/graphql",
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "https://thcvoorhees.com/1d7fc9af-8d54-4003-b8f3-4a29e3bc3ed3",
+   "thcvoorhees.com/api/census/render-batch"
+  ]
+ },
+ {
+  "id": "bloc-waretown",
+  "name": "BLOC",
+  "town": "Waretown",
+  "zip": "08758",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://www.blocdispensary.com/",
+  "menu_url": "https://blocdispensary.com/shop",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "blocdispensary.com/wp-json/age-gate/v3/check",
+   "pixel.quantserve.com/cs"
+  ]
+ },
+ {
+  "id": "dank-poet-dispensary-washington",
+  "name": "Dank Poet Dispensary",
+  "town": "Washington",
+  "zip": "07882",
+  "tags": "Recreational cannabis",
+  "website": "https://dankpoet.com/",
+  "menu_url": "https://dankpoet.com/menu/specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dankpoet.com/api-2/graphql",
+   "dankpoet.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.9078045911414621:1792789814:bxiipYOs1wl2d25uLitlR",
+   "dankpoet.com/cdn-cgi/rum",
+   "dankpoet.com/telemetry"
+  ]
+ },
+ {
+  "id": "doobiez-west-milford",
+  "name": "Doobiez",
+  "town": "West Milford",
+  "zip": "07480",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://doobiez.com",
+  "menu_url": "https://www.doobiez.com/menu?dtche%5Bpath%5D=specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cdn.acsbapp.com/cache/app/wildcards.json",
+   "cdn.acsbapp.com/config/doobiez.com/config.json",
+   "core.service.elfsight.com/p/boot/",
+   "dutchie.com/api-4/graphql"
+  ]
+ },
+ {
+  "id": "jersey-roots-west-milford",
+  "name": "Jersey Roots",
+  "town": "West Milford",
+  "zip": "07480",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://jerseyrootsdispensary.com",
+  "menu_url": "https://www.jerseyrootsdispensary.com/delivery/",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-4/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fd-api.cleantalk.org/frontend_data/v2"
+  ]
+ },
+ {
+  "id": "pure-natural-vibes-west-orange",
+  "name": "Pure Natural Vibes",
+  "town": "West Orange",
+  "zip": "07052",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://www.purenaturalvibes.com/",
+  "menu_url": "https://dutchie.com/embedded-menu/pure-natural-vibes/specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-0/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "west-orange-wellness-west-orange",
+  "name": "West Orange Wellness",
+  "town": "West Orange",
+  "zip": "07052",
+  "tags": "Recreational cannabis",
+  "website": "https://wowdispensary.com/",
+  "menu_url": "https://wowdispensary.com/menu",
+  "platform": "Dutchie",
+  "confidence": "medium",
+  "api_paths": [
+   "wowdispensary.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.12206316131058603:1792775448:7evII9Bj5KbXx7B",
+   "wowdispensary.com/nitropack_static/RSSyaqwnrfSbZTjsaTenBPKWBkjhuXSV/assets/static/optimized/rev-7c0a620/dutchie.com/api/",
+   "wowdispensary.com/nitropack_static/RSSyaqwnrfSbZTjsaTenBPKWBkjhuXSV/assets/static/optimized/rev-7c0a620/wowdispensary.co"
+  ]
+ },
+ {
+  "id": "ascend-wharton",
+  "name": "Ascend",
+  "town": "Wharton",
+  "zip": "07885",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://letsascend.com/menu/nj-montclair-menu/",
+  "menu_url": "https://letsascend.com/stores/chicago-logan-square-illinois",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "fides.dutchie.com/api/v1/privacy-experience",
+   "letsascend.com/api-4/graphql",
+   "letsascend.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "the-botanist-williamstown",
+  "name": "The Botanist",
+  "town": "Williamstown",
+  "zip": "08094",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://www.shopbotanist.com/locations/williamstown/",
+  "menu_url": "https://shopbotanist.com/stores//specials",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/IL1MZjyD.json",
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/audit-table/LY9CAMvP.json",
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/config/WwGX9zY-.json",
+   "cdn-cookieyes.com/client_data/c7baa5dc01bb261f99e5523e8a491c1c/translations/rVeM4LTL.json"
+  ]
+ },
+ {
+  "id": "woodbury-wellness-woodbury",
+  "name": "Woodbury Wellness",
+  "town": "Woodbury",
+  "zip": "08096",
+  "tags": "Recreational cannabis",
+  "website": "https://www.woodburywellnessdispensary.com/",
+  "menu_url": "https://woodburywellnessdispensary.com/stores/woodbury-wellness-llc/products/flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-2/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fides.dutchie.com/api/v1/privacy-experience"
+  ]
+ },
+ {
+  "id": "star-leaf-dispensary-wrightstown",
+  "name": "Star Leaf Dispensary",
+  "town": "Wrightstown",
+  "zip": "08562",
+  "tags": "Recreational cannabis",
+  "website": "https://starleafdispensary.com/",
+  "menu_url": "https://starleafdispensary.com/shop/?dtche%5Bcategory%5D=flower",
+  "platform": "Dutchie",
+  "confidence": "high",
+  "api_paths": [
+   "dutchie.com/api-1/graphql",
+   "dutchie.com/graphql",
+   "dutchie.com/telemetry",
+   "fd-api.cleantalk.org/frontend_data/v2"
+  ]
+ },
+ {
+  "id": "blue-violets-hoboken",
+  "name": "Blue Violets",
+  "town": "Hoboken",
+  "zip": "07030",
+  "tags": "Recreational cannabis|Offers delivery|Microbusiness",
+  "website": "http://blueviolets.co",
+  "menu_url": "",
+  "platform": "Error",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "sunnytien-atlantic-city",
+  "name": "SunnyTien",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis|Offers delivery|Cannabis Consumption Area",
+  "website": "http://sunnytien.com",
+  "menu_url": "http://www.instagra.com/SUNNYTIENAC",
+  "platform": "Flowhub",
+  "confidence": "high",
+  "api_paths": [
+   "app.jointcommerce.com/api/event-data/",
+   "fh-elastic.apm.psc.us-central1.gcp.cloud.es.io/intake/v2/rum/events",
+   "frog.wix.com/bolt-performance",
+   "frog.wix.com/bpm"
+  ]
+ },
+ {
+  "id": "sweet-leaf-s-llc-atlantic-city",
+  "name": "Sweet Leaf's LLC",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis",
+  "website": "https://sweetleafsnj.com/",
+  "menu_url": "https://sweetleafnj.dispensary.shop/med/menu?page=1",
+  "platform": "Flowhub",
+  "confidence": "high",
+  "api_paths": [
+   "fh-elastic.apm.psc.us-central1.gcp.cloud.es.io/intake/v2/rum/events"
+  ]
+ },
+ {
+  "id": "green-lightning-cannabis-cinnaminson",
+  "name": "Green Lightning Cannabis",
+  "town": "Cinnaminson",
+  "zip": "08077",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://greenlightningcannabis.com/",
+  "menu_url": "https://greenlightningcannabis.com/shop/",
+  "platform": "Flowhub",
+  "confidence": "high",
+  "api_paths": [
+   "fd-api.cleantalk.org/frontend_data/v2",
+   "fh-elastic.apm.psc.us-central1.gcp.cloud.es.io/intake/v2/rum/events"
+  ]
+ },
+ {
+  "id": "hamm-chaz-cannabis-dispensary-jersey-city",
+  "name": "Hamm & Chaz Cannabis Dispensary",
+  "town": "Jersey City",
+  "zip": "07306",
+  "tags": "Recreational cannabis",
+  "website": "http://hammchaz.com/",
+  "menu_url": "https://hammandchaz.dispensary.shop/",
+  "platform": "Flowhub",
+  "confidence": "high",
+  "api_paths": [
+   "fh-elastic.apm.psc.us-central1.gcp.cloud.es.io/intake/v2/rum/events",
+   "www.hammchaz.com/",
+   "www.hammchaz.com/.image-slots.state.json",
+   "www.hammchaz.com/AgeGate.dc.html"
+  ]
+ },
+ {
+  "id": "the-happy-farmer-lumberton-township",
+  "name": "The Happy Farmer",
+  "town": "Lumberton Township",
+  "zip": "08048",
+  "tags": "Recreational cannabis",
+  "website": "https://happyfarmernj.com/",
+  "menu_url": "https://happyfarmernj.com/products/",
+  "platform": "Flowhub",
+  "confidence": "medium",
+  "api_paths": []
+ },
+ {
+  "id": "mass-grown-mt-holly",
+  "name": "Mass Grown",
+  "town": "Mt Holly",
+  "zip": "08060",
+  "tags": "Recreational cannabis",
+  "website": "http://massgrownnj.com",
+  "menu_url": "https://massgrown.dispensary.shop/rec/menu",
+  "platform": "Flowhub",
+  "confidence": "high",
+  "api_paths": [
+   "cdn.acsbapp.com/config/massgrownnj.com/config.json",
+   "col.surfside.io/event/track",
+   "fh-elastic.apm.psc.us-central1.gcp.cloud.es.io/intake/v2/rum/events",
+   "r.surfside.io/i0126/7d8cc/config.json"
+  ]
+ },
+ {
+  "id": "sage-dispensary-mt-laurel-township",
+  "name": "Sage Dispensary",
+  "town": "Mt Laurel Township",
+  "zip": "08054",
+  "tags": "Recreational cannabis",
+  "website": "https://sagedispensary.com/",
+  "menu_url": "https://shop.sagedispensarynj.com/",
+  "platform": "Flowhub",
+  "confidence": "high",
+  "api_paths": [
+   "fh-elastic.apm.psc.us-central1.gcp.cloud.es.io/intake/v2/rum/events",
+   "sagedispensarynj.com/",
+   "sagedispensarynj.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.9999477838826931:1792793422:8FxdMQmR8TL0R",
+   "shop.sagedispensarynj.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.9999477838826931:1792793422:8FxdMQmR"
+  ]
+ },
+ {
+  "id": "spot-23-llc-newfoundland",
+  "name": "Spot 23 LLC",
+  "town": "Newfoundland",
+  "zip": "07435",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://spot23llc.com/",
+  "menu_url": "https://spot23-newfoundland.dispensary.shop/catalog/browse?medrec=rec",
+  "platform": "Flowhub",
+  "confidence": "high",
+  "api_paths": [
+   "csp.secureserver.net/eventbus/web",
+   "fh-elastic.apm.psc.us-central1.gcp.cloud.es.io/intake/v2/rum/events"
+  ]
+ },
+ {
+  "id": "canna-remedies-trenton",
+  "name": "Canna Remedies",
+  "town": "Trenton",
+  "zip": "08638",
+  "tags": "Recreational cannabis",
+  "website": "https://cannaremediesnj.com/",
+  "menu_url": "https://cannaremediesnj.dispensary.shop/rec/all-products/nb/i04",
+  "platform": "Flowhub",
+  "confidence": "high",
+  "api_paths": [
+   "fh-elastic.apm.psc.us-central1.gcp.cloud.es.io/intake/v2/rum/events"
+  ]
+ },
+ {
+  "id": "illicit-gardens-dispensary-secaucus-secaucus",
+  "name": "Illicit Gardens Dispensary Secaucus",
+  "town": "Secaucus",
+  "zip": "07094",
+  "tags": "Medicinal cannabis|Recreational cannabis|Expanded ATC (Both Med & Rec)",
+  "website": "https://illicitgardens.com/?utm_source=terrayn_gbp&utm_medium=organic&utm_campaign=secaucus",
+  "menu_url": "https://illicitgardens.com/stores//products",
+  "platform": "Hashly",
+  "confidence": "high",
+  "api_paths": [
+   "illicitgardens.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.17402221155145703:1792804333:MWXc235bVYWani"
+  ]
+ },
+ {
+  "id": "altius-nj-glassboro",
+  "name": "Altius NJ",
+  "town": "Glassboro",
+  "zip": "08028",
+  "tags": "Recreational cannabis",
+  "website": "https://altiusdispensary.com/location/glassboro/",
+  "menu_url": "https://altiusdispensary.com/shop",
+  "platform": "Herb.co (Aggle)",
+  "confidence": "high",
+  "api_paths": [
+   "altiusdispensary.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "sweetspot-dispensary-hamilton-hamilton-township",
+  "name": "Sweetspot Dispensary Hamilton",
+  "town": "Hamilton Township",
+  "zip": "08619",
+  "tags": "Recreational cannabis",
+  "website": "https://sweetspotfarms.com/",
+  "menu_url": "https://sweetspotfarms.com/store",
+  "platform": "Herb.co (Aggle)",
+  "confidence": "high",
+  "api_paths": [
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "herb.aggle.net/ack",
+   "herb.aggle.net/csc",
+   "herb.aggle.net/r3r"
+  ]
+ },
+ {
+  "id": "earth-ivy-lakehurst-lakehurst",
+  "name": "Earth & Ivy Lakehurst",
+  "town": "Lakehurst",
+  "zip": "08733",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://earthandivy.co/lakehurst-nj-dispensary/",
+  "menu_url": "https://earthandivy.co/menu/",
+  "platform": "Herb.co (Aggle)",
+  "confidence": "high",
+  "api_paths": [
+   "alocdn.com/c/9rgi64bf/a/xtarget/p.json",
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "earthandivy.co/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "docanna-maplewood",
+  "name": "Docanna",
+  "town": "Maplewood",
+  "zip": "07040",
+  "tags": "Recreational cannabis",
+  "website": "https://sweetspotfarms.com/store/nj002/menu/rec",
+  "menu_url": "https://sweetspotfarms.com/store",
+  "platform": "Herb.co (Aggle)",
+  "confidence": "high",
+  "api_paths": [
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "herb.aggle.net/ack",
+   "herb.aggle.net/csc",
+   "sweetspotfarms.com/"
+  ]
+ },
+ {
+  "id": "earth-ivy-new-brunswick",
+  "name": "Earth & Ivy",
+  "town": "New Brunswick",
+  "zip": "08901",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://earthandivy.co/",
+  "menu_url": "https://earthandivy.co/menu/collection/flower",
+  "platform": "Herb.co (Aggle)",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "earthandivy.co/cdn-cgi/rum",
+   "test-custom-tags.cnna.io/app-ids/M2UxMmViMzktYzEyNi00NzRmLTkzOGItZTcxMTNhYTNkMjRi.js"
+  ]
+ },
+ {
+  "id": "sweetspot-river-edge-river-edge",
+  "name": "Sweetspot River Edge",
+  "town": "River Edge",
+  "zip": "07661",
+  "tags": "Recreational cannabis",
+  "website": "https://sweetspotfarms.com/",
+  "menu_url": "https://sweetspotfarms.com/store",
+  "platform": "Herb.co (Aggle)",
+  "confidence": "high",
+  "api_paths": [
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "herb.aggle.net/ack",
+   "herb.aggle.net/csc",
+   "herb.aggle.net/r3r"
+  ]
+ },
+ {
+  "id": "restore-nj-glassboro",
+  "name": "Restore NJ",
+  "town": "Glassboro",
+  "zip": "08028",
+  "tags": "Medicinal cannabis|Recreational cannabis|Expanded ATC (Both Med & Rec)",
+  "website": "https://restoredispensaries.com/locations/glassboro/",
+  "menu_url": "https://restoredispensaries.com/locations/allentown-pa/menu/",
+  "platform": "Hytiva",
+  "confidence": "high",
+  "api_paths": [
+   "api.hytiva.com/v1/dispensaries/172835",
+   "api.hytiva.com/v1/menu/172835",
+   "api.hytiva.com/v1/menu/172835/promo"
+  ]
+ },
+ {
+  "id": "rise-bloomfield",
+  "name": "RISE",
+  "town": "Bloomfield",
+  "zip": "07003",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://risecannabis.com/dispensaries/new-jersey/bloomfield/",
+  "menu_url": "https://risecannabis.com/dispensaries/new-jersey/bloomfield/4439/recreational-menu",
+  "platform": "Jane",
+  "confidence": "medium",
+  "api_paths": [
+   "api-bong.risecannabis.com/v1/b",
+   "cdn-bong.risecannabis.com/v1/projects/k8mTZHLeu3yuz69FNFjuVQbtweZcdf1A/settings",
+   "risecannabis.com/",
+   "risecannabis.com/api/opensearch/dispensaries/nearest"
+  ]
+ },
+ {
+  "id": "garfield-gardens-dispensary-garfield",
+  "name": "Garfield Gardens Dispensary",
+  "town": "Garfield",
+  "zip": "07026",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://yumaway.com/locations/yumawaynj",
+  "menu_url": "https://shop.gardensdispensary.com/locations/cannabis-dispensary-garfield-nj/rec-menu/5713",
+  "platform": "Jane",
+  "confidence": "high",
+  "api_paths": [
+   "api.iheartjane.com/v1/cart_products",
+   "api.iheartjane.com/v1/gold_configs",
+   "api.iheartjane.com/v1/stores/5713",
+   "api.iheartjane.com/v1/stores/5713/banner_message_settings"
+  ]
+ },
+ {
+  "id": "elevated-by-thecannabosslady-maplewood",
+  "name": "Elevated by TheCannaBossLady",
+  "town": "Maplewood",
+  "zip": "07040",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://thecannabosslady.com/",
+  "menu_url": "https://thecannabosslady.com/buy-cannabis-online-new-jersey/menu/flower",
+  "platform": "Jane",
+  "confidence": "high",
+  "api_paths": [
+   "api.iheartjane.com/v1/gold_configs",
+   "api.iheartjane.com/v1/stores/6623",
+   "api.iheartjane.com/v1/stores/6623/seo",
+   "api.iheartjane.com/v1/whoami"
+  ]
+ },
+ {
+  "id": "rise-paramus",
+  "name": "RISE",
+  "town": "Paramus",
+  "zip": "07652",
+  "tags": "Medicinal cannabis|Recreational cannabis|Expanded ATC (Both Med & Rec)|Offers delivery",
+  "website": "https://risecannabis.com/dispensary-menu/new-jersey/paramus-medical-menu/",
+  "menu_url": "https://risecannabis.com/dispensaries/new-jersey/paramus/2446/medical-menu/?currentSort=thc-potency-desc",
+  "platform": "Jane",
+  "confidence": "high",
+  "api_paths": [
+   "cdn-bong.risecannabis.com/v1/projects/k8mTZHLeu3yuz69FNFjuVQbtweZcdf1A/settings",
+   "dmerch.iheartjane.com/fp/token",
+   "risecannabis.com/",
+   "risecannabis.com/cdn-cgi/challenge-platform/h/b/fo/894996485:1792771817:fVZrEN6cKEue2OG1YyZbZXl6X8nyvOvqR7wfE9Y7kVo/a4f2"
+  ]
+ },
+ {
+  "id": "rise-paterson",
+  "name": "RISE",
+  "town": "Paterson",
+  "zip": "07514",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://risecannabis.com/dispensaries/new-jersey/paterson/",
+  "menu_url": "https://risecannabis.com/dispensaries/new-jersey/paterson/4440/recreational-menu",
+  "platform": "Jane",
+  "confidence": "medium",
+  "api_paths": [
+   "api-bong.risecannabis.com/v1/b",
+   "cdn-bong.risecannabis.com/v1/projects/k8mTZHLeu3yuz69FNFjuVQbtweZcdf1A/settings",
+   "risecannabis.com/",
+   "risecannabis.com/api/opensearch/dispensaries/nearest"
+  ]
+ },
+ {
+  "id": "holistic-re-leaf-rockaway",
+  "name": "Holistic Re-Leaf",
+  "town": "Rockaway",
+  "zip": "07866",
+  "tags": "Recreational cannabis",
+  "website": "http://holisticreleafnj.com",
+  "menu_url": "https://holisticreleafnj.com/stores/holistic-re-leaf-cannabis-dispensary-rockaway-nj/",
+  "platform": "Jane",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/43ab9/5821/999997632.json",
+   "dmerch.iheartjane.com/v2/smart"
+  ]
+ },
+ {
+  "id": "dogwood-green-west-orange",
+  "name": "Dogwood Green",
+  "town": "West Orange",
+  "zip": "07052",
+  "tags": "Recreational cannabis",
+  "website": "https://www.dogwoodgreen.com/",
+  "menu_url": "https://www.dogwoodgreen.com/shop/",
+  "platform": "Jane",
+  "confidence": "high",
+  "api_paths": [
+   "api.iheartjane.com/v1/gold_configs",
+   "api.iheartjane.com/v1/stores/6297",
+   "api.iheartjane.com/v1/stores/6297/banner_message_settings",
+   "api.iheartjane.com/v1/stores/6297/seo"
+  ]
+ },
+ {
+  "id": "theo-a-cannabis-franklin-park",
+  "name": "Theo A. Cannabis",
+  "town": "Franklin Park",
+  "zip": "08823",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "http://njtheo.com",
+  "menu_url": "https://njtheo.com/shop",
+  "platform": "Joint Commerce",
+  "confidence": "high",
+  "api_paths": [
+   "alt-tags.accessiblyapp.com/v1/alt-tags",
+   "app.jointcommerce.com/api/event-data/493/",
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "urb-n-dispensary-newark",
+  "name": "URB\u2019N Dispensary",
+  "town": "Newark",
+  "zip": "07105",
+  "tags": "Medicinal cannabis|Recreational cannabis|Expanded ATC (Both Med & Rec)|Cannabis Consumption Area|Offers delivery",
+  "website": "https://urbndispensary.com/home",
+  "menu_url": "http://urbndispensary.wm.store/",
+  "platform": "Leafly embed",
+  "confidence": "high",
+  "api_paths": [
+   "api-g.weedmaps.com/discovery/v1/listings/dispensaries/urb-n/brands",
+   "api-g.weedmaps.com/discovery/v1/listings/dispensaries/urb-n/menu_items",
+   "api-g.weedmaps.com/discovery/v1/listings/dispensaries/urb-n/taxonomy",
+   "api-g.weedmaps.com/discovery/v1/products"
+  ]
+ },
+ {
+  "id": "otc-jersey-absecon",
+  "name": "OTC Jersey",
+  "town": "Absecon",
+  "zip": "08201",
+  "tags": "Recreational cannabis",
+  "website": "https://www.offthechartsshop.com/absecon",
+  "menu_url": "https://otcjersey.com/shop",
+  "platform": "Meadow",
+  "confidence": "high",
+  "api_paths": [
+   "api.getmeadow.com/organizations/1984",
+   "api.userway.org/api/v1/tunings/VHyXhcibqZ",
+   "cdn.userway.org/widgetapp/2026-09-29-10-33-22/locales/en-US.json",
+   "daffodil.getmeadow.com/organizations/1984/products"
+  ]
+ },
+ {
+  "id": "the-leaf-and-seed-dispensary-clementon",
+  "name": "The Leaf and Seed Dispensary",
+  "town": "Clementon",
+  "zip": "08021",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://www.theleafandseednj.com/?meadowQuery=",
+  "menu_url": "https://www.theleafandseednj.com/?meadowQuery=",
+  "platform": "Meadow",
+  "confidence": "high",
+  "api_paths": [
+   "api.getmeadow.com/organizations/2068",
+   "cdn.weglot.com/projects-settings/ce1b4d00a5fa8da2a065726ae4e4b8412.json",
+   "core.service.elfsight.com/p/boot/",
+   "daffodil.getmeadow.com/organizations/2068/products"
+  ]
+ },
+ {
+  "id": "baked-by-the-river-lambertville",
+  "name": "Baked by the River",
+  "town": "Lambertville",
+  "zip": "08530",
+  "tags": "Recreational cannabis|Microbusiness",
+  "website": "http://www.bakedbytheriver.com/",
+  "menu_url": "https://bakedbytheriver.com/shop",
+  "platform": "Meadow",
+  "confidence": "high",
+  "api_paths": [
+   "api.getmeadow.com/organizations/1736",
+   "bakedbytheriver.com/wp-json/age-gate/v3/check",
+   "cdn.acsbapp.com/config/bakedbytheriver.com/config.json",
+   "daffodil.getmeadow.com/organizations/1736/products"
+  ]
+ },
+ {
+  "id": "feels-of-green-newton",
+  "name": "Feels of Green",
+  "town": "Newton",
+  "zip": "07860",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://feelsofgreendispensary.com/",
+  "menu_url": "https://feelsofgreendispensary.com/cannabis-shop-andover-township/",
+  "platform": "Meadow",
+  "confidence": "high",
+  "api_paths": [
+   "api.getmeadow.com/organizations/1874",
+   "daffodil.getmeadow.com/organizations/1874/products",
+   "feelsofgreendispensary.com/wp-json/age-gate/v3/check",
+   "feelsofgreendispensary.com/wp-json/sl-insta/media/feed"
+  ]
+ },
+ {
+  "id": "public-absecon-absecon",
+  "name": "Public Absecon",
+  "town": "Absecon",
+  "zip": "08201",
+  "tags": "Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "loud-house-camden",
+  "name": "Loud House",
+  "town": "Camden",
+  "zip": "08102",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "memes-danckk-world-jersey-city",
+  "name": "Memes Danckk World",
+  "town": "Jersey City",
+  "zip": "07305",
+  "tags": "Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "the-next-chapter-market-ocean-township",
+  "name": "The Next Chapter Market",
+  "town": "Ocean Township",
+  "zip": "07712",
+  "tags": "Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "blaze-green-paterson",
+  "name": "Blaze Green",
+  "town": "Paterson",
+  "zip": "07514",
+  "tags": "Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "brute-s-roots-paulsboro-paulsboro",
+  "name": "Brute's Roots-Paulsboro",
+  "town": "Paulsboro",
+  "zip": "08066",
+  "tags": "Medicinal cannabis|Recreational cannabis|Expanded ATC (Both Med & Rec)",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "uncle-beez-greeneryz-penns-grove",
+  "name": "Uncle Beez Greeneryz",
+  "town": "Penns Grove",
+  "zip": "08069",
+  "tags": "Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "broad-street-buds-phillipsburg",
+  "name": "Broad Street Buds",
+  "town": "Phillipsburg",
+  "zip": "08865",
+  "tags": "Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "kota-canna-plainfield",
+  "name": "Kota Canna",
+  "town": "Plainfield",
+  "zip": "07060",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "roll-models-roselle",
+  "name": "Roll Models",
+  "town": "Roselle",
+  "zip": "07203",
+  "tags": "",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "dazed-cannabis-somerset-somerset",
+  "name": "Dazed Cannabis - Somerset",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "high-end-gardens-sussex",
+  "name": "High End Gardens",
+  "town": "Sussex",
+  "zip": "07461",
+  "tags": "Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "the-library-of-new-jersey-west-orange",
+  "name": "The Library of New Jersey",
+  "town": "West Orange",
+  "zip": "07052",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "",
+  "menu_url": "",
+  "platform": "No website",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "twisted-hat-cannabis-carneys-point",
+  "name": "Twisted Hat Cannabis",
+  "town": "Carneys Point",
+  "zip": "08069",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://twistedhatcannabis.com/",
+  "menu_url": "https://cart.twistedhatcannabis.com/",
+  "platform": "Proteus420",
+  "confidence": "high",
+  "api_paths": [
+   "api.proteuserp.com/twistedhat/embed/emailform.js.cfm",
+   "twistedhatcannabis.com/wp-json/age-gate/v3/check"
+  ]
+ },
+ {
+  "id": "toke-lane-trenton-trenton",
+  "name": "Toke Lane - Trenton",
+  "town": "Trenton",
+  "zip": "08608",
+  "tags": "Medicinal cannabis|Recreational cannabis|Expanded ATC (Both Med & Rec)",
+  "website": "https://tokelane.com/",
+  "menu_url": "https://cart.tokelane.com/index.cfm?chooselocation=1",
+  "platform": "Proteus420",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "dev4.proteuserp.com/tokelane/chat/chatwidgetsql.cfm",
+   "r.surfside.io/gm0a3/98fbd/config.json"
+  ]
+ },
+ {
+  "id": "boone-town-provisions-boonton",
+  "name": "Boone Town Provisions",
+  "town": "Boonton",
+  "zip": "07005",
+  "tags": "Recreational cannabis",
+  "website": "http://boonetownnj.com",
+  "menu_url": "https://boonetownnj.com/products/buy-prerolls/",
+  "platform": "Shopify (custom storefront)",
+  "confidence": "medium",
+  "api_paths": [
+   "cdn.acsbapp.com/config/boonetownnj.com/config.json",
+   "col.surfside.io/event/track",
+   "r.surfside.io/dd3ef/00253/config.json",
+   "r.surfside.io/dd3ef/5e250/config.json"
+  ]
+ },
+ {
+  "id": "jersey-dispensary-jersey-city",
+  "name": "Jersey Dispensary",
+  "town": "Jersey City",
+  "zip": "07304",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://jerseydispensary.com/",
+  "menu_url": "https://getcarrot.io/",
+  "platform": "Shopify (custom storefront)",
+  "confidence": "medium",
+  "api_paths": [
+   "api.nevada.getcarrot.io/api/v1/customer/me/cart",
+   "api.nevada.getcarrot.io/api/v1/store/category",
+   "api.nevada.getcarrot.io/api/v1/store/flags",
+   "api.nevada.getcarrot.io/api/v1/store/locations"
+  ]
+ },
+ {
+  "id": "nar-cannabis-mt-laurel-township",
+  "name": "NAR Cannabis",
+  "town": "Mt Laurel Township",
+  "zip": "08054",
+  "tags": "Recreational cannabis",
+  "website": "https://narcannabis.com/",
+  "menu_url": "https://shopnarcannabis.com/pages/career",
+  "platform": "Shopify (custom storefront)",
+  "confidence": "medium",
+  "api_paths": [
+   "api.framer.com/auth/web/access-token",
+   "api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Bold,Arial%20Unicode%20MS%20Bold/0-255.pbf",
+   "api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Medium,Arial%20Unicode%20MS%20Regular/0-255.pbf",
+   "api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Medium,Arial%20Unicode%20MS%20Regular/8192-8447.pbf"
+  ]
+ },
+ {
+  "id": "zen-leaf",
+  "name": "Zen Leaf",
+  "town": "",
+  "zip": "",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://zenleafdispensaries.com/locations/neptune/",
+  "menu_url": "https://zenleafdispensaries.com/locations/neptune/menu/medical/log-in",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "ad.doubleclick.net/ccm/s/collect",
+   "analytics.google.com/g/collect",
+   "data.zenleafdispensaries.com/catalog/152/medical",
+   "data.zenleafdispensaries.com/catalog/553/medical"
+  ]
+ },
+ {
+  "id": "natural-apothecary-belleville",
+  "name": "Natural Apothecary",
+  "town": "Belleville",
+  "zip": "07109",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://natural-apothecary.com",
+  "menu_url": "http://shop.natural-apothecary.com/",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/23bd1/232/999998348.json",
+   "creative.surfside.io/product/23bd1/232/172969.json"
+  ]
+ },
+ {
+  "id": "castaway-cannabis-delran",
+  "name": "Castaway Cannabis",
+  "town": "Delran",
+  "zip": "08075",
+  "tags": "Recreational cannabis",
+  "website": "http://castawaycanna.com",
+  "menu_url": "https://shop.castawaycanna.com/delran",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/f02d7/76/999997593.json",
+   "creative.surfside.io/product/f02d7/76/148796.json"
+  ]
+ },
+ {
+  "id": "zacate-delran",
+  "name": "Zacate",
+  "town": "Delran",
+  "zip": "08075",
+  "tags": "Recreational cannabis",
+  "website": "http://www.zacate.co",
+  "menu_url": "https://zacate.co/shop/",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "static-prime.sweedpos.com/ecom-themes/builds/prime/c--zacate/b2-a2a65e0c77f6c9626e69815d431960c515e7854423857797a37924a8",
+   "web-ui-prime.sweedpos.com/_api/proxy/Account/Get",
+   "web-ui-prime.sweedpos.com/_api/proxy/AccountV2/GetAccountFulfillmentPreferencesV2"
+  ]
+ },
+ {
+  "id": "the-cannabist-deptford",
+  "name": "The Cannabist",
+  "town": "Deptford",
+  "zip": "08096",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://gocannabist.com/location/deptford/",
+  "menu_url": "https://www.gocannabist.com/stores/new-jersey/deptford/shop/medical",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "cdn.acsbapp.com/config/gocannabist.com/config.json",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/50m83/458/999997901.json"
+  ]
+ },
+ {
+  "id": "urge-elizabeth",
+  "name": "Urge",
+  "town": "Elizabeth",
+  "zip": "07201",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "http://urgenj.com",
+  "menu_url": "https://urgenj.com/products/",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "sa.searchatlas.com/api/v2/otto-url-details/",
+   "static-prime.sweedpos.com/ecom-themes/builds/prime/c--urge/b2-145315f12368431196843a68110ca88a11c70c34a531c1bd816e9fba12",
+   "urgenj.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "zen-leaf-elizabeth",
+  "name": "Zen Leaf",
+  "town": "Elizabeth",
+  "zip": "07201",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://zenleafdispensaries.com/locations/elizabeth/",
+  "menu_url": "https://zenleafdispensaries.com/locations/elizabeth/menu/medical/log-in",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "data.zenleafdispensaries.com/catalog/152/medical",
+   "data.zenleafdispensaries.com/catalog/552/medical",
+   "data.zenleafdispensaries.com/menu-config/elizabeth"
+  ]
+ },
+ {
+  "id": "bud-it-up-englishtown",
+  "name": "Bud It Up",
+  "town": "Englishtown",
+  "zip": "07726",
+  "tags": "Recreational cannabis",
+  "website": "https://www.buditupnj.com/",
+  "menu_url": "https://shop.buditupnj.com/englishtown/menu/discounts?promo=products",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "shop.buditupnj.com/_api/Account/Get",
+   "shop.buditupnj.com/_api/AccountV2/GetAccountFulfillmentPreferencesV2",
+   "shop.buditupnj.com/_api/Banners/GetBanners"
+  ]
+ },
+ {
+  "id": "scarlet-reserve-room-englishtown",
+  "name": "Scarlet Reserve Room",
+  "town": "Englishtown",
+  "zip": "07726",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://scarletreserveroom.com",
+  "menu_url": "https://scarletreserveroom.com/englishtown-nj-dispensary-about-us/",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "pixel.quantserve.com/cs",
+   "scarletreserveroom.com/cdn-cgi/rum",
+   "scarletreserveroom.com/wp-admin/admin-ajax.php"
+  ]
+ },
+ {
+  "id": "jane-s-joint-boutique-dispensary-gibbsboro",
+  "name": "Jane\u2019s Joint Boutique Dispensary",
+  "town": "Gibbsboro",
+  "zip": "08026",
+  "tags": "Recreational cannabis",
+  "website": "https://myjanesjoint.com/",
+  "menu_url": "https://shop.myjanesjoint.com/gibbsboro/menu/flower-7113",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/02f26/301/999998106.json",
+   "creative.surfside.io/product/02f26/301/424186.json"
+  ]
+ },
+ {
+  "id": "blulight-cannabis-dispensary-gloucester-city-gloucester-city",
+  "name": "BluLight Cannabis Dispensary - Gloucester City",
+  "town": "Gloucester City",
+  "zip": "08030",
+  "tags": "Recreational cannabis",
+  "website": "https://blulight.com/gloucester",
+  "menu_url": "https://blulight.com/store-redirect/menu/discounts?promo=deals",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "app.jointcommerce.com/api/event-data/",
+   "bid.surfside.io/rtb/bids/surfside",
+   "blulight.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/b53e478bd915/0.9833681103415648:1792767624:3L0V6Jt2o3ZdU_QkRpKkE",
+   "blulight.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "hudsonica-inc-hoboken",
+  "name": "Hudsonica Inc.",
+  "town": "Hoboken",
+  "zip": "07030",
+  "tags": "Recreational cannabis",
+  "website": "https://hudsonicadispensary.com/",
+  "menu_url": "https://hudsonicadispensary.com/hoboken/menu/flower-10862",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/689c8/992/999997914.json",
+   "creative.surfside.io/product/689c8/992/709008.json"
+  ]
+ },
+ {
+  "id": "authorized-dealer-dispensary-iii-jersey-city",
+  "name": "Authorized Dealer Dispensary III",
+  "town": "Jersey City",
+  "zip": "07302",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://baystgreenery.com",
+  "menu_url": "https://yourdealer.co/shop/nj/willingboro/menu",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/435cg/90/999997914.json",
+   "creative.surfside.io/product/435cg/90/190463.json"
+  ]
+ },
+ {
+  "id": "greenstop-dispensary-jersey-city",
+  "name": "Greenstop Dispensary",
+  "town": "Jersey City",
+  "zip": "07307",
+  "tags": "Recreational cannabis",
+  "website": "https://greenstopwellnessjc.com/",
+  "menu_url": "https://greenstopwellnessjc.com/shop/mi/greenstop/menu/discounts/harvest-moon-madness-45-off.-52016",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "greenstopwellnessjc.com/wp-admin/admin-ajax.php",
+   "greenstopwellnessjc.com/wp-json/age-gate/v3/check",
+   "static-prime.sweedpos.com/ecom-themes/builds/prime/c--greenstopwellness/b2-098c413ee7da02707aed3d5020e71600f2f4f72814db1"
+  ]
+ },
+ {
+  "id": "ript-jersey-city",
+  "name": "RIPT",
+  "town": "Jersey City",
+  "zip": "07306",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "http://www.riptdispensary.com",
+  "menu_url": "https://www.riptdispensary.com/shop/new-jersey/ript",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "events.dwh.sweedkube.com/decide/",
+   "r.surfside.io/b8c00/c0494/config.json"
+  ]
+ },
+ {
+  "id": "union-chill-lambertville",
+  "name": "Union Chill",
+  "town": "Lambertville",
+  "zip": "08530",
+  "tags": "Recreational cannabis",
+  "website": "https://unionchillco.com/",
+  "menu_url": "https://shop.unionchillco.com/lambertville/menu/discounts",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "cmp.osano.com/Eq0y1pc9DQ/8f58704a-f2e2-44e7-83dc-79b71462c815/en.json",
+   "events.dwh.sweedkube.com/decide/",
+   "shop.unionchillco.com/_api/Account/Get",
+   "shop.unionchillco.com/_api/AccountV2/GetAccountFulfillmentPreferencesV2"
+  ]
+ },
+ {
+  "id": "zen-leaf-lawrence-township",
+  "name": "Zen Leaf",
+  "town": "Lawrence Township",
+  "zip": "08648",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://zenleafdispensaries.com/locations/lawrence/",
+  "menu_url": "https://zenleafdispensaries.com/locations/lawrence/menu/medical/log-in",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "collector-azsx401.dmp.cnna.io/analytics/track",
+   "data.zenleafdispensaries.com/catalog/152/medical",
+   "data.zenleafdispensaries.com/catalog/554/medical"
+  ]
+ },
+ {
+  "id": "apothecarium-dispensary-lodi",
+  "name": "Apothecarium Dispensary",
+  "town": "Lodi",
+  "zip": "07644",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://apothecariumnj.com/lodi/",
+  "menu_url": "https://shop.apothecarium.com/phillipsburg/menu/discounts",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "apothecarium.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/b53e478bd915/0.9833681103415648:1792767624:3L0V6Jt2o3ZdU_QkR",
+   "apothecarium.com/cdn-cgi/rum",
+   "apothecarium.com/wp-admin/admin-ajax.php",
+   "cmp.osano.com/Eq0y1pc9DQ/068a58a1-9e89-4875-818a-c4aced718193/en.json"
+  ]
+ },
+ {
+  "id": "apothecarium-dispensary-maplewood",
+  "name": "Apothecarium Dispensary",
+  "town": "Maplewood",
+  "zip": "07040",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://apothecariumnj.com/maplewood/",
+  "menu_url": "https://shop.apothecarium.com/phillipsburg/menu/discounts",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "apothecarium.com/cdn-cgi/rum",
+   "apothecarium.com/wp-admin/admin-ajax.php",
+   "cmp.osano.com/Eq0y1pc9DQ/068a58a1-9e89-4875-818a-c4aced718193/en.json",
+   "events.dwh.sweedkube.com/decide/"
+  ]
+ },
+ {
+  "id": "noire-dispensary-maplewood",
+  "name": "Noire Dispensary",
+  "town": "Maplewood",
+  "zip": "07040",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://noiredispensary.com/",
+  "menu_url": "https://noiredispensary.com/",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/0b74a/84/999997573.json",
+   "creative.surfside.io/product/0b74a/84/21788.json"
+  ]
+ },
+ {
+  "id": "the-cannabist-mays-landing",
+  "name": "The Cannabist",
+  "town": "Mays Landing",
+  "zip": "08330",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://www.gocannabist.com/stores/new-jersey/mays-landing",
+  "menu_url": "https://www.gocannabist.com/stores/new-jersey/mays-landing/shop/medical",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "cdn.acsbapp.com/config/gocannabist.com/config.json",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/50m83/546/999998315.json"
+  ]
+ },
+ {
+  "id": "the-grass-cab-maywood",
+  "name": "The Grass Cab",
+  "town": "Maywood",
+  "zip": "07607",
+  "tags": "Recreational cannabis",
+  "website": "https://thegrasscab.com/?utm_source=terrayn_gbp&utm_medium=organic&utm_campaign=maywood",
+  "menu_url": "https://shop.thegrasscab.com/maywood/menu/discounts?promo=deals",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "shop.thegrasscab.com/_api/Account/Get",
+   "shop.thegrasscab.com/_api/AccountV2/GetAccountFulfillmentPreferencesV2",
+   "shop.thegrasscab.com/_api/Banners/GetBanners"
+  ]
+ },
+ {
+  "id": "fire-and-oak-mt-holly",
+  "name": "Fire and Oak",
+  "town": "Mt Holly",
+  "zip": "08060",
+  "tags": "Recreational cannabis",
+  "website": "https://faomtholly.com/",
+  "menu_url": "https://faomtholly.com/shop?store=fire-oak-store&category=specials",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/de92f/518/999997978.json",
+   "creative.surfside.io/product/de92f/518/428316.json"
+  ]
+ },
+ {
+  "id": "zen-leaf-mount-holly-mt-holly",
+  "name": "Zen Leaf Mount Holly",
+  "town": "Mt Holly",
+  "zip": "08060",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://zenleafdispensaries.com/locations/mt-holly/",
+  "menu_url": "https://zenleafdispensaries.com/locations/mt-holly/menu/recreational/log-in",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "data.zenleafdispensaries.com/catalog/152/medical",
+   "data.zenleafdispensaries.com/catalog/555/recreational",
+   "data.zenleafdispensaries.com/menu-config/mt-holly"
+  ]
+ },
+ {
+  "id": "lilac-dispensary-newark",
+  "name": "Lilac Dispensary",
+  "town": "Newark",
+  "zip": "07102",
+  "tags": "Recreational cannabis",
+  "website": "https://lilacdispensary.com/about-us/",
+  "menu_url": "https://shop.lilacdispensary.com/newark",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "lilacdispensary.com/wp-json/age-gate/v3/check",
+   "lilacdispensary.com/wp-json/contact-form-7/v1/contact-forms/230/feedback/schema",
+   "lilacdispensary.com/wp-json/contact-form-7/v1/contact-forms/230/refill"
+  ]
+ },
+ {
+  "id": "authorized-dealer-dispensary-north-bergen",
+  "name": "Authorized Dealer Dispensary",
+  "town": "North Bergen",
+  "zip": "07047",
+  "tags": "Recreational cannabis",
+  "website": "https://yourdealer.co/locations/",
+  "menu_url": "https://yourdealer.co/shop/nj/baystreet",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/435cg/90/999997897.json",
+   "creative.surfside.io/product/435cg/90/190463.json"
+  ]
+ },
+ {
+  "id": "apothecarium-dispensary-phillipsburg",
+  "name": "Apothecarium Dispensary",
+  "town": "Phillipsburg",
+  "zip": "08865",
+  "tags": "Medicinal cannabis|Recreational cannabis|Expanded ATC (Both Med & Rec)",
+  "website": "https://apothecariumnj.com/phillipsburg/",
+  "menu_url": "https://shop.apothecarium.com/phillipsburg/menu/discounts",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "apothecarium.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.639106172951227:1792771825:oUmVw93VOJ0vAZkqMw",
+   "apothecarium.com/cdn-cgi/rum",
+   "apothecarium.com/wp-admin/admin-ajax.php",
+   "cmp.osano.com/Eq0y1pc9DQ/068a58a1-9e89-4875-818a-c4aced718193/en.json"
+  ]
+ },
+ {
+  "id": "mindlift-dispensary-plainfield",
+  "name": "MindLift Dispensary",
+  "town": "Plainfield",
+  "zip": "07060",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://mindliftdispensary.com/",
+  "menu_url": "https://mindliftdispensary.com/plainfield/menu/discounts?promo=products",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "static-prime.sweedpos.com/ecom-themes/builds/prime/c--mindlift/b2-df2025731665b31aeb6a055e086e8c8d71dd6fd49974648c4c127f",
+   "web-ui-prime.sweedpos.com/_api/proxy/Account/Get",
+   "web-ui-prime.sweedpos.com/_api/proxy/AccountV2/GetAccountFulfillmentPreferencesV2"
+  ]
+ },
+ {
+  "id": "valley-wellness-raritan",
+  "name": "Valley Wellness",
+  "town": "Raritan",
+  "zip": "08869",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://valleywellnessnj.com/",
+  "menu_url": "https://valleywellnessnj.com/shop/menu/flower-1181",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "api.yourgpt.ai/chatbot/v1/public/getChatbotSetting",
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/d8ddc/87/999997901.json"
+  ]
+ },
+ {
+  "id": "cannabis-city-dispensary-137-roselle",
+  "name": "Cannabis City Dispensary 137",
+  "town": "Roselle",
+  "zip": "07203",
+  "tags": "Recreational cannabis",
+  "website": "https://shop.dispensary137.com/cannabiscity",
+  "menu_url": "https://shop.dispensary137.com/cannabiscity/menu/discounts?promo=deals",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "shop.dispensary137.com/_api/Account/Get",
+   "shop.dispensary137.com/_api/AccountV2/GetAccountFulfillmentPreferencesV2",
+   "shop.dispensary137.com/_api/Banners/GetBanners"
+  ]
+ },
+ {
+  "id": "joy-leaf-roselle-park",
+  "name": "Joy Leaf",
+  "town": "Roselle Park",
+  "zip": "07204",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.joyleaf.com/?utm_source=gmb&utm_campaign=dispenza",
+  "menu_url": "https://shop.joyleaf.com/joyleaf?modal=locations",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "events.dwh.sweedkube.com/decide/",
+   "r.surfside.io/18faa/1f09e/config.json",
+   "shop.joyleaf.com/_api/Account/Get"
+  ]
+ },
+ {
+  "id": "best-budz-nj-dispensary-saddle-brook",
+  "name": "Best Budz NJ Dispensary",
+  "town": "Saddle Brook",
+  "zip": "07663",
+  "tags": "Recreational cannabis",
+  "website": "https://www.bestbudznj.com/",
+  "menu_url": "https://shop.bestbudznj.com/saddle-brook",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "api.open-meteo.com/v1/forecast",
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "events.dwh.sweedkube.com/decide/"
+  ]
+ },
+ {
+  "id": "sanctuary-cannabis-scotch-plains",
+  "name": "Sanctuary Cannabis",
+  "town": "Scotch Plains",
+  "zip": "07076",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://sanctuarymed.com/scotchplains/",
+  "menu_url": "https://sanctuarymed.com/shop/florida/clearwater/marketing/subscribe?source=eyJEYXRhIjp7IkZvcm1JZCI6ImRlMjhhOTdmLWJhZjAtNDQ3YS1hNDIzLTAwNzE0NzZiYTliMyJ9LCJTaWduIjoiNEY2NEJCMDBDMUMwMTg2RTM1RkUyNUU3NUExQzEyQ0FGMjg5QzExRDI1OTE1NEY1MzhFMTEwNjQ0NEQ2MDRCOCJ9",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "embeds.fbdash.com/forms/get/1349/5fa1b1d7-f6c6-4491-b64e-2bf989e76094",
+   "events.dwh.sweedkube.com/decide/",
+   "r.surfside.io/b69f8/f1f8e/config.json"
+  ]
+ },
+ {
+  "id": "green-knight-cannabis-somerset",
+  "name": "Green Knight Cannabis",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Recreational cannabis",
+  "website": "https://greenknightdispensary.com/",
+  "menu_url": "https://greenknightdispensary.com/order",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "events.dwh.sweedkube.com/decide/",
+   "greenknightdispensary.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.17402221155145703:1792804333:MWXc235",
+   "greenknightdispensary.com/cdn-cgi/rum",
+   "greenknightdispensary.com/waitlist/"
+  ]
+ },
+ {
+  "id": "authorized-dealer-dispensary-iv-willingboro",
+  "name": "Authorized Dealer Dispensary IV",
+  "town": "Willingboro",
+  "zip": "08046",
+  "tags": "Recreational cannabis",
+  "website": "https://yourdealer.co/",
+  "menu_url": "https://yourdealer.co/shop/nj/willingboro",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/435cg/402/999997914.json",
+   "creative.surfside.io/product/435cg/402/199685.json"
+  ]
+ },
+ {
+  "id": "nova-farms-woodbury",
+  "name": "Nova Farms",
+  "town": "Woodbury",
+  "zip": "08096",
+  "tags": "Recreational cannabis",
+  "website": "http://www.novafarms.com/",
+  "menu_url": "https://novafarms.com/stores/ma/attleboro",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "creative.surfside.io/native/v2/brand/f866b/200/999997569.json",
+   "creative.surfside.io/product/f866b/200/241144.json"
+  ]
+ },
+ {
+  "id": "blulight-cannabis-woodbury-heights",
+  "name": "BluLight Cannabis",
+  "town": "Woodbury Heights",
+  "zip": "08097",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://blulight.com/",
+  "menu_url": "https://blulight.com/gloucester/menu/pre-rolls-2062",
+  "platform": "Sweed",
+  "confidence": "high",
+  "api_paths": [
+   "app.jointcommerce.com/api/event-data/",
+   "bid.surfside.io/rtb/bids/surfside",
+   "blulight.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.12206316131058603:1792775448:7evII9Bj5KbXx7Byew4L",
+   "blulight.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "nevaeh-verde-dispensary-belleville",
+  "name": "Nevaeh Verde Dispensary",
+  "town": "Belleville",
+  "zip": "07109",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://nevaehverde.com/",
+  "menu_url": "https://nevaehverdedispensary.com/age-gate?returnUrl=%2F",
+  "platform": "Treez",
+  "confidence": "medium",
+  "api_paths": [
+   "cdn.acsbapp.com/config/nevaehverdedispensary.com/config.json",
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "canopy-crossroad-red-bank",
+  "name": "Canopy Crossroad",
+  "town": "Red Bank",
+  "zip": "07701",
+  "tags": "Recreational cannabis",
+  "website": "https://canopycrossroad.com/",
+  "menu_url": "https://canopycrossroad.com/dispensary/canopy-crossroad-red-bank",
+  "platform": "Treez",
+  "confidence": "medium",
+  "api_paths": [
+   "canopycrossroad.com/",
+   "canopycrossroad.com/blog",
+   "canopycrossroad.com/deals",
+   "canopycrossroad.com/later-weekend-hours-red-bank"
+  ]
+ },
+ {
+  "id": "cannaboy-treehouse-south-orange-village",
+  "name": "CannaBoy Treehouse",
+  "town": "South Orange Village",
+  "zip": "07079",
+  "tags": "Recreational cannabis|Microbusiness",
+  "website": "http://cannaboytreehouse.com",
+  "menu_url": "https://cannaboytreehouse.com/m/orders",
+  "platform": "Treez",
+  "confidence": "medium",
+  "api_paths": [
+   "992b79df-a6c4-461f-b281-6cd3b80cdbfa.mysimplestore.com/api/taxonomies/1/taxons",
+   "992b79df-a6c4-461f-b281-6cd3b80cdbfa.mysimplestore.com/api/v1/shipping_methods",
+   "992b79df-a6c4-461f-b281-6cd3b80cdbfa.mysimplestore.com/api/v2/products",
+   "992b79df-a6c4-461f-b281-6cd3b80cdbfa.mysimplestore.com/api/v3/config"
+  ]
+ },
+ {
+  "id": "holistic-solutions-atco",
+  "name": "Holistic Solutions",
+  "town": "Atco",
+  "zip": "08004",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://myholisticsolutions.com/",
+  "menu_url": "https://myholisticsolutions.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "design-710-atlantic-city",
+  "name": "Design 710",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://design710.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "honey-buzz-farms-atlantic-city",
+  "name": "Honey Buzz Farms",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://honeybuzzfarms.com",
+  "menu_url": "http://honeybuzzfarms.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "marvins-gardens-atlantic-city",
+  "name": "Marvins Gardens",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Recreational cannabis",
+  "website": "https://www.marvinsgardennj.com/",
+  "menu_url": "https://www.marvinsgardennj.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "the-healing-side-atlantic-city",
+  "name": "The Healing Side",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://thehealingside.com",
+  "menu_url": "http://thehealingside.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "the-thc-shop-atlantic-city",
+  "name": "The THC Shop",
+  "town": "Atlantic City",
+  "zip": "08401",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://ourthcshop.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "mad-hatter-dispensary-avenel",
+  "name": "Mad Hatter Dispensary",
+  "town": "Avenel",
+  "zip": "07001",
+  "tags": "Recreational cannabis",
+  "website": "https://www.madhatterdispensary.com/",
+  "menu_url": "https://www.madhatterdispensary.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "curaleaf-bellmawr",
+  "name": "Curaleaf",
+  "town": "Bellmawr",
+  "zip": "08031",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://curaleaf.com/shop/new-jersey/curaleaf-nj-bellmawr?",
+  "menu_url": "https://curaleaf.com/age-gate?returnurl=%2Fshop%2Fnew-jersey%2Fcuraleaf-nj-bellmawr",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "cdn.cookielaw.org/consent/01933fc9-bcbd-77e6-bd61-3d08bd47cac9/01933fc9-bcbd-77e6-bd61-3d08bd47cac9.json",
+   "cdn.cookielaw.org/consent/01933fc9-bcbd-77e6-bd61-3d08bd47cac9/019345a1-a335-7a73-86ea-2aad694b1db7/en.json",
+   "cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+   "cdn.cookielaw.org/scripttemplates/202608.1.0/assets/otCommonStyles.css"
+  ]
+ },
+ {
+  "id": "midnight-greens-blackwood",
+  "name": "Midnight Greens",
+  "town": "Blackwood",
+  "zip": "08012",
+  "tags": "Recreational cannabis",
+  "website": "http://midnightgreensnj.com",
+  "menu_url": "https://midnightgreensnj.com/cannabis-stash-for-atlantic-city-labor-day/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "quality-cannabliss-blackwood",
+  "name": "Quality Cannabliss",
+  "town": "Blackwood",
+  "zip": "08012",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://www.qualitycannabliss.com/",
+  "menu_url": "https://www.qualitycannabliss.com/age-gate?returnUrl=%2F",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "curaleaf-bordentown",
+  "name": "Curaleaf",
+  "town": "Bordentown",
+  "zip": "08505",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://curaleaf.com/shop/new-jersey/curaleaf-nj-bordentown?",
+  "menu_url": "https://curaleaf.com/age-gate?returnurl=%2Fshop%2Fnew-jersey%2Fcuraleaf-nj-bordentown",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "cdn.cookielaw.org/consent/01933fc9-bcbd-77e6-bd61-3d08bd47cac9/01933fc9-bcbd-77e6-bd61-3d08bd47cac9.json",
+   "cdn.cookielaw.org/consent/01933fc9-bcbd-77e6-bd61-3d08bd47cac9/019345a1-a335-7a73-86ea-2aad694b1db7/en.json",
+   "cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+   "cdn.cookielaw.org/scripttemplates/202608.1.0/assets/otCommonStyles.css"
+  ]
+ },
+ {
+  "id": "evergreen-nature-s-remedy-butler",
+  "name": "Evergreen Nature's Remedy",
+  "town": "Butler",
+  "zip": "07405",
+  "tags": "Recreational cannabis",
+  "website": "https://evergreen23.com/",
+  "menu_url": "https://evergreen23.com/menu?tags%5B0%5D=Staff%20Favorites",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "cdn.acsbapp.com/config/evergreen23.com/config.json",
+   "evergreen23.com/about-us",
+   "evergreen23.com/api/search/multi_search",
+   "evergreen23.com/contact"
+  ]
+ },
+ {
+  "id": "camden-apothecary-camden",
+  "name": "Camden Apothecary",
+  "town": "Camden",
+  "zip": "08103",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://camdenapothecary.com/",
+  "menu_url": "https://shop.camdenapothecary.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "csp.secureserver.net/eventbus/web",
+   "njbiz.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.2504141682415929:1792800633:XPcfU8qrBS0GHTMJlCAbiRK2",
+   "njbiz.com/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "the-g-factory-recreational-dispensary-camden",
+  "name": "The G Factory - Recreational Dispensary",
+  "town": "Camden",
+  "zip": "08103",
+  "tags": "Recreational cannabis",
+  "website": "https://gfactorynj.com/",
+  "menu_url": "https://gfactorynj.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "gfactorynj.com/__challenge"
+  ]
+ },
+ {
+  "id": "herb-haus-carlstadt",
+  "name": "Herb Haus",
+  "town": "Carlstadt",
+  "zip": "07072",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://herbhaus.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "casa-verde-wellness-dover",
+  "name": "Casa Verde Wellness",
+  "town": "Dover",
+  "zip": "07801",
+  "tags": "Recreational cannabis",
+  "website": "https://casaverdenj.com/",
+  "menu_url": "https://casaverdenj.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "premo-dover-dover",
+  "name": "Premo Dover",
+  "town": "Dover",
+  "zip": "07801",
+  "tags": "Recreational cannabis",
+  "website": "https://thegoodssupply.co/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "baked-goodz-east-orange",
+  "name": "Baked Goodz",
+  "town": "East Orange",
+  "zip": "07018",
+  "tags": "Recreational cannabis",
+  "website": "https://bakedgoodz6.com/home",
+  "menu_url": "https://bakedgoodz6.com/menu",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "bakedgoodz6.com/api/v1/blog",
+   "bakedgoodz6.com/api/v1/content/home",
+   "bakedgoodz6.com/api/v1/deals",
+   "bakedgoodz6.com/api/v1/flowhub/inventory"
+  ]
+ },
+ {
+  "id": "ayr-wellness-eatontown",
+  "name": "Ayr Wellness",
+  "town": "Eatontown",
+  "zip": "07724",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://gardenstatedispensary.com/locations/eatontown/",
+  "menu_url": "https://gardenstatedispensary.com/locations/eatontown/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "gardenstatedispensary.com/0.39851829600264577",
+   "gardenstatedispensary.com/0.6358643220279344",
+   "gardenstatedispensary.com/0.7075214925409522",
+   "gardenstatedispensary.com/0.8251084381942057"
+  ]
+ },
+ {
+  "id": "the-wildflower-market-eatontown",
+  "name": "The Wildflower Market",
+  "town": "Eatontown",
+  "zip": "07724",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://thewildflowernj.com/shop/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "curaleaf-edgewater-park",
+  "name": "Curaleaf",
+  "town": "Edgewater Park",
+  "zip": "08010",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://curaleaf.com/shop/new-jersey/curaleaf-nj-edgewater-park?",
+  "menu_url": "https://curaleaf.com/age-gate?returnurl=%2Fshop%2Fnew-jersey%2Fcuraleaf-nj-edgewater-park",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "cdn.cookielaw.org/consent/01933fc9-bcbd-77e6-bd61-3d08bd47cac9/01933fc9-bcbd-77e6-bd61-3d08bd47cac9.json",
+   "cdn.cookielaw.org/consent/01933fc9-bcbd-77e6-bd61-3d08bd47cac9/019345a1-a335-7a73-86ea-2aad694b1db7/en.json",
+   "cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+   "cdn.cookielaw.org/scripttemplates/202608.1.0/assets/otCommonStyles.css"
+  ]
+ },
+ {
+  "id": "nj-pure-edgewater-park",
+  "name": "NJ Pure",
+  "town": "Edgewater Park",
+  "zip": "08010",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "http://njpure.net",
+  "menu_url": "https://njpure.net/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "njpure.net/cdn-cgi/rum"
+  ]
+ },
+ {
+  "id": "brute-s-roots-egg-harbor-township",
+  "name": "Brute's Roots",
+  "town": "Egg Harbor Township",
+  "zip": "08234",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://brutesroots.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "green-haven-industries-elizabeth",
+  "name": "Green Haven Industries",
+  "town": "Elizabeth",
+  "zip": "07206",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://greenhaven-nj.com/",
+  "menu_url": "https://greenhaven-nj.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "greenhaven-nj.com/__challenge"
+  ]
+ },
+ {
+  "id": "simply-pure-trenton-ewing-township",
+  "name": "Simply Pure Trenton",
+  "town": "Ewing Township",
+  "zip": "08638",
+  "tags": "Recreational cannabis",
+  "website": "http://simplypuretrenton.com",
+  "menu_url": "https://simplypuretrenton.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "simplypuretrenton.com/0.004227229525320952",
+   "simplypuretrenton.com/0.09967281670268546",
+   "simplypuretrenton.com/0.21587258746797844",
+   "simplypuretrenton.com/0.371198977686902"
+  ]
+ },
+ {
+  "id": "the-station-hoboken",
+  "name": "The Station",
+  "town": "Hoboken",
+  "zip": "07030",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis|Offers delivery",
+  "website": "https://shop.thestationhoboken.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "nature-s-motivation-irvington",
+  "name": "Nature\u2019s Motivation",
+  "town": "Irvington",
+  "zip": "07111",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "http://natmotive.com",
+  "menu_url": "https://www.natmotive.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "candid-dispensary-jersey-city",
+  "name": "Candid Dispensary",
+  "town": "Jersey City",
+  "zip": "07307",
+  "tags": "Recreational cannabis",
+  "website": "https://candiddispensary.com/",
+  "menu_url": "https://candiddispensary.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "clone-canabiss-jersey-city",
+  "name": "Clone Canabiss",
+  "town": "Jersey City",
+  "zip": "07306",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://goldendoordispensary.com",
+  "menu_url": "https://clonecanabiss.com/new-jersey/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "clonecanabiss.com/cdn-cgi/rum",
+   "clonecanabiss.com/wp-json/contact-form-7/v1/contact-forms/457/feedback/schema",
+   "csp.secureserver.net/eventbus/web"
+  ]
+ },
+ {
+  "id": "downtown-flwr-jersey-city",
+  "name": "Downtown FLWR",
+  "town": "Jersey City",
+  "zip": "07302",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://downtownflwr.com/",
+  "menu_url": "https://www.downtownflwr.com/age-gate?returnUrl=%2F",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "cdn.acsbapp.com/config/downtownflwr.com/config.json",
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "the-medicine-woman-jersey-city",
+  "name": "The Medicine Woman",
+  "town": "Jersey City",
+  "zip": "07307",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.themedicinewoman.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "the-other-side-dispensary-jersey-city",
+  "name": "The Other Side Dispensary",
+  "town": "Jersey City",
+  "zip": "07307",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "http://tos-dispensary-prod.vercel.app/",
+  "menu_url": "https://tos-dispensary-prod.vercel.app/age-gate?returnUrl=%2F",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "xena-nj-jersey-city",
+  "name": "Xena NJ",
+  "town": "Jersey City",
+  "zip": "07305",
+  "tags": "Recreational cannabis|Cannabis Consumption Area",
+  "website": "https://www.xenanj.com/",
+  "menu_url": "https://xenanj.com/age-gate?returnUrl=%2F",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "greenlight-apothecary-lake-hopatcong",
+  "name": "Greenlight Apothecary",
+  "town": "Lake Hopatcong",
+  "zip": "07849",
+  "tags": "Recreational cannabis",
+  "website": "https://www.greenlightnj.com/location/greenlightnj",
+  "menu_url": "https://www.greenlightnj.com/location/greenlightnj",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "www.greenlightnj.com/_next/data/uA7l8GZdH8mbTjGMezH97/menu.json",
+   "www.greenlightnj.com/_next/data/uA7l8GZdH8mbTjGMezH97/online-menu.json",
+   "www.greenlightnj.com/_next/data/uA7l8GZdH8mbTjGMezH97/order-online.json",
+   "www.greenlightnj.com/_next/data/uA7l8GZdH8mbTjGMezH97/order.json"
+  ]
+ },
+ {
+  "id": "quality-roots-marlton",
+  "name": "Quality Roots",
+  "town": "Marlton",
+  "zip": "08053",
+  "tags": "Recreational cannabis",
+  "website": "https://getqualityroots.com/locations/marlton/",
+  "menu_url": "https://getqualityroots.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "a.usbrowserspeed.com/cs",
+   "api.getqualityroots.com/auth/check/",
+   "api.getqualityroots.com/cart/",
+   "api.getqualityroots.com/categories/"
+  ]
+ },
+ {
+  "id": "phula-mt-holly",
+  "name": "Phula",
+  "town": "Mt Holly",
+  "zip": "08060",
+  "tags": "Recreational cannabis",
+  "website": "http://www.phulaweed.com/",
+  "menu_url": "http://www.phulaweed.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "csp.secureserver.net/eventbus/web"
+  ]
+ },
+ {
+  "id": "voltaire-nj-mt-holly",
+  "name": "Voltaire NJ",
+  "town": "Mt Holly",
+  "zip": "08060",
+  "tags": "Recreational cannabis",
+  "website": "https://www.voltairecannabis.com/",
+  "menu_url": "https://www.voltairecannabis.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "www.voltairecannabis.com/__challenge"
+  ]
+ },
+ {
+  "id": "bud-2-bloom-netcong",
+  "name": "Bud 2 Bloom",
+  "town": "Netcong",
+  "zip": "07857",
+  "tags": "Recreational cannabis",
+  "website": "https://bud2bloomdispensary.com/",
+  "menu_url": "https://bud2bloomdispensary.com/?ki-cf-botcl=1",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "bud2bloomdispensary.com/cdn-cgi/challenge-platform/h/b/fo/2206462477:1792800619:D8oUXNYwxX_zM_WzpAGGWzHFtaLmVKBkF8gpQ-LZ"
+  ]
+ },
+ {
+  "id": "releaf-newton-newton",
+  "name": "Releaf Newton",
+  "town": "Newton",
+  "zip": "07860",
+  "tags": "Recreational cannabis",
+  "website": "https://www.releafnewton.com/location/releafnewton",
+  "menu_url": "https://www.releafnewton.com/location/releafnewton",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "www.releafnewton.com/_next/data/uA7l8GZdH8mbTjGMezH97/menu.json",
+   "www.releafnewton.com/_next/data/uA7l8GZdH8mbTjGMezH97/online-menu.json",
+   "www.releafnewton.com/_next/data/uA7l8GZdH8mbTjGMezH97/order-online.json",
+   "www.releafnewton.com/_next/data/uA7l8GZdH8mbTjGMezH97/order.json"
+  ]
+ },
+ {
+  "id": "hudhaus-north-bergen",
+  "name": "HudHaus",
+  "town": "North Bergen",
+  "zip": "07047",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "http://hudhaus.co",
+  "menu_url": "https://hudhaus.co/age-gate?returnUrl=%2F",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "j-j-cannabis-dispensary-oak-ridge",
+  "name": "J & J Cannabis Dispensary",
+  "town": "Oak Ridge",
+  "zip": "07438",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://www.jjdispensary.com/",
+  "menu_url": "https://www.jjdispensary.com/categories/vaporizers/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "bid.surfside.io/rtb/bids/surfside",
+   "col.surfside.io/event/track",
+   "g.surfside.io/enrich",
+   "r.surfside.io/38f65/01461/config.json"
+  ]
+ },
+ {
+  "id": "plant-base-plainfield",
+  "name": "Plant Base",
+  "town": "Plainfield",
+  "zip": "07060",
+  "tags": "Recreational cannabis",
+  "website": "https://plantbasellc.com/?fbclid=PAAaa4dL7dpLjs55HvwqAODV97t7QbmOImMO1KbgFeqeHk0bRzspbjgKH-08E",
+  "menu_url": "https://plantbasellc.com/?fbclid=PAAaa4dL7dpLjs55HvwqAODV97t7QbmOImMO1KbgFeqeHk0bRzspbjgKH-08E",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "plantbasellc.com/0.061721584394927476",
+   "plantbasellc.com/0.08465515082066688",
+   "plantbasellc.com/0.2589028084085324",
+   "plantbasellc.com/0.2772069023070961"
+  ]
+ },
+ {
+  "id": "plantabis-rahway",
+  "name": "Plantabis",
+  "town": "Rahway",
+  "zip": "07065",
+  "tags": "Recreational cannabis",
+  "website": "http://plantabis.com",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "kind-kush-rockaway",
+  "name": "Kind Kush",
+  "town": "Rockaway",
+  "zip": "07866",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://kindkushdispensary.com/",
+  "menu_url": "https://www.kindkushdispensary.com/age-gate?returnUrl=%2F",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "new-frontier-solutions-salem",
+  "name": "New Frontier Solutions",
+  "town": "Salem",
+  "zip": "08079",
+  "tags": "Recreational cannabis",
+  "website": "https://www.newfrontiersolutions.org/",
+  "menu_url": "https://newfrontiersolutions.org/store-policy",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "lemon-22-scotch-plains",
+  "name": "Lemon 22",
+  "town": "Scotch Plains",
+  "zip": "07076",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://lemon22nj.com/",
+  "menu_url": "https://lemon22nj.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "central-jersey-dispensary-somerset",
+  "name": "Central Jersey Dispensary",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Recreational cannabis",
+  "website": "https://centraljerseydispensary.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "herb-s-premium-dispensary-somerset",
+  "name": "Herb's Premium Dispensary",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Recreational cannabis",
+  "website": "https://herbspremiumdispensary.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "somerset-green-somerset",
+  "name": "Somerset Green",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Recreational cannabis",
+  "website": "https://www.somersetgreen.co/",
+  "menu_url": "https://www.somersetgreen.co/products/flower/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "timber-5-somerset",
+  "name": "Timber 5",
+  "town": "Somerset",
+  "zip": "08873",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "http://timber5.com",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "sussex-pharms-sussex",
+  "name": "Sussex Pharms",
+  "town": "Sussex",
+  "zip": "07461",
+  "tags": "Microbusiness|Recreational cannabis",
+  "website": "https://www.sussexpharms.com/",
+  "menu_url": "https://shop.sussexpharms.com/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "core.service.elfsight.com/p/boot/",
+   "https://www.sussexpharms.com/50a85344-d1c2-4c79-8c8a-0bb055e57180",
+   "video.squarespace-cdn.com/content/v1/5f0df96c630eee45d21f6aed/45d10f6a-c5be-4480-be7f-efd6f019f371/key/41efcbfc21a04d918"
+  ]
+ },
+ {
+  "id": "the-social-leaf-toms-river",
+  "name": "The Social Leaf",
+  "town": "Toms River",
+  "zip": "08757",
+  "tags": "Microbusiness|Recreational cannabis|Offers delivery",
+  "website": "https://thesocialleaf.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "ayr-wellness-union",
+  "name": "Ayr Wellness",
+  "town": "Union",
+  "zip": "07083",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://gardenstatedispensary.com/locations/union/",
+  "menu_url": "https://gardenstatedispensary.com/locations/union/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "gardenstatedispensary.com/0.09054711844451646",
+   "gardenstatedispensary.com/0.115182462308555",
+   "gardenstatedispensary.com/0.30977559691352197",
+   "gardenstatedispensary.com/0.487958145300075"
+  ]
+ },
+ {
+  "id": "mountain-dispensary-vernon-township",
+  "name": "Mountain Dispensary",
+  "town": "Vernon Township",
+  "zip": "07462",
+  "tags": "Recreational cannabis|Offers delivery",
+  "website": "https://mountaindispensarynj.com/",
+  "menu_url": "https://mountaindispensarynj.com/age-gate?returnUrl=%2F",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track"
+  ]
+ },
+ {
+  "id": "the-cannabist-vineland",
+  "name": "The Cannabist",
+  "town": "Vineland",
+  "zip": "08360",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://col-care.com/location/vineland/",
+  "menu_url": "https://col-care.com/location/vineland/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "the-green-initiative-wenonah",
+  "name": "The Green Initiative",
+  "town": "Wenonah",
+  "zip": "08090",
+  "tags": "Recreational cannabis",
+  "website": "https://tginj.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "24-dispensary-west-milford",
+  "name": "24 Dispensary",
+  "town": "West Milford",
+  "zip": "07480",
+  "tags": "Recreational cannabis|Microbusiness",
+  "website": "https://www.canabhang.com/",
+  "menu_url": "chrome-error://chromewebdata/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": []
+ },
+ {
+  "id": "carry-on-cannabis-williamstown",
+  "name": "Carry-On Cannabis",
+  "town": "Williamstown",
+  "zip": "08094",
+  "tags": "Recreational cannabis",
+  "website": "https://gocarryon.com/",
+  "menu_url": "https://gocarryon.com/williamstown-dispensary/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "col.surfside.io/event/track",
+   "connect.gocarryon.com/events",
+   "gocarryon.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.17402221155145703:1792804333:MWXc235bVYWanikVhve",
+   "gocarryon.com/wp-admin/admin-ajax.php"
+  ]
+ },
+ {
+  "id": "ayr-wellness-woodbridge",
+  "name": "Ayr Wellness",
+  "town": "Woodbridge",
+  "zip": "07095",
+  "tags": "Expanded ATC (Both Med & Rec)|Medicinal cannabis|Recreational cannabis",
+  "website": "https://gardenstatedispensary.com/locations/woodbridge/",
+  "menu_url": "https://gardenstatedispensary.com/locations/woodbridge/",
+  "platform": "Unidentified",
+  "confidence": "none",
+  "api_paths": [
+   "gardenstatedispensary.com/0.044680527097786915",
+   "gardenstatedispensary.com/0.3265712062851157",
+   "gardenstatedispensary.com/0.5544709581788373",
+   "gardenstatedispensary.com/0.6452220624526376"
+  ]
+ }
+]
